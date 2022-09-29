@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Normals_Temperature_Annual_1991-2020_binned_2800x2181.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		DE764C6B28E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C6A28E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_AppApp.swift */; };
-		DE764C6D28E6324E00ADE5B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C6C28E6324E00ADE5B6 /* ContentView.swift */; };
 		DE764C6F28E6324F00ADE5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */; };
 		DE764C7228E6324F00ADE5B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */; };
+		DE764C8328E6329300ADE5B6 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7928E6329300ADE5B6 /* ArticleView.swift */; };
+		DE764C8428E6329300ADE5B6 /* Articles_Tab_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7A28E6329300ADE5B6 /* Articles_Tab_View.swift */; };
+		DE764C8528E6329300ADE5B6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7B28E6329300ADE5B6 /* HomeView.swift */; };
+		DE764C8628E6329300ADE5B6 /* Articles_Table_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7C28E6329300ADE5B6 /* Articles_Table_View.swift */; };
+		DE764C8728E6329300ADE5B6 /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7D28E6329300ADE5B6 /* ListCellView.swift */; };
+		DE764C8828E6329300ADE5B6 /* WeatherImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7E28E6329300ADE5B6 /* WeatherImagesView.swift */; };
+		DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C8028E6329300ADE5B6 /* ArticleListViewModel.swift */; };
+		DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C8228E6329300ADE5B6 /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE764C6728E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimateArticlesOf2021FromNOAA_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE764C6A28E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateArticlesOf2021FromNOAA_AppApp.swift; sourceTree = "<group>"; };
-		DE764C6C28E6324E00ADE5B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE764C7928E6329300ADE5B6 /* ArticleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		DE764C7A28E6329300ADE5B6 /* Articles_Tab_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles_Tab_View.swift; sourceTree = "<group>"; };
+		DE764C7B28E6329300ADE5B6 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DE764C7C28E6329300ADE5B6 /* Articles_Table_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles_Table_View.swift; sourceTree = "<group>"; };
+		DE764C7D28E6329300ADE5B6 /* ListCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
+		DE764C7E28E6329300ADE5B6 /* WeatherImagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherImagesView.swift; sourceTree = "<group>"; };
+		DE764C8028E6329300ADE5B6 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		DE764C8228E6329300ADE5B6 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,10 @@
 		DE764C6928E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_App */ = {
 			isa = PBXGroup;
 			children = (
+				DE764C7828E6329300ADE5B6 /* View */,
+				DE764C7F28E6329300ADE5B6 /* ViewModel */,
+				DE764C8128E6329300ADE5B6 /* Model */,
 				DE764C6A28E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_AppApp.swift */,
-				DE764C6C28E6324E00ADE5B6 /* ContentView.swift */,
 				DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */,
 				DE764C7028E6324F00ADE5B6 /* Preview Content */,
 			);
@@ -65,6 +81,35 @@
 				DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE764C7828E6329300ADE5B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE764C7928E6329300ADE5B6 /* ArticleView.swift */,
+				DE764C7A28E6329300ADE5B6 /* Articles_Tab_View.swift */,
+				DE764C7B28E6329300ADE5B6 /* HomeView.swift */,
+				DE764C7C28E6329300ADE5B6 /* Articles_Table_View.swift */,
+				DE764C7D28E6329300ADE5B6 /* ListCellView.swift */,
+				DE764C7E28E6329300ADE5B6 /* WeatherImagesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE764C7F28E6329300ADE5B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE764C8028E6329300ADE5B6 /* ArticleListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE764C8128E6329300ADE5B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE764C8228E6329300ADE5B6 /* Article.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE764C6D28E6324E00ADE5B6 /* ContentView.swift in Sources */,
+				DE764C8728E6329300ADE5B6 /* ListCellView.swift in Sources */,
+				DE764C8428E6329300ADE5B6 /* Articles_Tab_View.swift in Sources */,
+				DE764C8828E6329300ADE5B6 /* WeatherImagesView.swift in Sources */,
+				DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */,
+				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
+				DE764C8628E6329300ADE5B6 /* Articles_Table_View.swift in Sources */,
+				DE764C8328E6329300ADE5B6 /* ArticleView.swift in Sources */,
+				DE764C8528E6329300ADE5B6 /* HomeView.swift in Sources */,
 				DE764C6B28E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
