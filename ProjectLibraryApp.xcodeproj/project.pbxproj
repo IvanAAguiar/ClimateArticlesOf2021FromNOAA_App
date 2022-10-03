@@ -33,7 +33,7 @@
 		DE321EBE28E72C60006A74E0 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		DE321EC028E745E7006A74E0 /* ExplanationWeSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationWeSplitView.swift; sourceTree = "<group>"; };
 		DE321EC228E7465D006A74E0 /* WeSplitProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitProjectView.swift; sourceTree = "<group>"; };
-		DE764C6728E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimateArticlesOf2021FromNOAA_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE764C6728E6324E00ADE5B6 /* ProjectLibraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLibraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProjectsApp.swift; sourceTree = "<group>"; };
 		DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		DE764C5E28E6324E00ADE5B6 = {
 			isa = PBXGroup;
 			children = (
-				DE764C6928E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_App */,
+				DE764C6928E6324E00ADE5B6 /* ProjectLibraryApp */,
 				DE764C6828E6324E00ADE5B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,12 +89,12 @@
 		DE764C6828E6324E00ADE5B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE764C6728E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_App.app */,
+				DE764C6728E6324E00ADE5B6 /* ProjectLibraryApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE764C6928E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_App */ = {
+		DE764C6928E6324E00ADE5B6 /* ProjectLibraryApp */ = {
 			isa = PBXGroup;
 			children = (
 				DE321EB728E72795006A74E0 /* WeSplit */,
@@ -106,7 +106,7 @@
 				DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */,
 				DE764C7028E6324F00ADE5B6 /* Preview Content */,
 			);
-			path = ClimateArticlesOf2021FromNOAA_App;
+			path = ProjectLibraryApp;
 			sourceTree = "<group>";
 		};
 		DE764C7028E6324F00ADE5B6 /* Preview Content */ = {
@@ -149,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE764C6628E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_App */ = {
+		DE764C6628E6324E00ADE5B6 /* ProjectLibraryApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE764C7528E6324F00ADE5B6 /* Build configuration list for PBXNativeTarget "ClimateArticlesOf2021FromNOAA_App" */;
+			buildConfigurationList = DE764C7528E6324F00ADE5B6 /* Build configuration list for PBXNativeTarget "ProjectLibraryApp" */;
 			buildPhases = (
 				DE764C6328E6324E00ADE5B6 /* Sources */,
 				DE764C6428E6324E00ADE5B6 /* Frameworks */,
@@ -161,9 +161,9 @@
 			);
 			dependencies = (
 			);
-			name = ClimateArticlesOf2021FromNOAA_App;
+			name = ProjectLibraryApp;
 			productName = ClimateArticlesOf2021FromNOAA_App;
-			productReference = DE764C6728E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_App.app */;
+			productReference = DE764C6728E6324E00ADE5B6 /* ProjectLibraryApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -181,7 +181,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DE764C6228E6324E00ADE5B6 /* Build configuration list for PBXProject "ClimateArticlesOf2021FromNOAA_App" */;
+			buildConfigurationList = DE764C6228E6324E00ADE5B6 /* Build configuration list for PBXProject "ProjectLibraryApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -194,7 +194,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE764C6628E6324E00ADE5B6 /* ClimateArticlesOf2021FromNOAA_App */,
+				DE764C6628E6324E00ADE5B6 /* ProjectLibraryApp */,
 			);
 		};
 /* End PBXProject section */
@@ -358,7 +358,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ClimateArticlesOf2021FromNOAA_App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ProjectLibraryApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -386,7 +386,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ClimateArticlesOf2021FromNOAA_App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ProjectLibraryApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -410,7 +410,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE764C6228E6324E00ADE5B6 /* Build configuration list for PBXProject "ClimateArticlesOf2021FromNOAA_App" */ = {
+		DE764C6228E6324E00ADE5B6 /* Build configuration list for PBXProject "ProjectLibraryApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE764C7328E6324F00ADE5B6 /* Debug */,
@@ -419,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE764C7528E6324F00ADE5B6 /* Build configuration list for PBXNativeTarget "ClimateArticlesOf2021FromNOAA_App" */ = {
+		DE764C7528E6324F00ADE5B6 /* Build configuration list for PBXNativeTarget "ProjectLibraryApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE764C7628E6324F00ADE5B6 /* Debug */,

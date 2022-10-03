@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FirstPageView: View {
+    
+    @Environment(\.colorScheme) var defaultColor
 
     var articlesView: [Article] = articles.articles2021
     
@@ -27,8 +29,8 @@ struct FirstPageView: View {
                     }
                     .tag(1)
             }
-            .accentColor(.black)
         }
+        .accentColor(defaultColor == .light ? .black : .white)
     }
 }
 

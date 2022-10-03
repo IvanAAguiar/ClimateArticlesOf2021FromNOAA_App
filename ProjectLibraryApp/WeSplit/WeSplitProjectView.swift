@@ -47,6 +47,10 @@ struct WeSplitProjectView: View {
         return amountPerPerson
     }
     
+    let currencyFormatter = {
+        
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
