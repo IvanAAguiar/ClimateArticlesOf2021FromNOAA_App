@@ -1,6 +1,6 @@
 //
 //  ProjectListView.swift
-//  ClimateArticlesOf2021FromNOAA_App
+//  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 30/09/2022.
 //
@@ -10,8 +10,9 @@ import SwiftUI
 struct ProjectListView: View {
     var body: some View {
         Form {
-            NavigationLink("WeSplit", destination: FirstWeSplitPageView())
-            NavigationLink("Climate Articles", destination: FirstClimateArticlesPageView())
+            NavigationLink("WeSplit", destination: FirstWeSplitView())
+            NavigationLink("Climate Articles", destination: FirstClimateArticlesView())
+            NavigationLink("Guess The Flag", destination: FirstGuessTheFlagView())
         }
     }
 }

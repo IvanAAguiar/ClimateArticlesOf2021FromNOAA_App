@@ -1,13 +1,13 @@
 //
-//  HomePageView.swift
-//  ClimateArticlesOf2021FromNOAA_App
+//  HomeView.swift
+//  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 30/09/2022.
 //
 
 import SwiftUI
 
-struct HomePageView: View {
+struct HomeView: View {
     var body: some View {
         ZStack {
             Color(.orange).ignoresSafeArea()
@@ -31,6 +31,6 @@ struct HomePageView: View {
 
 struct HomePageView_Previews: PreviewProvider {
     static var previews: some View {
-        HomePageView()
+        HomeView()
     }
 }

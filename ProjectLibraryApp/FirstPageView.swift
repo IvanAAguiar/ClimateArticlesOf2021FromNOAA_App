@@ -1,6 +1,6 @@
 //
 //  FirstPageView.swift
-//  ClimateArticlesOf2021FromNOAA_App
+//  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 30/09/2022.
 //
@@ -16,7 +16,7 @@ struct FirstPageView: View {
     var body: some View {
         NavigationView {
             TabView {
-                HomePageView()
+                HomeView()
                     .tabItem {
                         Image(systemName: "house.fill")
                         Text("Home")

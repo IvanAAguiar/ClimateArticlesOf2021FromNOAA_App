@@ -1,13 +1,13 @@
 //
-//  ExplanationWeSplitView.swift
+//  ExplanationGuessTheFlagView.swift
 //  ProjectLibraryApp
 //
-//  Created by Ivan Aguiar on 30/09/2022.
+//  Created by Ivan Aguiar on 03/10/2022.
 //
 
 import SwiftUI
 
-struct ExplanationWeSplitView: View {
+struct ExplanationGuessTheFlagView: View {
     var body: some View {
         ZStack {
             Color(.orange).ignoresSafeArea()
@@ -18,7 +18,7 @@ struct ExplanationWeSplitView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 40, height: 40, alignment: .center)
-                    Text("WeSplit")
+                    Text("Guess The Flag")
                         .font(.largeTitle)
                 }
                 Spacer()
@@ -32,8 +32,8 @@ struct ExplanationWeSplitView: View {
     }
 }
 
-struct ExplanationWeSplitView_Previews: PreviewProvider {
+struct ExplanationGuessTheFlagView_Previews: PreviewProvider {
     static var previews: some View {
-        ExplanationWeSplitView()
+        ExplanationGuessTheFlagView()
     }
 }

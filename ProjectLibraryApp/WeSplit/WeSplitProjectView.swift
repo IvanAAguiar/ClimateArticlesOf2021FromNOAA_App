@@ -1,6 +1,6 @@
 //
 //  WeSplitProjectView.swift
-//  ClimateArticlesOf2021FromNOAA_App
+//  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 30/09/2022.
 //

@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EB828E7282E006A74E0 /* FirstPageView.swift */; };
-		DE321EBB28E72ADD006A74E0 /* FirstWeSplitPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBA28E72ADD006A74E0 /* FirstWeSplitPageView.swift */; };
+		DE321EBB28E72ADD006A74E0 /* FirstWeSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */; };
 		DE321EBD28E72B97006A74E0 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBC28E72B97006A74E0 /* ProjectListView.swift */; };
-		DE321EBF28E72C60006A74E0 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBE28E72C60006A74E0 /* HomePageView.swift */; };
+		DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBE28E72C60006A74E0 /* HomeView.swift */; };
 		DE321EC128E745E7006A74E0 /* ExplanationWeSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EC028E745E7006A74E0 /* ExplanationWeSplitView.swift */; };
 		DE321EC328E7465D006A74E0 /* WeSplitProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EC228E7465D006A74E0 /* WeSplitProjectView.swift */; };
+		DE321EDA28EB42FC006A74E0 /* FirstGuessTheFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321ED928EB42FC006A74E0 /* FirstGuessTheFlagView.swift */; };
+		DE321EDC28EB4408006A74E0 /* ExplanationGuessTheFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EDB28EB4408006A74E0 /* ExplanationGuessTheFlagView.swift */; };
+		DE321EDE28EB441D006A74E0 /* GuessTheFlagProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EDD28EB441D006A74E0 /* GuessTheFlagProjectView.swift */; };
 		DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */; };
 		DE764C6F28E6324F00ADE5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */; };
 		DE764C7228E6324F00ADE5B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */; };
@@ -21,18 +24,21 @@
 		DE764C8528E6329300ADE5B6 /* ExplanationClimateArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7B28E6329300ADE5B6 /* ExplanationClimateArticlesView.swift */; };
 		DE764C8628E6329300ADE5B6 /* Articles_Table_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7C28E6329300ADE5B6 /* Articles_Table_View.swift */; };
 		DE764C8728E6329300ADE5B6 /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7D28E6329300ADE5B6 /* ListCellView.swift */; };
-		DE764C8828E6329300ADE5B6 /* FirstClimateArticlesPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7E28E6329300ADE5B6 /* FirstClimateArticlesPageView.swift */; };
+		DE764C8828E6329300ADE5B6 /* FirstClimateArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7E28E6329300ADE5B6 /* FirstClimateArticlesView.swift */; };
 		DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C8028E6329300ADE5B6 /* ArticleListViewModel.swift */; };
 		DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C8228E6329300ADE5B6 /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE321EB828E7282E006A74E0 /* FirstPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageView.swift; sourceTree = "<group>"; };
-		DE321EBA28E72ADD006A74E0 /* FirstWeSplitPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeSplitPageView.swift; sourceTree = "<group>"; };
+		DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeSplitView.swift; sourceTree = "<group>"; };
 		DE321EBC28E72B97006A74E0 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
-		DE321EBE28E72C60006A74E0 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		DE321EBE28E72C60006A74E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DE321EC028E745E7006A74E0 /* ExplanationWeSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationWeSplitView.swift; sourceTree = "<group>"; };
 		DE321EC228E7465D006A74E0 /* WeSplitProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitProjectView.swift; sourceTree = "<group>"; };
+		DE321ED928EB42FC006A74E0 /* FirstGuessTheFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstGuessTheFlagView.swift; sourceTree = "<group>"; };
+		DE321EDB28EB4408006A74E0 /* ExplanationGuessTheFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationGuessTheFlagView.swift; sourceTree = "<group>"; };
+		DE321EDD28EB441D006A74E0 /* GuessTheFlagProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagProjectView.swift; sourceTree = "<group>"; };
 		DE764C6728E6324E00ADE5B6 /* ProjectLibraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLibraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProjectsApp.swift; sourceTree = "<group>"; };
 		DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,7 +48,7 @@
 		DE764C7B28E6329300ADE5B6 /* ExplanationClimateArticlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplanationClimateArticlesView.swift; sourceTree = "<group>"; };
 		DE764C7C28E6329300ADE5B6 /* Articles_Table_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles_Table_View.swift; sourceTree = "<group>"; };
 		DE764C7D28E6329300ADE5B6 /* ListCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
-		DE764C7E28E6329300ADE5B6 /* FirstClimateArticlesPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = FirstClimateArticlesPageView.swift; sourceTree = "<group>"; };
+		DE764C7E28E6329300ADE5B6 /* FirstClimateArticlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = FirstClimateArticlesView.swift; sourceTree = "<group>"; };
 		DE764C8028E6329300ADE5B6 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		DE764C8228E6329300ADE5B6 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,11 +77,21 @@
 		DE321EB728E72795006A74E0 /* WeSplit */ = {
 			isa = PBXGroup;
 			children = (
-				DE321EBA28E72ADD006A74E0 /* FirstWeSplitPageView.swift */,
+				DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */,
 				DE321EC028E745E7006A74E0 /* ExplanationWeSplitView.swift */,
 				DE321EC228E7465D006A74E0 /* WeSplitProjectView.swift */,
 			);
 			path = WeSplit;
+			sourceTree = "<group>";
+		};
+		DE321ED828EB3824006A74E0 /* GuessTheFlag */ = {
+			isa = PBXGroup;
+			children = (
+				DE321ED928EB42FC006A74E0 /* FirstGuessTheFlagView.swift */,
+				DE321EDB28EB4408006A74E0 /* ExplanationGuessTheFlagView.swift */,
+				DE321EDD28EB441D006A74E0 /* GuessTheFlagProjectView.swift */,
+			);
+			path = GuessTheFlag;
 			sourceTree = "<group>";
 		};
 		DE764C5E28E6324E00ADE5B6 = {
@@ -97,9 +113,10 @@
 		DE764C6928E6324E00ADE5B6 /* ProjectLibraryApp */ = {
 			isa = PBXGroup;
 			children = (
+				DE321ED828EB3824006A74E0 /* GuessTheFlag */,
 				DE321EB728E72795006A74E0 /* WeSplit */,
 				DE321EB628E72742006A74E0 /* ClimateArticles */,
-				DE321EBE28E72C60006A74E0 /* HomePageView.swift */,
+				DE321EBE28E72C60006A74E0 /* HomeView.swift */,
 				DE321EBC28E72B97006A74E0 /* ProjectListView.swift */,
 				DE321EB828E7282E006A74E0 /* FirstPageView.swift */,
 				DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */,
@@ -125,7 +142,7 @@
 				DE764C7B28E6329300ADE5B6 /* ExplanationClimateArticlesView.swift */,
 				DE764C7C28E6329300ADE5B6 /* Articles_Table_View.swift */,
 				DE764C7D28E6329300ADE5B6 /* ListCellView.swift */,
-				DE764C7E28E6329300ADE5B6 /* FirstClimateArticlesPageView.swift */,
+				DE764C7E28E6329300ADE5B6 /* FirstClimateArticlesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,15 +235,18 @@
 			files = (
 				DE764C8728E6329300ADE5B6 /* ListCellView.swift in Sources */,
 				DE321EC128E745E7006A74E0 /* ExplanationWeSplitView.swift in Sources */,
-				DE321EBF28E72C60006A74E0 /* HomePageView.swift in Sources */,
+				DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */,
 				DE764C8428E6329300ADE5B6 /* Articles_Tab_View.swift in Sources */,
-				DE764C8828E6329300ADE5B6 /* FirstClimateArticlesPageView.swift in Sources */,
+				DE764C8828E6329300ADE5B6 /* FirstClimateArticlesView.swift in Sources */,
 				DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */,
 				DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */,
-				DE321EBB28E72ADD006A74E0 /* FirstWeSplitPageView.swift in Sources */,
+				DE321EBB28E72ADD006A74E0 /* FirstWeSplitView.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
 				DE764C8628E6329300ADE5B6 /* Articles_Table_View.swift in Sources */,
+				DE321EDE28EB441D006A74E0 /* GuessTheFlagProjectView.swift in Sources */,
+				DE321EDC28EB4408006A74E0 /* ExplanationGuessTheFlagView.swift in Sources */,
 				DE764C8328E6329300ADE5B6 /* ArticleView.swift in Sources */,
+				DE321EDA28EB42FC006A74E0 /* FirstGuessTheFlagView.swift in Sources */,
 				DE321EBD28E72B97006A74E0 /* ProjectListView.swift in Sources */,
 				DE764C8528E6329300ADE5B6 /* ExplanationClimateArticlesView.swift in Sources */,
 				DE321EC328E7465D006A74E0 /* WeSplitProjectView.swift in Sources */,
