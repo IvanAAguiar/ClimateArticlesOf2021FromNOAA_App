@@ -1,5 +1,5 @@
 //
-//  WeatherImagesView.swift
+//  FirstClimateArticlesPageView.swift
 //  StormViewProject
 //
 //  Created by Ivan Aguiar on 28/09/2022.
@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct WeatherImagesView: View {
+struct FirstClimateArticlesPageView: View {
 
     var articlesView: [Article] = articles.articles2021
     
     var body: some View {
         TabView {
-            HomeView()
+            ExplanationClimateArticlesView()
                 .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
+                    Image(systemName: "brain.head.profile")
+                    Text("Explanation")
                 }
                 .tag(0)
             Articles_Table_View()
@@ -38,7 +38,7 @@ struct WeatherImagesView: View {
 
 struct WeatherImagesView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherImagesView()
+        FirstClimateArticlesPageView()
     }
 }
 
