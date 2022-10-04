@@ -13,18 +13,23 @@ struct FirstViewsAndModifiersView: View {
     
     var body: some View {
         TabView (selection: $selection) {
-            ViewsAndModifiersProjectView()
+            GridMaginificationEffectView()
                 .tabItem {
-                    Image(systemName: "flag")
-                    Text("WeSplit")
+                    Image(systemName: "circle.square.fill")
+                    Text("Grid")
                 }
                 .tag(0)
+            GeometryReaderAnimationView()
+                .tabItem {
+                    Image(systemName: "r.joystick")
+                    Text("GeoReader")
+                }
             ExplanationViewsAndModifiersView()
                 .tabItem {
                     Image(systemName: "brain.head.profile")
                     Text("Explanation")
                 }
-                .tag(1)
+                .tag(2)
         }
     }
 }

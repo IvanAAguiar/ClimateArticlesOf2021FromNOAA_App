@@ -1,5 +1,5 @@
 //
-//  ViewsAndModifiersProjectView.swift
+//  GridMaginificationEffectView.swift
 //  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 04/10/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ViewsAndModifiersProjectView: View {
+struct GridMaginificationEffectView: View {
     // MARK: Gesture State
     @GestureState var location: CGPoint = .zero
         
@@ -64,7 +64,6 @@ struct ViewsAndModifiersProjectView: View {
                 })
         )
         .coordinateSpace(name: "GESTURE")
-        .preferredColorScheme(.dark)
         .animation(.easeOut, value: location == .zero)
     }
     
@@ -85,6 +84,6 @@ struct ViewsAndModifiersProjectView: View {
 
 struct ViewsAndModifiersProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ViewsAndModifiersProjectView()
+        GridMaginificationEffectView()
     }
 }
