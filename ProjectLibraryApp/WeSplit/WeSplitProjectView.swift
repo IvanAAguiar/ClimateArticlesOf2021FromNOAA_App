@@ -20,35 +20,24 @@ struct WeSplitProjectView: View {
     
     let tipPercentages = [0, 5, 10, 15, 20, 25]
     let ivaPercentages = [23, 13, 6]
+    let localCurreny = Locale.current.currency?.identifier ?? "EUR"
     
-    var iva: Double {
-        let ivaSelection = Double(ivaPercentage)
-        
-        let ivaAmount = billAmount / 100 * ivaSelection
+    var iva: (Double, String) {
+        let url = "https://www.e-konomista.pt/como-calcular-o-iva"
+        let ivaAmount = billAmount / 100 * Double(ivaPercentage)
                 
-        return ivaAmount
+        return (ivaAmount, url)
     }
     
     var totalPerPerson: Double {
         let peopleCount = Double(numberOfPeople + 2)
-        let tipSelection = Double(tipPercentage)
+        let tipValue = billAmount / 100 * Double(tipPercentage)
         
-        let tipValue = billAmount / 100 * tipSelection
-        let grandTotal: Double
-        
-        if includeIVA {
-            grandTotal = billAmount + tipValue + iva
-        } else {
-            grandTotal = billAmount + tipValue
-        }
+        let grandTotal: Double = includeIVA ? (billAmount + tipValue + iva.0) : (billAmount + tipValue)
         
         let amountPerPerson = grandTotal / peopleCount
         
         return amountPerPerson
-    }
-    
-    let currencyFormatter = {
-        
     }
     
     var body: some View {
@@ -56,7 +45,7 @@ struct WeSplitProjectView: View {
             VStack {
                 Form {
                     Section (header: Text("Amount to split")) {
-                        TextField("Enter the amount", value: $billAmount, format: .currency(code: Locale.current.currency?.identifier ?? "EUR"))
+                        TextField("Enter the amount", value: $billAmount, format: .currency(code: localCurreny))
                             .keyboardType(.decimalPad)
                             .focused($billAmountIsFocused)
                         Picker("Number of People", selection: $numberOfPeople) {
@@ -86,17 +75,20 @@ struct WeSplitProjectView: View {
                                 }
                             }
                             .pickerStyle(.segmented)
-                            Text(iva, format: .currency(code: Locale.current.currency?.identifier ?? "EUR"))
-                            Link("About", destination: URL(string: "https://www.e-konomista.pt/como-calcular-o-iva")!)
+                             Text(iva.0, format: .currency(code: localCurreny))
+                             Link("About", destination: URL(string: iva.1)!)
+                                 .modifier(UrlLink())
                          }
                     }
                     
                     Section (header: Text("total per person")){
-                        Text(totalPerPerson, format: .currency(code: Locale.current.currency?.identifier ?? "EUR"))
+                        Text(totalPerPerson, format: .currency(code: localCurreny))
+                            .foregroundColor(tipPercentage == 0 ? .red : .primary)
+                            .fontWeight(tipPercentage == 0 ? .heavy : .medium)
                     }
                 }
             }
-            .formStyle(.automatic)
+            .formStyle(.grouped)
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
                     Spacer()
@@ -106,8 +98,15 @@ struct WeSplitProjectView: View {
                 }
             }
             .navigationTitle("WeSplit")
-            .tint(.blue)
         }
+    }
+}
+
+struct UrlLink: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(.blue)
+            .fontWeight(.light)
     }
 }
 

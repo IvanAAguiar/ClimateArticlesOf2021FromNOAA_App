@@ -22,7 +22,7 @@ struct ExplanationGuessTheFlagView: View {
                         .font(.largeTitle)
                 }
                 Spacer()
-                Text("This project was inspired from HACKING WITH SWIFT. The principle goal is to undestand the difference between TableView and TabView. All the data are static and was collected from NOAA web site.")
+                Text("")
                     .multilineTextAlignment(.center)
                     .font(.title3)
                 Spacer()

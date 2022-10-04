@@ -30,7 +30,9 @@ struct GridMaginificationEffectView: View {
             
             //MARK: For Solid Linear Gradient
             //We're Going to Uss Mask
-            AngularGradient(gradient: location == .zero ? colorsNotTapped: colorsTapped, center: .center).mask {
+            AngularGradient(
+                gradient: (location == .zero ? colorsNotTapped: colorsTapped),
+                center: .center).mask {
                 
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 0), count: 10), spacing: 0) {
                     ForEach(0..<itemCount, id: \.self) {_ in
@@ -45,7 +47,7 @@ struct GridMaginificationEffectView: View {
                             //MARK: Transformin Location Too
                             let transformedLocation = location.applying(.init(scaleX: scale, y: scale))
                             
-                            RoundedRectangle(cornerRadius: 4)
+                            RoundedRectangle(cornerRadius: 10)
                                 .scaleEffect(scale)
                             
                                 //MARK: For Effect 1
