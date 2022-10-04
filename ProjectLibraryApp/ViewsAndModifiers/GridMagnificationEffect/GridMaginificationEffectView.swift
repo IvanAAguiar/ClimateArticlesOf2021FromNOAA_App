@@ -10,6 +10,10 @@ import SwiftUI
 struct GridMaginificationEffectView: View {
     // MARK: Gesture State
     @GestureState var location: CGPoint = .zero
+    
+    //Colors to the effect
+    let colorsTapped = Gradient(colors: [.cyan, .mint, .green, .yellow, .orange, .red, .pink, .purple, .teal])
+    let colorsNotTapped = Gradient(colors: [.white, .gray, .black, .gray, .white])
         
     var body: some View {
         GeometryReader { proxy in
@@ -23,10 +27,10 @@ struct GridMaginificationEffectView: View {
             //Multiplaying Each Row Count
             let itemCount = Int((size.height / width).rounded()) * 10
             
+            
             //MARK: For Solid Linear Gradient
             //We're Going to Uss Mask
-            
-            LinearGradient(colors: [.cyan, .red, .yellow, .green], startPoint: .topLeading, endPoint: .bottomLeading).mask {
+            AngularGradient(gradient: location == .zero ? colorsNotTapped: colorsTapped, center: .center).mask {
                 
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 0), count: 10), spacing: 0) {
                     ForEach(0..<itemCount, id: \.self) {_ in
@@ -42,7 +46,6 @@ struct GridMaginificationEffectView: View {
                             let transformedLocation = location.applying(.init(scaleX: scale, y: scale))
                             
                             RoundedRectangle(cornerRadius: 4)
-                                .fill(.purple)
                                 .scaleEffect(scale)
                             
                                 //MARK: For Effect 1
