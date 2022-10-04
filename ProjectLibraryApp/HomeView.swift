@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ZStack {
-            Color(.orange).ignoresSafeArea()
+            Color(.red).opacity(0.6).ignoresSafeArea()
             VStack (alignment: .center, spacing: 10){
                 Spacer()
                 Image(systemName: "swift")

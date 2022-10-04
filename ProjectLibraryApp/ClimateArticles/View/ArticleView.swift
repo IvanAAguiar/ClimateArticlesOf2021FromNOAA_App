@@ -34,12 +34,7 @@ struct ArticleView: View {
                 .padding()
                 Link(destination: article.url) {
                     Text("FOR READ CLICK HERE!")
-                        .bold()
-                        .font(.title2)
-                        .frame(width: 350, height: 50, alignment: .center)
-                        .background(Color.blue)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(10)
+                        .modifier(ButtonView())
                 }
                 VStack (alignment: .leading, spacing: 10){
                     Text("Reference:")

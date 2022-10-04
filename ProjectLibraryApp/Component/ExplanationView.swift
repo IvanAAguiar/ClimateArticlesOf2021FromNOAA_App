@@ -1,16 +1,19 @@
 //
-//  ExplanationGuessTheFlagView.swift
+//  ExplanationView.swift
 //  ProjectLibraryApp
 //
-//  Created by Ivan Aguiar on 03/10/2022.
+//  Created by Ivan Aguiar on 04/10/2022.
 //
 
 import SwiftUI
 
-struct ExplanationGuessTheFlagView: View {
+struct ExplanationView: View {
+    var title: String
+    var description: String
+    
     var body: some View {
         ZStack {
-            Color(.orange).ignoresSafeArea()
+            Color(.clear).ignoresSafeArea()
             VStack (alignment: .center, spacing: 10) {
                 Spacer()
                 HStack {
@@ -18,11 +21,11 @@ struct ExplanationGuessTheFlagView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 40, height: 40, alignment: .center)
-                    Text("Guess The Flag")
+                    Text(title)
                         .font(.largeTitle)
                 }
                 Spacer()
-                Text("")
+                Text(description)
                     .multilineTextAlignment(.center)
                     .font(.title3)
                 Spacer()
@@ -32,8 +35,8 @@ struct ExplanationGuessTheFlagView: View {
     }
 }
 
-struct ExplanationGuessTheFlagView_Previews: PreviewProvider {
+struct ExplanationView_Previews: PreviewProvider {
     static var previews: some View {
-        ExplanationGuessTheFlagView()
+        ExplanationView(title: "Something", description: ".........................................................")
     }
 }

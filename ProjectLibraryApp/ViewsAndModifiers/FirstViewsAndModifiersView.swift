@@ -24,7 +24,7 @@ struct FirstViewsAndModifiersView: View {
                     Image(systemName: "r.joystick")
                     Text("GeoReader")
                 }
-            ExplanationViewsAndModifiersView()
+            ExplanationView(title: "Views And Modifiers", description: "")
                 .tabItem {
                     Image(systemName: "brain.head.profile")
                     Text("Explanation")

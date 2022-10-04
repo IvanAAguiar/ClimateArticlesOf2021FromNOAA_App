@@ -45,10 +45,7 @@ struct GuessTheFlagProjectView: View {
                     Button {
                         flagTapped(number)
                     } label: {
-                        Image(countries[number])
-                            .renderingMode(.original)
-                            .cornerRadius(5.0)
-                            .shadow(color: .black ,radius: 2.5)
+                        FlagView(countryName: countries[number])
                     }
                 }
                 Spacer()

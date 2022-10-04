@@ -16,7 +16,7 @@ struct FirstWeSplitView: View {
                     Text("WeSplit")
                 }
                 .tag(0)
-            ExplanationWeSplitView()
+            ExplanationView(title: "WeSplit", description: "This project was inspired from HACKING WITH SWIFT. The principle goal is to understand how Form works. The secondary goal is to customize the components and try to simplify the code as it is possible.")
                 .tabItem {
                     Image(systemName: "brain.head.profile")
                     Text("Explanation")

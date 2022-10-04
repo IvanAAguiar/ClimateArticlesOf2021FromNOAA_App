@@ -25,7 +25,7 @@ struct FirstClimateArticlesView: View {
                     Text("TabView")
                 }
                 .tag(1)
-            ExplanationClimateArticlesView()
+            ExplanationView(title: "Climate Articles", description: "This project was inspired from HACKING WITH SWIFT. The principle goal is to understand the difference between TableView and TabView. All the data are static and was collected from NOAA web site.")
                 .tabItem {
                     Image(systemName: "brain.head.profile")
                     Text("Explanation")

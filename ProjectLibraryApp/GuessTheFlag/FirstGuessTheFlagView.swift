@@ -19,7 +19,7 @@ struct FirstGuessTheFlagView: View {
                     Text("WeSplit")
                 }
                 .tag(0)
-            ExplanationGuessTheFlagView()
+            ExplanationView(title: "Guess The Flag", description: "This project was inspired from HACKING WITH SWIFT. The principle goal is to understand new SwiftUI functionality: stacks, buttons, images, alerts, asset catalogs, and more. The secondary goal is turn the components reusables.")
                 .tabItem {
                     Image(systemName: "brain.head.profile")
                     Text("Explanation")
