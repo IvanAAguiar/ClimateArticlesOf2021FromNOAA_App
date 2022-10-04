@@ -27,6 +27,9 @@
 		DE764C8828E6329300ADE5B6 /* FirstClimateArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7E28E6329300ADE5B6 /* FirstClimateArticlesView.swift */; };
 		DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C8028E6329300ADE5B6 /* ArticleListViewModel.swift */; };
 		DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C8228E6329300ADE5B6 /* Article.swift */; };
+		DEF4FB9128EC27DA00BDB191 /* FirstViewsAndModifiersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FB9028EC27DA00BDB191 /* FirstViewsAndModifiersView.swift */; };
+		DEF4FB9328EC280700BDB191 /* ExplanationViewsAndModifiersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FB9228EC280700BDB191 /* ExplanationViewsAndModifiersView.swift */; };
+		DEF4FB9528EC283800BDB191 /* ViewsAndModifiersProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FB9428EC283800BDB191 /* ViewsAndModifiersProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		DE764C7E28E6329300ADE5B6 /* FirstClimateArticlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = FirstClimateArticlesView.swift; sourceTree = "<group>"; };
 		DE764C8028E6329300ADE5B6 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		DE764C8228E6329300ADE5B6 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		DEF4FB9028EC27DA00BDB191 /* FirstViewsAndModifiersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewsAndModifiersView.swift; sourceTree = "<group>"; };
+		DEF4FB9228EC280700BDB191 /* ExplanationViewsAndModifiersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationViewsAndModifiersView.swift; sourceTree = "<group>"; };
+		DEF4FB9428EC283800BDB191 /* ViewsAndModifiersProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAndModifiersProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		DE764C6928E6324E00ADE5B6 /* ProjectLibraryApp */ = {
 			isa = PBXGroup;
 			children = (
+				DEF4FB8F28EC279B00BDB191 /* ViewsAndModifiers */,
 				DE321ED828EB3824006A74E0 /* GuessTheFlag */,
 				DE321EB728E72795006A74E0 /* WeSplit */,
 				DE321EB628E72742006A74E0 /* ClimateArticles */,
@@ -161,6 +168,16 @@
 				DE764C8228E6329300ADE5B6 /* Article.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DEF4FB8F28EC279B00BDB191 /* ViewsAndModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DEF4FB9028EC27DA00BDB191 /* FirstViewsAndModifiersView.swift */,
+				DEF4FB9228EC280700BDB191 /* ExplanationViewsAndModifiersView.swift */,
+				DEF4FB9428EC283800BDB191 /* ViewsAndModifiersProjectView.swift */,
+			);
+			path = ViewsAndModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF4FB9528EC283800BDB191 /* ViewsAndModifiersProjectView.swift in Sources */,
 				DE764C8728E6329300ADE5B6 /* ListCellView.swift in Sources */,
 				DE321EC128E745E7006A74E0 /* ExplanationWeSplitView.swift in Sources */,
+				DEF4FB9328EC280700BDB191 /* ExplanationViewsAndModifiersView.swift in Sources */,
 				DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */,
 				DE764C8428E6329300ADE5B6 /* Articles_Tab_View.swift in Sources */,
 				DE764C8828E6329300ADE5B6 /* FirstClimateArticlesView.swift in Sources */,
@@ -251,6 +270,7 @@
 				DE764C8528E6329300ADE5B6 /* ExplanationClimateArticlesView.swift in Sources */,
 				DE321EC328E7465D006A74E0 /* WeSplitProjectView.swift in Sources */,
 				DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */,
+				DEF4FB9128EC27DA00BDB191 /* FirstViewsAndModifiersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

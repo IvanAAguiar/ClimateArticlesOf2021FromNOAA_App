@@ -26,7 +26,7 @@ struct GuessTheFlagProjectView: View {
                 .init(color: .white, location: 0.3)
             ],
                            center: .top,
-                           startRadius: 115,
+                           startRadius: 70,
                            endRadius: 700)
             .ignoresSafeArea()
             VStack (spacing: 30) {
@@ -62,13 +62,8 @@ struct GuessTheFlagProjectView: View {
                     .foregroundColor(Color.red)
             }
         } message: {
-            if scoreTitle == "Correct" {
-                Text ("Well done!")
-            } else if plays == 8 {
-                Text(result())
-            }else {
-                Text("Try again!")
-            }
+            if plays == 8 { Text(result()) }
+            scoreTitle == "Correct" ? Text ("Well done!") : Text("Try again!")
         }
     }
     
@@ -110,13 +105,14 @@ struct GuessTheFlagProjectView: View {
     }
     
     func result() -> String {
+        plays = 0
         
         if score < 40 {
-            return "You need improve"
+            return "You lost! Do you need to improve"
         } else if score > 60 {
-           return "Very good job!"
+           return "You won! Very good job!"
         } else {
-           return "Congratulation!!"
+           return "You won! Congratulation!!"
         }
     }
 }
