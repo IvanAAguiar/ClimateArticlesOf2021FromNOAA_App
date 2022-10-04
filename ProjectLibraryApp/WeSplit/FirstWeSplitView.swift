@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct FirstWeSplitView: View {
+    
+    @State private var selection: Int = 0
+    
     var body: some View {
-        TabView {
+        TabView(selection: $selection) {
             WeSplitProjectView()
                 .tabItem {
                     Image(systemName: "plusminus")
-                    Text("WeSplit")
+                    if selection != 0 { Text("WeSplit") }
                 }
                 .tag(0)
             ExplanationView(title: "WeSplit", description: "This project was inspired from HACKING WITH SWIFT. The principle goal is to understand how Form works. The secondary goal is to customize the components and try to simplify the code as it is possible.")
                 .tabItem {
                     Image(systemName: "brain.head.profile")
-                    Text("Explanation")
+                    if selection != 1 { Text("Explanation") }
                 }
                 .tag(1)
         }

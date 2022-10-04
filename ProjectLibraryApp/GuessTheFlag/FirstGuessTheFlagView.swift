@@ -16,13 +16,13 @@ struct FirstGuessTheFlagView: View {
             GuessTheFlagProjectView()
                 .tabItem {
                     Image(systemName: "flag")
-                    Text("WeSplit")
+                    if selection != 0 { Text("WeSplit") }
                 }
                 .tag(0)
             ExplanationView(title: "Guess The Flag", description: "This project was inspired from HACKING WITH SWIFT. The principle goal is to understand new SwiftUI functionality: stacks, buttons, images, alerts, asset catalogs, and more. The secondary goal is turn the components reusables.")
                 .tabItem {
                     Image(systemName: "brain.head.profile")
-                    Text("Explanation")
+                    if selection != 1 { Text("Explanation") }
                 }
                 .tag(1)
         }

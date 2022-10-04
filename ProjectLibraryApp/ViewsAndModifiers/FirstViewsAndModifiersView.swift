@@ -16,18 +16,19 @@ struct FirstViewsAndModifiersView: View {
             GridMaginificationEffectView()
                 .tabItem {
                     Image(systemName: "circle.square.fill")
-                    Text("Grid")
+                    if selection != 0 { Text("Grid") }
                 }
                 .tag(0)
             GeometryReaderAnimationView()
                 .tabItem {
                     Image(systemName: "r.joystick")
-                    Text("GeoReader")
+                    if selection != 1 { Text("GeoReader") }
                 }
-            ExplanationView(title: "Views And Modifiers", description: "")
+                .tag(1)
+            ExplanationView(title: "Views And Modifiers", description: "This project was inspired from HACKING WITH SWIFT. The principle goal is to understand how GeometryReader and LazyVGrid work. The second goal is review @State, customized itens, random itens, arrays and ForEachs.")
                 .tabItem {
                     Image(systemName: "brain.head.profile")
-                    Text("Explanation")
+                    if selection != 2 { Text("Explanation") }
                 }
                 .tag(2)
         }
