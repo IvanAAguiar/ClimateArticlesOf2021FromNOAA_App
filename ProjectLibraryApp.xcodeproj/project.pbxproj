@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E647C28EDD96D00E916D2 /* ViewsModifierView.swift */; };
 		DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EB828E7282E006A74E0 /* FirstPageView.swift */; };
 		DE321EBB28E72ADD006A74E0 /* FirstWeSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */; };
 		DE321EBD28E72B97006A74E0 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBC28E72B97006A74E0 /* ProjectListView.swift */; };
@@ -30,10 +31,11 @@
 		DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FB9A28EC74D400BDB191 /* FlagsCoordinateView.swift */; };
 		DEF4FB9F28ECCB1800BDB191 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FB9E28ECCB1800BDB191 /* FlagView.swift */; };
 		DEF4FBA228ECCCF400BDB191 /* ExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FBA128ECCCF400BDB191 /* ExplanationView.swift */; };
-		DEF4FBA428ECD0F100BDB191 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FBA328ECD0F100BDB191 /* ButtonView.swift */; };
+		DEF4FBA428ECD0F100BDB191 /* CustomizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FBA328ECD0F100BDB191 /* CustomizedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE0E647C28EDD96D00E916D2 /* ViewsModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsModifierView.swift; sourceTree = "<group>"; };
 		DE321EB828E7282E006A74E0 /* FirstPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageView.swift; sourceTree = "<group>"; };
 		DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeSplitView.swift; sourceTree = "<group>"; };
 		DE321EBC28E72B97006A74E0 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		DEF4FB9A28EC74D400BDB191 /* FlagsCoordinateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsCoordinateView.swift; sourceTree = "<group>"; };
 		DEF4FB9E28ECCB1800BDB191 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
 		DEF4FBA128ECCCF400BDB191 /* ExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationView.swift; sourceTree = "<group>"; };
-		DEF4FBA328ECD0F100BDB191 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		DEF4FBA328ECD0F100BDB191 /* CustomizedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE0E647B28EDD8C500E916D2 /* ViewsModifier */ = {
+			isa = PBXGroup;
+			children = (
+				DE0E647C28EDD96D00E916D2 /* ViewsModifierView.swift */,
+			);
+			path = ViewsModifier;
+			sourceTree = "<group>";
+		};
 		DE321EB628E72742006A74E0 /* ClimateArticles */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +184,7 @@
 		DEF4FB8F28EC279B00BDB191 /* ViewsAndModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				DE0E647B28EDD8C500E916D2 /* ViewsModifier */,
 				DEF4FB9928EC73AA00BDB191 /* GridMagnificationEffect */,
 				DEF4FB9828EC739100BDB191 /* GeometryReaderAnimation */,
 				DEF4FB9028EC27DA00BDB191 /* FirstViewsAndModifiersView.swift */,
@@ -202,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				DEF4FBA128ECCCF400BDB191 /* ExplanationView.swift */,
-				DEF4FBA328ECD0F100BDB191 /* ButtonView.swift */,
+				DEF4FBA328ECD0F100BDB191 /* CustomizedButton.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -277,13 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */,
 				DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */,
 				DEF4FB9528EC283800BDB191 /* GridMaginificationEffectView.swift in Sources */,
 				DE764C8728E6329300ADE5B6 /* ListCellView.swift in Sources */,
 				DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */,
 				DE764C8428E6329300ADE5B6 /* Articles_Tab_View.swift in Sources */,
 				DE764C8828E6329300ADE5B6 /* FirstClimateArticlesView.swift in Sources */,
-				DEF4FBA428ECD0F100BDB191 /* ButtonView.swift in Sources */,
+				DEF4FBA428ECD0F100BDB191 /* CustomizedButton.swift in Sources */,
 				DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */,
 				DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */,
 				DE321EBB28E72ADD006A74E0 /* FirstWeSplitView.swift in Sources */,

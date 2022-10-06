@@ -13,24 +13,30 @@ struct FirstViewsAndModifiersView: View {
     
     var body: some View {
         TabView (selection: $selection) {
+            ViewsModifierView()
+                .tabItem {
+                    Image(systemName: "iphone.and.arrow.forward")
+                    if selection != 0 { Text("Modifier") }
+                }
+                .tag(0)
             GridMaginificationEffectView()
                 .tabItem {
                     Image(systemName: "circle.square.fill")
-                    if selection != 0 { Text("Grid") }
+                    if selection != 1 { Text("Grid") }
                 }
-                .tag(0)
+                .tag(1)
             GeometryReaderAnimationView()
                 .tabItem {
                     Image(systemName: "r.joystick")
-                    if selection != 1 { Text("GeoReader") }
+                    if selection != 2 { Text("GeoReader") }
                 }
-                .tag(1)
+                .tag(2)
             ExplanationView(title: "Views And Modifiers", description: "This project was inspired from HACKING WITH SWIFT. The principle goal is to understand how GeometryReader and LazyVGrid work. The second goal is review @State, customized itens, random itens, arrays and ForEachs.")
                 .tabItem {
                     Image(systemName: "brain.head.profile")
-                    if selection != 2 { Text("Explanation") }
+                    if selection != 3 { Text("Explanation") }
                 }
-                .tag(2)
+                .tag(3)
         }
     }
 }

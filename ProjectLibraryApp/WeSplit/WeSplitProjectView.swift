@@ -96,6 +96,7 @@ struct WeSplitProjectView: View {
                         billAmountIsFocused = false
                     }
                 }
+                
             }
             .navigationTitle("WeSplit")
         }

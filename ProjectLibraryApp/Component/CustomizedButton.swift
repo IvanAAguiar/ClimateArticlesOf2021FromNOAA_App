@@ -1,5 +1,5 @@
 //
-//  ButtonView.swift
+//  CustomizedButton.swift
 //  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 04/10/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ButtonView: ViewModifier {
+struct CustomizedButton: ViewModifier {
     func body(content: Content) -> some View {
         content
             .bold()
@@ -16,5 +16,11 @@ struct ButtonView: ViewModifier {
             .background(Color.blue)
             .foregroundColor(Color.white)
             .cornerRadius(10)
+    }
+}
+
+extension View {
+    func ButtonCustomizedStyle() -> some View {
+        modifier(CustomizedButton())
     }
 }

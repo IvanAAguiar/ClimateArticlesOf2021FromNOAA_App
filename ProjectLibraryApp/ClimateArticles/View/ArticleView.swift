@@ -34,7 +34,7 @@ struct ArticleView: View {
                 .padding()
                 Link(destination: article.url) {
                     Text("FOR READ CLICK HERE!")
-                        .modifier(ButtonView())
+                        .ButtonCustomizedStyle()
                 }
                 VStack (alignment: .leading, spacing: 10){
                     Text("Reference:")
