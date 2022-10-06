@@ -11,6 +11,7 @@
 		DE0E648028EEE4A300E916D2 /* FirstBetterRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E647F28EEE4A300E916D2 /* FirstBetterRestView.swift */; };
 		DE0E648228EEE67600E916D2 /* BetterRestProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648128EEE67600E916D2 /* BetterRestProjectView.swift */; };
 		DE0E648C28EF271500E916D2 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */; };
+		DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */; };
 		DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EB828E7282E006A74E0 /* FirstPageView.swift */; };
 		DE321EBB28E72ADD006A74E0 /* FirstWeSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */; };
 		DE321EBD28E72B97006A74E0 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBC28E72B97006A74E0 /* ProjectListView.swift */; };
@@ -42,6 +43,7 @@
 		DE0E647F28EEE4A300E916D2 /* FirstBetterRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBetterRestView.swift; sourceTree = "<group>"; };
 		DE0E648128EEE67600E916D2 /* BetterRestProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestProjectView.swift; sourceTree = "<group>"; };
 		DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
+		DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestMLViewModel.swift; sourceTree = "<group>"; };
 		DE321EB828E7282E006A74E0 /* FirstPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageView.swift; sourceTree = "<group>"; };
 		DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeSplitView.swift; sourceTree = "<group>"; };
 		DE321EBC28E72B97006A74E0 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
@@ -91,8 +93,17 @@
 		DE0E647E28EEE2E800E916D2 /* BetterRest */ = {
 			isa = PBXGroup;
 			children = (
+				DE0E648F28EF600100E916D2 /* BetterRest */,
 				DE0E647F28EEE4A300E916D2 /* FirstBetterRestView.swift */,
+			);
+			path = BetterRest;
+			sourceTree = "<group>";
+		};
+		DE0E648F28EF600100E916D2 /* BetterRest */ = {
+			isa = PBXGroup;
+			children = (
 				DE0E648128EEE67600E916D2 /* BetterRestProjectView.swift */,
+				DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */,
 				DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */,
 			);
 			path = BetterRest;
@@ -307,6 +318,7 @@
 			files = (
 				DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */,
 				DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */,
+				DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */,
 				DEF4FB9528EC283800BDB191 /* GridMaginificationEffectView.swift in Sources */,
 				DE764C8728E6329300ADE5B6 /* ListCellView.swift in Sources */,
 				DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */,
