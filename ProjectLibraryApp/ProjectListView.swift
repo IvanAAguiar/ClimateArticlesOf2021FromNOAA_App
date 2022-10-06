@@ -14,6 +14,7 @@ struct ProjectListView: View {
             NavigationLink("Climate Articles", destination: FirstClimateArticlesView())
             NavigationLink("Guess The Flag", destination: FirstGuessTheFlagView())
             NavigationLink("Views And Modifiers", destination: FirstViewsAndModifiersView())
+            NavigationLink("Better Rest", destination: FirstBetterRestView())
         }
     }
 }

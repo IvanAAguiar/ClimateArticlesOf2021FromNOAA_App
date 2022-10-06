@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E647C28EDD96D00E916D2 /* ViewsModifierView.swift */; };
+		DE0E648028EEE4A300E916D2 /* FirstBetterRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E647F28EEE4A300E916D2 /* FirstBetterRestView.swift */; };
+		DE0E648228EEE67600E916D2 /* BetterRestProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648128EEE67600E916D2 /* BetterRestProjectView.swift */; };
 		DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EB828E7282E006A74E0 /* FirstPageView.swift */; };
 		DE321EBB28E72ADD006A74E0 /* FirstWeSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */; };
 		DE321EBD28E72B97006A74E0 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBC28E72B97006A74E0 /* ProjectListView.swift */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		DE0E647C28EDD96D00E916D2 /* ViewsModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsModifierView.swift; sourceTree = "<group>"; };
+		DE0E647F28EEE4A300E916D2 /* FirstBetterRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBetterRestView.swift; sourceTree = "<group>"; };
+		DE0E648128EEE67600E916D2 /* BetterRestProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestProjectView.swift; sourceTree = "<group>"; };
 		DE321EB828E7282E006A74E0 /* FirstPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageView.swift; sourceTree = "<group>"; };
 		DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeSplitView.swift; sourceTree = "<group>"; };
 		DE321EBC28E72B97006A74E0 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 				DE0E647C28EDD96D00E916D2 /* ViewsModifierView.swift */,
 			);
 			path = ViewsModifier;
+			sourceTree = "<group>";
+		};
+		DE0E647E28EEE2E800E916D2 /* BetterRest */ = {
+			isa = PBXGroup;
+			children = (
+				DE0E647F28EEE4A300E916D2 /* FirstBetterRestView.swift */,
+				DE0E648128EEE67600E916D2 /* BetterRestProjectView.swift */,
+			);
+			path = BetterRest;
 			sourceTree = "<group>";
 		};
 		DE321EB628E72742006A74E0 /* ClimateArticles */ = {
@@ -130,11 +143,12 @@
 		DE764C6928E6324E00ADE5B6 /* ProjectLibraryApp */ = {
 			isa = PBXGroup;
 			children = (
-				DEF4FBA028ECCCD700BDB191 /* Component */,
+				DE0E647E28EEE2E800E916D2 /* BetterRest */,
 				DEF4FB8F28EC279B00BDB191 /* ViewsAndModifiers */,
 				DE321ED828EB3824006A74E0 /* GuessTheFlag */,
 				DE321EB728E72795006A74E0 /* WeSplit */,
 				DE321EB628E72742006A74E0 /* ClimateArticles */,
+				DEF4FBA028ECCCD700BDB191 /* Component */,
 				DE321EBE28E72C60006A74E0 /* HomeView.swift */,
 				DE321EBC28E72B97006A74E0 /* ProjectListView.swift */,
 				DE321EB828E7282E006A74E0 /* FirstPageView.swift */,
@@ -299,6 +313,8 @@
 				DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */,
 				DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */,
 				DE321EBB28E72ADD006A74E0 /* FirstWeSplitView.swift in Sources */,
+				DE0E648028EEE4A300E916D2 /* FirstBetterRestView.swift in Sources */,
+				DE0E648228EEE67600E916D2 /* BetterRestProjectView.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
 				DE764C8628E6329300ADE5B6 /* Articles_Table_View.swift in Sources */,
 				DEF4FBA228ECCCF400BDB191 /* ExplanationView.swift in Sources */,

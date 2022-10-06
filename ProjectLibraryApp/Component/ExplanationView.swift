@@ -25,10 +25,17 @@ struct ExplanationView: View {
                         .font(.largeTitle)
                 }
                 Spacer()
-                Text(description)
-                    .multilineTextAlignment(.center)
-                    .font(.title3)
-                Spacer()
+                
+                VStack {
+                    ScrollView {
+                        Text(description)
+                            .frame(maxWidth: .infinity)
+                            .multilineTextAlignment(.center)
+                            .font(.title3)
+                    }
+                    
+                }
+                .frame(maxHeight: 400)
             }
             .padding()
         }
@@ -37,6 +44,6 @@ struct ExplanationView: View {
 
 struct ExplanationView_Previews: PreviewProvider {
     static var previews: some View {
-        ExplanationView(title: "Something", description: ".........................................................")
+        ExplanationView(title: "Something", description: "....................")
     }
 }
