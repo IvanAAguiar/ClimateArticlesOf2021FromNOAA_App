@@ -13,6 +13,10 @@
 		DE0E648C28EF271500E916D2 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */; };
 		DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */; };
 		DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E649228F01F9000E916D2 /* GridViewModel.swift */; };
+		DE305EB928F03FA8002FD76F /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EB828F03FA8002FD76F /* CalculatorViewModel.swift */; };
+		DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */; };
+		DE305EBE28F04AC2002FD76F /* IVAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBD28F04AC2002FD76F /* IVAModel.swift */; };
+		DE305EC028F04D7E002FD76F /* TipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBF28F04D7E002FD76F /* TipModel.swift */; };
 		DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EB828E7282E006A74E0 /* FirstPageView.swift */; };
 		DE321EBB28E72ADD006A74E0 /* FirstWeSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */; };
 		DE321EBD28E72B97006A74E0 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBC28E72B97006A74E0 /* ProjectListView.swift */; };
@@ -46,6 +50,10 @@
 		DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestMLViewModel.swift; sourceTree = "<group>"; };
 		DE0E649228F01F9000E916D2 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
+		DE305EB828F03FA8002FD76F /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLLinkViewModifier.swift; sourceTree = "<group>"; };
+		DE305EBD28F04AC2002FD76F /* IVAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVAModel.swift; sourceTree = "<group>"; };
+		DE305EBF28F04D7E002FD76F /* TipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipModel.swift; sourceTree = "<group>"; };
 		DE321EB828E7282E006A74E0 /* FirstPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageView.swift; sourceTree = "<group>"; };
 		DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeSplitView.swift; sourceTree = "<group>"; };
 		DE321EBC28E72B97006A74E0 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
@@ -111,6 +119,33 @@
 			path = BetterRest;
 			sourceTree = "<group>";
 		};
+		DE305EB628F03F67002FD76F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */,
+				DE321EC228E7465D006A74E0 /* WeSplitProjectView.swift */,
+				DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE305EB728F03F70002FD76F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE305EB828F03FA8002FD76F /* CalculatorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE305EBC28F04A9D002FD76F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE305EBF28F04D7E002FD76F /* TipModel.swift */,
+				DE305EBD28F04AC2002FD76F /* IVAModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DE321EB628E72742006A74E0 /* ClimateArticles */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +159,9 @@
 		DE321EB728E72795006A74E0 /* WeSplit */ = {
 			isa = PBXGroup;
 			children = (
-				DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */,
-				DE321EC228E7465D006A74E0 /* WeSplitProjectView.swift */,
+				DE305EB628F03F67002FD76F /* View */,
+				DE305EB728F03F70002FD76F /* ViewModel */,
+				DE305EBC28F04A9D002FD76F /* Model */,
 			);
 			path = WeSplit;
 			sourceTree = "<group>";
@@ -326,13 +362,16 @@
 				DE764C8728E6329300ADE5B6 /* ListCellView.swift in Sources */,
 				DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */,
 				DE0E648C28EF271500E916D2 /* SleepCalculator.mlmodel in Sources */,
+				DE305EC028F04D7E002FD76F /* TipModel.swift in Sources */,
 				DE764C8428E6329300ADE5B6 /* Articles_Tab_View.swift in Sources */,
 				DE764C8828E6329300ADE5B6 /* FirstClimateArticlesView.swift in Sources */,
 				DEF4FBA428ECD0F100BDB191 /* CustomizedButton.swift in Sources */,
 				DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */,
 				DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */,
 				DE321EBB28E72ADD006A74E0 /* FirstWeSplitView.swift in Sources */,
+				DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */,
 				DE0E648028EEE4A300E916D2 /* FirstBetterRestView.swift in Sources */,
+				DE305EBE28F04AC2002FD76F /* IVAModel.swift in Sources */,
 				DE0E648228EEE67600E916D2 /* BetterRestProjectView.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
 				DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */,
@@ -342,6 +381,7 @@
 				DEF4FB9728EC6B8600BDB191 /* GeometryReaderAnimationView.swift in Sources */,
 				DE764C8328E6329300ADE5B6 /* ArticleView.swift in Sources */,
 				DE321EDA28EB42FC006A74E0 /* FirstGuessTheFlagView.swift in Sources */,
+				DE305EB928F03FA8002FD76F /* CalculatorViewModel.swift in Sources */,
 				DE321EBD28E72B97006A74E0 /* ProjectListView.swift in Sources */,
 				DE321EC328E7465D006A74E0 /* WeSplitProjectView.swift in Sources */,
 				DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */,
