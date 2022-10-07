@@ -10,8 +10,6 @@ import SwiftUI
 struct FirstPageView: View {
     
     @Environment(\.colorScheme) var defaultColor
-
-    var articlesView: [Article] = articles.articles2021
     
     var body: some View {
         NavigationView {

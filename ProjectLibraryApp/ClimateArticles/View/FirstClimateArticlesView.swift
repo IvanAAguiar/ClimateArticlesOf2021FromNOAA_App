@@ -10,7 +10,6 @@ import SwiftUI
 struct FirstClimateArticlesView: View {
 
     @State private var selection: Int = 0
-    var articlesView: [Article] = articles.articles2021
     
     var body: some View {
         TabView (selection: $selection) {

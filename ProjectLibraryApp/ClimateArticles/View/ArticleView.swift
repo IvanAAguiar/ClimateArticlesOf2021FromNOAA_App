@@ -11,7 +11,6 @@ struct ArticleView: View {
     
     var article: Article
     
-    
     var body: some View {
         ScrollView {
             VStack {
@@ -49,6 +48,6 @@ struct ArticleView: View {
 
 struct ArticleView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleView(article: articles.articles2021.first!)
+        ArticleView(article: ArticleListViewModel().articles2021.first!)
     }
 }

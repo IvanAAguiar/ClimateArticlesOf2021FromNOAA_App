@@ -9,11 +9,11 @@ import SwiftUI
 
 struct Articles_Tab_View: View {
 
-    var articlesView: [Article] = articles.articles2021
-    
+    @ObservedObject var articlesView: ArticleListViewModel = ArticleListViewModel()
+
     var body: some View {
         TabView {
-            ForEach (articlesView, id: \.id) { art in
+            ForEach (articlesView.articles2021, id: \.id) { art in
                 ArticleView(article: art)
             }
         }

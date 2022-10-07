@@ -31,6 +31,6 @@ struct ListCellView: View {
 
 struct ListCellView_Previews: PreviewProvider {
     static var previews: some View {
-        ListCellView(article: articles.articles2021.first!)
+        ListCellView(article: ArticleListViewModel().articles2021.first!)
     }
 }

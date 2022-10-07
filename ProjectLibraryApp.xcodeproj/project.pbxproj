@@ -12,6 +12,7 @@
 		DE0E648228EEE67600E916D2 /* BetterRestProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648128EEE67600E916D2 /* BetterRestProjectView.swift */; };
 		DE0E648C28EF271500E916D2 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */; };
 		DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */; };
+		DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E649228F01F9000E916D2 /* GridViewModel.swift */; };
 		DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EB828E7282E006A74E0 /* FirstPageView.swift */; };
 		DE321EBB28E72ADD006A74E0 /* FirstWeSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */; };
 		DE321EBD28E72B97006A74E0 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBC28E72B97006A74E0 /* ProjectListView.swift */; };
@@ -44,6 +45,7 @@
 		DE0E648128EEE67600E916D2 /* BetterRestProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestProjectView.swift; sourceTree = "<group>"; };
 		DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestMLViewModel.swift; sourceTree = "<group>"; };
+		DE0E649228F01F9000E916D2 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
 		DE321EB828E7282E006A74E0 /* FirstPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageView.swift; sourceTree = "<group>"; };
 		DE321EBA28E72ADD006A74E0 /* FirstWeSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeSplitView.swift; sourceTree = "<group>"; };
 		DE321EBC28E72B97006A74E0 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				DEF4FB9428EC283800BDB191 /* GridMaginificationEffectView.swift */,
+				DE0E649228F01F9000E916D2 /* GridViewModel.swift */,
 			);
 			path = GridMagnificationEffect;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				DE0E648028EEE4A300E916D2 /* FirstBetterRestView.swift in Sources */,
 				DE0E648228EEE67600E916D2 /* BetterRestProjectView.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
+				DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */,
 				DE764C8628E6329300ADE5B6 /* Articles_Table_View.swift in Sources */,
 				DEF4FBA228ECCCF400BDB191 /* ExplanationView.swift in Sources */,
 				DE321EDE28EB441D006A74E0 /* GuessTheFlagProjectView.swift in Sources */,

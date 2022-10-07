@@ -5,10 +5,10 @@
 //  Created by Ivan Aguiar on 29/09/2022.
 //
 
-import Foundation
+import SwiftUI
 
-struct articles {
-    public static let articles2021 = [
+class ArticleListViewModel: ObservableObject {
+    @Published var articles2021 = [
         Article(
             tittle: "Winter sea ice pack likely thinnest on record",
             details: """
