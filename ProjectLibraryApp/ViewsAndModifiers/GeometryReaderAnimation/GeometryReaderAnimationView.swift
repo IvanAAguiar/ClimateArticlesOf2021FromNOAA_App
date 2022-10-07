@@ -9,24 +9,30 @@ import SwiftUI
 
 struct GeometryReaderAnimationView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var countries = ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "uk", "us"]
     
     var body: some View {
-        ScrollView (showsIndicators: false) {
-            VStack {
-                ForEach(countries, id: \.self) { flag in
-                    GeometryReader { proxy in
-                        FlagsCoordinateView(coordinateOnScreen: proxy.frame(in: .global).midY, flagName: flag)
-                        .rotation3DEffect(
-                            Angle(degrees: Double(proxy.frame(in: .global).minY) - 47), axis: (x: 0.0, y: 10.0, z: 7.0)
-                            )
+        ZStack {
+            LinearGradient(colors: [.secondary, Color(colorScheme == .light ? .white : .black)], startPoint: .bottom, endPoint: .top)
+            ScrollView (showsIndicators: false) {
+                VStack {
+                    ForEach(countries, id: \.self) { flag in
+                        GeometryReader { proxy in
+                            FlagsCoordinateView(coordinateOnScreen: proxy.frame(in: .global).midY, flagName: flag)
+                            .rotation3DEffect(
+                                Angle(degrees: Double(proxy.frame(in: .global).minY) - 47), axis: (x: 0.0, y: 10.0, z: 7.0)
+                                )
+                        }
+                        .frame(width: 370, height: 200)
                     }
-                    .frame(width: 370, height: 200)
                 }
+                .padding(.trailing)
             }
-            .padding(.trailing)
+            .padding(.horizontal)
         }
-        .padding(.horizontal)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

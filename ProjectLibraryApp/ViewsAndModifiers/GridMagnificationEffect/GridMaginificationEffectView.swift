@@ -10,10 +10,7 @@ import SwiftUI
 struct GridMaginificationEffectView: View {
     // MARK: Gesture State
     @GestureState var location: CGPoint = .zero
-    
-    //Colors to the effect
-    let colorsTapped = Gradient(colors: [.cyan, .mint, .green, .yellow, .orange, .red, .pink, .purple, .teal])
-    let colorsNotTapped = Gradient(colors: [.white, .gray, .black, .gray, .white])
+    @ObservedObject var vm: GridViewModel = GridViewModel()
         
     var body: some View {
         GeometryReader { proxy in
@@ -31,7 +28,7 @@ struct GridMaginificationEffectView: View {
             //MARK: For Solid Linear Gradient
             //We're Going to Uss Mask
             AngularGradient(
-                gradient: (location == .zero ? colorsNotTapped: colorsTapped),
+                gradient: (location == .zero ? vm.colorsNotTapped: vm.colorsTapped),
                 center: .center).mask {
                 
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 0), count: 10), spacing: 0) {
@@ -39,7 +36,7 @@ struct GridMaginificationEffectView: View {
                         
                         GeometryReader { innerProxy in
                             let rect = innerProxy.frame(in: .named("GESTURE"))
-                            let scale = itemScale(rect: rect, size: size)
+                            let scale = vm.itemScale(rect: rect, size: size, coord: self.location)
                             
                             //MARK: Instead Of Manual Calculation
                             //We're going to use UIKit's CGAffineTransform
@@ -70,20 +67,6 @@ struct GridMaginificationEffectView: View {
         )
         .coordinateSpace(name: "GESTURE")
         .animation(.easeOut, value: location == .zero)
-    }
-    
-    //MARK: Calculating Scale For Each Item With the Help Of Pythagorean Theorem
-    func itemScale(rect: CGRect, size: CGSize) -> CGFloat {
-        let x = location.x - rect.midX
-        let y = location.y - rect.midY
-        
-        let root = sqrt((x * x) + (y * y))
-        let diagonalValue = sqrt((size.width * size.width) + (size.height * size.height))
-        
-        //MARK: For More Detail Divide Diagonal Valeu
-        let scale = root / (diagonalValue / 3)
-        let modifiedScale = location == .zero ? 1 : (1 - scale)
-        return modifiedScale > 0 ? modifiedScale : 0.001
     }
 }
 
