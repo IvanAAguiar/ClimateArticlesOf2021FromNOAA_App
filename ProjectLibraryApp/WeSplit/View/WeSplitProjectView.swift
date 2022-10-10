@@ -51,7 +51,7 @@ struct WeSplitProjectView: View {
                             
                              Text(vm.iva.0, format: .currency(code: vm.localCurreny))
                              Link("About", destination: URL(string: vm.iva.1)!)
-                                 .modifier(URLLinkViewModifier())
+                                .URLLink()
                          }
                     }
                     

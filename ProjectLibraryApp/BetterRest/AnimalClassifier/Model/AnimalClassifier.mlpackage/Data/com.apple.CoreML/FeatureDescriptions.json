@@ -1,0 +1,63 @@
+{
+  "Outputs" : {
+    "class_type" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "class_typeProbability" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "Inputs" : {
+    "toothed" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "feathers" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "tail" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "legs" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "aquatic" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "backbone" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "airborne" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "venomous" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "predator" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "fins" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "domestic" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "milk" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "eggs" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "breathes" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "catsize" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "hair" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}

@@ -13,12 +13,18 @@ struct FirstBetterRestView: View {
     
     var body: some View {
         TabView (selection: $selection) {
+            AnimalClassifierView()
+                .tabItem {
+                    Image(systemName: "pawprint.circle.fill")
+                    if selection != 0 { Text("Classifier") }
+                }
+                .tag(0)
             BetterRestProjectView()
                 .tabItem {
                     Image(systemName: "bed.double.circle")
-                    if selection != 0 { Text("BetterRest") }
+                    if selection != 1 { Text("BetterRest") }
                 }
-                .tag(0)
+                .tag(1)
             ExplanationView(title: "Better Rest", description: """
             This project was inspired from HACKING WITH SWIFT. The principle goal is to understand how MLCreate works
             The reason we have a fairly simple project is because is to introduce one of the true power features of iOS development: machine learning (ML).
@@ -32,9 +38,9 @@ struct FirstBetterRestView: View {
             """)
             .tabItem {
                 Image(systemName: "brain.head.profile")
-                if selection != 1 { Text("Explanation") }
+                if selection != 2 { Text("Explanation") }
             }
-            .tag(1)
+            .tag(2)
         }
     }
 }

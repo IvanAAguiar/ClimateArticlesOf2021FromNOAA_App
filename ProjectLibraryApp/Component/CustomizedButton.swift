@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CustomizedButton: ViewModifier {
+    
+    
     func body(content: Content) -> some View {
         content
             .bold()

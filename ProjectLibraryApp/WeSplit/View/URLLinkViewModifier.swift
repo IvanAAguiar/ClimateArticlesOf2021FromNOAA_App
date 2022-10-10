@@ -14,3 +14,9 @@ struct URLLinkViewModifier: ViewModifier {
             .fontWeight(.light)
     }
 }
+
+extension View {
+    func URLLink() -> some View {
+        modifier(URLLinkViewModifier())
+    }
+}
