@@ -10,10 +10,10 @@ import SwiftUI
 struct ProjectListView: View {
     var body: some View {
         Form {
-            NavigationLink("WeSplit", destination: FirstWeSplitView())
-            NavigationLink("Climate Articles", destination: FirstClimateArticlesView())
-            NavigationLink("Guess The Flag", destination: FirstGuessTheFlagView())
-            NavigationLink("Views And Modifiers", destination: FirstViewsAndModifiersView())
+            NavigationLink("WeSplit", destination: WeSplitProjectView())
+            NavigationLink("Climate Articles", destination: ClimateArticlesView())
+            NavigationLink("Guess The Flag", destination: GuessTheFlagView())
+            NavigationLink("Views And Modifiers", destination: ViewsModifierView())
             NavigationLink("BetterRest", destination: FirstBetterRestView())
             NavigationLink("Word Scramble", destination: WordScrambleView())
         }

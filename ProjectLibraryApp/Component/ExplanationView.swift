@@ -15,17 +15,15 @@ struct ExplanationView: View {
         ZStack {
             Color(.clear).ignoresSafeArea()
             VStack (alignment: .center, spacing: 10) {
-                Spacer()
-                HStack {
-                    Image(systemName: "swift")
+                VStack {
+                    Image(systemName: "brain.head.profile")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 40, height: 40, alignment: .center)
+                        .frame(width: 100, height: 100, alignment: .center)
                     Text(title)
                         .font(.largeTitle)
                 }
-                Spacer()
-                
+                .padding(50)
                 VStack {
                     ScrollView {
                         Text(description)
@@ -36,8 +34,9 @@ struct ExplanationView: View {
                     
                 }
                 .frame(maxHeight: 400)
+                .padding(10)
             }
-            .padding()
+            Spacer()
         }
     }
 }

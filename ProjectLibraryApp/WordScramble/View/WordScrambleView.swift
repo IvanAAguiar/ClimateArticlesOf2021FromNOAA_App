@@ -9,18 +9,14 @@ import SwiftUI
 
 struct WordScrambleView: View {
     
-    @ObservedObject private var vm: WordService = WordService()
+    @ObservedObject private var vm: WordViewModel = WordViewModel()
     
     var body: some View {
+        NavigationView {
         ZStack {
             LinearGradient(colors: [.green, .yellow], startPoint: .bottom, endPoint: .top)
                 .ignoresSafeArea(.all)
             VStack {
-               Text("Word Scramble Game")
-                   .font(.largeTitle)
-                   .fontWeight(.heavy)
-               if vm.playing {
-                   NavigationView {
                        List {
                            Section {
                                TextField("Enter your word", text: $vm.newWord)
@@ -35,28 +31,25 @@ struct WordScrambleView: View {
                                }
                            }
                        }
-                       .navigationTitle(vm.rootWord)
-                       .onSubmit(vm.addNewWord)
-                       //            .onAppear(perform: vm.startGame)
-                       .alert(vm.errorTitle, isPresented: $vm.showingError) {
-                           Button("OK", role: .cancel) { }
-                       } message: {
-                           Text(vm.errorMessage)
-                       }
                    }
-               }
-                HStack {
-                    Button(!vm.playing ? "Start Game" : "Restart") {
-                        vm.startGame()
-                    }
-                    .ButtonCustomizedStyle()
-                    if vm.playing {
-                        Button("Finish", action: vm.finishGame)
-                            .ButtonCustomizedStyle()
-                    }
-                }
-                .padding(.horizontal)
             }
+        .navigationTitle(!vm.playing ? "Word Scramble Game" : vm.rootWord)
+        .toolbar(content: {
+            ToolbarItemGroup(content: {
+                Button(!vm.playing ? "Start Game" : "Restart") {
+                    vm.startGame()
+                }
+                if vm.playing {
+                    Button("Finish", action: vm.finishGame)
+                }
+            })
+        })
+        .onSubmit(vm.addNewWord)
+        .alert(vm.errorTitle, isPresented: $vm.showingError) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(vm.errorMessage)
+        }
         }
     }
 }

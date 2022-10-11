@@ -25,7 +25,18 @@ struct FirstBetterRestView: View {
                     if selection != 1 { Text("BetterRest") }
                 }
                 .tag(1)
-            ExplanationView(title: "Better Rest", description: """
+            
+            .tabItem {
+                Image(systemName: "brain.head.profile")
+                if selection != 2 { Text("Explanation") }
+            }
+            .tag(2)
+        }
+        .navigationTitle("Better Rest")
+        .navigationBarTitleDisplayMode(.large)
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarTrailing) {
+                NavigationLink(destination: ExplanationView(title: "Better Rest", description: """
             This project was inspired from HACKING WITH SWIFT. The principle goal is to understand how MLCreate works
             The reason we have a fairly simple project is because is to introduce one of the true power features of iOS development: machine learning (ML).
             All iPhones come with a technology called Core ML built right in, which allows us to write code that makes predictions about new data based on previous data it has seen. We’ll start with some raw data, give that to our Mac as training data, then use the results to build an app able to make accurate estimates about new data – all on device, and with complete privacy for users.
@@ -35,18 +46,21 @@ struct FirstBetterRestView: View {
             - How many cups of coffee do they drink per day?
             Once we have those three values, we’ll feed them into Core ML to get a result telling us when they ought to go to bed. If you think about it, there are billions of possible answers – all the various wake times multiplied by all the number of sleep hours, multiplied again by the full range of coffee amounts.
             That’s where machine learning comes in: using a technique called regression analysis we can ask the computer to come up with an algorithm able to represent all our data. This in turn allows it to apply the algorithm to fresh data it hasn’t seen before, and get accurate results.
-            """)
-            .tabItem {
-                Image(systemName: "brain.head.profile")
-                if selection != 2 { Text("Explanation") }
+            """)) {
+                    HStack {
+                        Text("Explanation")
+                        Image(systemName: "brain.head.profile")
+                    }
+                }
             }
-            .tag(2)
         }
     }
 }
 
 struct FirstBetterRestView_Previews: PreviewProvider {
     static var previews: some View {
-        FirstBetterRestView()
+        NavigationView {
+            FirstBetterRestView()
+        }
     }
 }

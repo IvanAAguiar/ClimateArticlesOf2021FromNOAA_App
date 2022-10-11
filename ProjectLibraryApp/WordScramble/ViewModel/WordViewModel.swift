@@ -1,5 +1,5 @@
 //
-//  WordService.swift
+//  WordViewModel.swift
 //  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 11/10/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class WordService: ObservableObject {
+class WordViewModel: ObservableObject {
     
     @Published var errorTitle = ""
     @Published var errorMessage = ""

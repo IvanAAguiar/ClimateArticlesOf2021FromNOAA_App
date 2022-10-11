@@ -14,8 +14,6 @@ struct GeometryReaderAnimationView: View {
     var countries = ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "uk", "us"]
     
     var body: some View {
-        ZStack {
-            LinearGradient(colors: [.secondary, Color(colorScheme == .light ? .white : .black)], startPoint: .bottom, endPoint: .top)
             ScrollView (showsIndicators: false) {
                 VStack {
                     ForEach(countries, id: \.self) { flag in
@@ -31,8 +29,6 @@ struct GeometryReaderAnimationView: View {
                 .padding(.trailing)
             }
             .padding(.horizontal)
-        }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 

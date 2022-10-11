@@ -1,5 +1,5 @@
 //
-//  ListCellView.swift
+//  ListRowView.swift
 //  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 29/09/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListCellView: View {
+struct ListRowView: View {
     var article: Article
     
     var body: some View {
@@ -29,8 +29,8 @@ struct ListCellView: View {
     }
 }
 
-struct ListCellView_Previews: PreviewProvider {
+struct ListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ListCellView(article: ArticleListViewModel().articles2021.first!)
+        ListRowView(article: ArticleListViewModel().articles2021.first!)
     }
 }

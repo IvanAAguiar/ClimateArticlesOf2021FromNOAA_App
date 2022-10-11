@@ -18,7 +18,7 @@ class ResultViewModel: ObservableObject {
         let className = types[Int(predicatedClass) - 1]
         let predicatedAccurancy = classifier.classify()!.class_typeProbability[predicatedClass]
 
-        return (className, String(predicatedAccurancy!.formatted(.percent)))
+        return (className, String(format: "%.2f", predicatedAccurancy! * 100).appending("%"))
     }
     
     func setClassifierInput(input: String, value: Double) {

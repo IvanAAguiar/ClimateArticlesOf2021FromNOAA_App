@@ -1,5 +1,5 @@
 //
-//  GuessTheFlagProjectView.swift
+//  FlagGameView.swift
 //  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 03/10/2022.
@@ -7,21 +7,21 @@
 
 import SwiftUI
 
-struct GuessTheFlagProjectView: View {
+struct FlagGameView: View {
     
     @ObservedObject var vm: GuessViewModel = GuessViewModel()
             
     var body: some View {
         ZStack {
             RadialGradient(stops: [
-                .init(color: .blue, location: 0.3),
-                .init(color: .white, location: 0.3)
+                .init(color: .blue, location: 0.5),
+                .init(color: .white, location: 0.5)
             ],
                            center: .top,
                            startRadius: 70,
                            endRadius: 700)
             .ignoresSafeArea()
-            VStack (spacing: 30) {
+            VStack () {
                 Spacer()
                 VStack {
                     Text("Which is the flag of")
@@ -55,8 +55,8 @@ struct GuessTheFlagProjectView: View {
     }
 }
 
-struct GuessTheFlagProjectView_Previews: PreviewProvider {
+struct FlagGameView_Previews: PreviewProvider {
     static var previews: some View {
-        GuessTheFlagProjectView()
+        FlagGameView()
     }
 }

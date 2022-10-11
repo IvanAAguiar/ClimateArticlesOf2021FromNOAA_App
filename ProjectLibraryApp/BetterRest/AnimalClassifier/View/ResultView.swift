@@ -20,7 +20,7 @@ struct ResultView: View {
             Image(name)
                 .resizable()
                 .scaledToFit()
-            Text("It has a probability of \(probability) to be \(name)")
+            Text("It has a probability of \(probability) to be \(name)!")
                 .font(.title3)
                 .fontWeight(.heavy)
         }
@@ -29,6 +29,6 @@ struct ResultView: View {
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView(name: "mammal", probability: String(0.0341029123912.formatted(.percent)))
+        ResultView(name: "mammal", probability: String(0.0341029123912))
     }
 }

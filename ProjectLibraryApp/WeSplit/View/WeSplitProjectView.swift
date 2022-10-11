@@ -14,7 +14,6 @@ struct WeSplitProjectView: View {
     @FocusState private var billAmountIsFocused: Bool
     
     var body: some View {
-        NavigationView {
             VStack {
                 Form {
                     Section (header: Text("Amount to split")) {
@@ -36,23 +35,23 @@ struct WeSplitProjectView: View {
                         }
                         .pickerStyle(.segmented)
                     }
-                
+                    
                     Section (header: Text("IVA")) {
                         Toggle("To include IVA taxes", isOn: $vm.includeIVA)
                             .toggleStyle(.switch)
-                                                
+                        
                         if vm.includeIVA {
-                             Picker("IVA taxes", selection: $vm.ivaPercentage) {
-                                 ForEach(vm.ivaPercentages.percentages, id: \.self) { value in
+                            Picker("IVA taxes", selection: $vm.ivaPercentage) {
+                                ForEach(vm.ivaPercentages.percentages, id: \.self) { value in
                                     Text("\(value)")
                                 }
                             }
                             .pickerStyle(.segmented)
                             
-                             Text(vm.iva.0, format: .currency(code: vm.localCurreny))
-                             Link("About", destination: URL(string: vm.iva.1)!)
-                                .URLLink()
-                         }
+                            Text(vm.iva.0, format: .currency(code: vm.localCurreny))
+                            Link("About", destination: URL(string: vm.iva.1)!)
+                                .modifier(URLLinkViewModifier())
+                        }
                     }
                     
                     Section (header: Text("total per person")){
@@ -62,23 +61,31 @@ struct WeSplitProjectView: View {
                     }
                 }
             }
-            .formStyle(.grouped)
+            .navigationTitle("WeSplit")
+            .navigationBarTitleDisplayMode(.large)
             .toolbar {
+                ToolbarItemGroup (placement: .navigationBarTrailing) {
+                    NavigationLink(destination: ExplanationView(title: "WeSplit", description: "This project was inspired from HACKING WITH SWIFT. The principle goal is to understand how Form works. The secondary goal is to customize the components and try to simplify the code as it is possible."), label: {
+                        HStack {
+                            Text("Explanation")
+                            Image(systemName: "brain.head.profile")
+                        }
+                    })
+                }
                 ToolbarItemGroup(placement: .keyboard) {
                     Spacer()
                     Button("Done") {
                         billAmountIsFocused = false
                     }
                 }
-                
             }
-            .navigationTitle("WeSplit")
-        }
     }
 }
 
 struct WeSplitProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        WeSplitProjectView()
+        NavigationView {
+            WeSplitProjectView()
+        }
     }
 }
