@@ -9,11 +9,7 @@ import SwiftUI
 
 struct AnimalClassifierView: View {
     
-    @ObservedObject var vm: ResultViewModel = ResultViewModel()
-    
-    private var inputs = [
-        "hair", "feathers", "eggs", "milk", "airborne", "aquatic", "predator", "toothed", "backbone", "breathes", "venomous", "fins", "legs", "tail", "domestic", "catsize"
-    ]
+    @ObservedObject private(set) var vm: ResultViewModel = ResultViewModel()
     
     var body: some View {
         
@@ -26,8 +22,8 @@ struct AnimalClassifierView: View {
                 VStack{
                     Text("Think in an animal...")
                         .font(.title2)
-                    List {
-                        ForEach(inputs, id: \.self) {item in
+                    ScrollView {
+                        ForEach(Array(vm.classifier.inputs), id: \.key) {item, value in
                             ClassifierQuestionView(inputName: item, vm: vm)
                         }
                     }

@@ -27,6 +27,9 @@
 		DE321EDA28EB42FC006A74E0 /* FirstGuessTheFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321ED928EB42FC006A74E0 /* FirstGuessTheFlagView.swift */; };
 		DE321EDE28EB441D006A74E0 /* GuessTheFlagProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EDD28EB441D006A74E0 /* GuessTheFlagProjectView.swift */; };
 		DE6F065028F42996003AEE6F /* ClassifierQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F064F28F42996003AEE6F /* ClassifierQuestionView.swift */; };
+		DE6F065628F585EE003AEE6F /* WordScrambleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F065528F585EE003AEE6F /* WordScrambleView.swift */; };
+		DE6F065828F5870D003AEE6F /* WordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F065728F5870D003AEE6F /* WordService.swift */; };
+		DE6F065A28F59165003AEE6F /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = DE6F065928F59165003AEE6F /* start.txt */; };
 		DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */; };
 		DE764C6F28E6324F00ADE5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */; };
 		DE764C7228E6324F00ADE5B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */; };
@@ -73,6 +76,9 @@
 		DE321ED928EB42FC006A74E0 /* FirstGuessTheFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstGuessTheFlagView.swift; sourceTree = "<group>"; };
 		DE321EDD28EB441D006A74E0 /* GuessTheFlagProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagProjectView.swift; sourceTree = "<group>"; };
 		DE6F064F28F42996003AEE6F /* ClassifierQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierQuestionView.swift; sourceTree = "<group>"; };
+		DE6F065528F585EE003AEE6F /* WordScrambleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleView.swift; sourceTree = "<group>"; };
+		DE6F065728F5870D003AEE6F /* WordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordService.swift; sourceTree = "<group>"; };
+		DE6F065928F59165003AEE6F /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		DE764C6728E6324E00ADE5B6 /* ProjectLibraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLibraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProjectsApp.swift; sourceTree = "<group>"; };
 		DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -221,6 +227,16 @@
 			path = GuessTheFlag;
 			sourceTree = "<group>";
 		};
+		DE6F065428F56228003AEE6F /* WordScramble */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F065528F585EE003AEE6F /* WordScrambleView.swift */,
+				DE6F065728F5870D003AEE6F /* WordService.swift */,
+				DE6F065928F59165003AEE6F /* start.txt */,
+			);
+			path = WordScramble;
+			sourceTree = "<group>";
+		};
 		DE764C5E28E6324E00ADE5B6 = {
 			isa = PBXGroup;
 			children = (
@@ -240,11 +256,12 @@
 		DE764C6928E6324E00ADE5B6 /* ProjectLibraryApp */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F065428F56228003AEE6F /* WordScramble */,
 				DE0E647E28EEE2E800E916D2 /* BetterRest */,
 				DEF4FB8F28EC279B00BDB191 /* ViewsAndModifiers */,
 				DE321ED828EB3824006A74E0 /* GuessTheFlag */,
-				DE321EB728E72795006A74E0 /* WeSplit */,
 				DE321EB628E72742006A74E0 /* ClimateArticles */,
+				DE321EB728E72795006A74E0 /* WeSplit */,
 				DEF4FBA028ECCCD700BDB191 /* Component */,
 				DE321EBE28E72C60006A74E0 /* HomeView.swift */,
 				DE321EBC28E72B97006A74E0 /* ProjectListView.swift */,
@@ -427,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE764C7228E6324F00ADE5B6 /* Preview Assets.xcassets in Resources */,
+				DE6F065A28F59165003AEE6F /* start.txt in Resources */,
 				DE764C6F28E6324F00ADE5B6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +461,7 @@
 				DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */,
 				DEF4FB9528EC283800BDB191 /* GridMaginificationEffectView.swift in Sources */,
 				DEB3DB1328F0E00300B75DD1 /* AnimalClassifier.mlpackage in Sources */,
+				DE6F065628F585EE003AEE6F /* WordScrambleView.swift in Sources */,
 				DE764C8728E6329300ADE5B6 /* ListCellView.swift in Sources */,
 				DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */,
 				DE0E648C28EF271500E916D2 /* SleepCalculator.mlmodel in Sources */,
@@ -462,6 +481,7 @@
 				DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */,
 				DEB3DB0B28F0CD1400B75DD1 /* ResultView.swift in Sources */,
 				DEB3DB0428F096E000B75DD1 /* ClassifierViewModel.swift in Sources */,
+				DE6F065828F5870D003AEE6F /* WordService.swift in Sources */,
 				DE764C8628E6329300ADE5B6 /* Articles_Table_View.swift in Sources */,
 				DEF4FBA228ECCCF400BDB191 /* ExplanationView.swift in Sources */,
 				DE321EDE28EB441D006A74E0 /* GuessTheFlagProjectView.swift in Sources */,
