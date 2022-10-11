@@ -9,7 +9,7 @@ import SwiftUI
 
 class ResultViewModel: ObservableObject {
     
-    @ObservedObject private(set) var classifier: ClassifierViewModel = ClassifierViewModel()
+    @ObservedObject var classifier: ClassifierViewModel = ClassifierViewModel()
 
     var types: [String] =  ["mammal", "bird", "reptile", "fish", "amphibian", "bug", "invertebrate"]
 

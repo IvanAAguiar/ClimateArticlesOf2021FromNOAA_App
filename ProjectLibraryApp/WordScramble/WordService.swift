@@ -24,16 +24,25 @@ class WordService: ObservableObject {
         // exit if the remaining string is empty
         guard answer.count > 0 else { return }
         
+        //exit if remaining string has less than 3 letters
+        guard followingRule(word: answer) else {
+            wordError(title: "Unfollowing the rule", message: "Word must have at least 3 letters!")
+            return
+        }
+        
+        // exit if already used
         guard isOriginal(word: answer) else {
-            wordError(title: "Word used already", message: "Be more original")
+            wordError(title: "Word used already", message: "Be more original.")
             return
         }
 
+        // exit if isn't possible to use the word
         guard isPossible(word: answer) else {
             wordError(title: "Word not possible", message: "You can't spell that word from '\(rootWord)'!")
             return
         }
 
+        // exit if the word doesn't exist
         guard isReal(word: answer) else {
             wordError(title: "Word not recognized", message: "You can't just make them up, you know!")
             return
@@ -60,6 +69,10 @@ class WordService: ObservableObject {
         }
         // If were are *here* then there was a problem - trigger a crash and report the error
         fatalError("Could not load start.txt from bundle.")
+    }
+    
+    func followingRule (word: String) -> Bool {
+        word.count >= 3
     }
 
     func isOriginal (word: String) -> Bool {

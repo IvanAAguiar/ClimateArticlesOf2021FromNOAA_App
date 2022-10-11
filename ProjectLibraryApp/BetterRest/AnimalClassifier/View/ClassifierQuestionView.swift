@@ -57,6 +57,7 @@ struct ClassifierQuestionView: View {
                     Button("Yes") {
                         vm.setClassifierInput(input: inputName, value: 1.0)
                         choosed = true
+
                     }
                     Button("No") {
                         vm.setClassifierInput(input: inputName, value: 0.0)
@@ -65,7 +66,6 @@ struct ClassifierQuestionView: View {
                 }
                 .pickerStyle(.segmented)
             }
-//            if choosed {hidden()}
         }
         .padding()
         .frame(maxWidth: 350, maxHeight: 450)
