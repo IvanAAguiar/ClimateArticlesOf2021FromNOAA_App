@@ -17,6 +17,8 @@ class WordService: ObservableObject {
     @Published var rootWord = ""
     @Published var newWord = ""
     
+    @Published var playing = false
+    
     func addNewWord() {
         // lowercase and trim the word, to make sure we don't add duplicate words with case differences
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
@@ -64,11 +66,16 @@ class WordService: ObservableObject {
                 //4. Pick one random word, or use "silkworm" as a sensible default
                 rootWord = allWords.randomElement() ?? "silkworm"
                 // If we are here everything has wored, so we can exit
+                playing = true
                 return
             }
         }
         // If were are *here* then there was a problem - trigger a crash and report the error
         fatalError("Could not load start.txt from bundle.")
+    }
+    
+    func finishGame() {
+        playing = false
     }
     
     func followingRule (word: String) -> Bool {

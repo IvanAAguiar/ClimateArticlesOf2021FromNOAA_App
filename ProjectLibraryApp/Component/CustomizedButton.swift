@@ -14,7 +14,7 @@ struct CustomizedButton: ViewModifier {
         content
             .bold()
             .font(.title2)
-            .frame(width: 350, height: 50, alignment: .center)
+            .frame(maxWidth: 350, maxHeight: 50, alignment: .center)
             .background(Color.blue)
             .foregroundColor(Color.white)
             .cornerRadius(10)
