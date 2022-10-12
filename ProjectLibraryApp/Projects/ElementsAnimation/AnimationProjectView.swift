@@ -15,10 +15,14 @@ struct AnimationProjectView: View {
                 .opacity(0.5)
                 .ignoresSafeArea()
             
-            VStack {
+            VStack (spacing: 10) {
                 CornerAnimationView()
                 SnakAnimationView()
                 TransitionAnimationView()
+                HStack (spacing: 10){
+                    CircleAnimationView()
+                    ScaleEffectAnimationView()
+                }
             }
             .navigationTitle("Elements Animation")
             .navigationBarTitleDisplayMode(.large)

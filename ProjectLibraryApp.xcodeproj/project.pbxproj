@@ -34,6 +34,9 @@
 		DE6F066828F7468E003AEE6F /* TransitionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066728F7468E003AEE6F /* TransitionAnimationView.swift */; };
 		DE6F066A28F74C4A003AEE6F /* SnakAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066928F74C4A003AEE6F /* SnakAnimationView.swift */; };
 		DE6F066C28F74D63003AEE6F /* CornerAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066B28F74D63003AEE6F /* CornerAnimationView.swift */; };
+		DE6F066E28F755C8003AEE6F /* CircleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066D28F755C8003AEE6F /* CircleAnimationView.swift */; };
+		DE6F067028F75859003AEE6F /* ScaleEffectAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066F28F75859003AEE6F /* ScaleEffectAnimationView.swift */; };
+		DE6F067228F75957003AEE6F /* DragAnimationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F067128F75957003AEE6F /* DragAnimationModifier.swift */; };
 		DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */; };
 		DE764C6F28E6324F00ADE5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */; };
 		DE764C7228E6324F00ADE5B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */; };
@@ -86,6 +89,9 @@
 		DE6F066728F7468E003AEE6F /* TransitionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationView.swift; sourceTree = "<group>"; };
 		DE6F066928F74C4A003AEE6F /* SnakAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakAnimationView.swift; sourceTree = "<group>"; };
 		DE6F066B28F74D63003AEE6F /* CornerAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerAnimationView.swift; sourceTree = "<group>"; };
+		DE6F066D28F755C8003AEE6F /* CircleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAnimationView.swift; sourceTree = "<group>"; };
+		DE6F066F28F75859003AEE6F /* ScaleEffectAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEffectAnimationView.swift; sourceTree = "<group>"; };
+		DE6F067128F75957003AEE6F /* DragAnimationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAnimationModifier.swift; sourceTree = "<group>"; };
 		DE764C6728E6324E00ADE5B6 /* ProjectLibraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLibraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProjectsApp.swift; sourceTree = "<group>"; };
 		DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -261,6 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				DE6F066128F714ED003AEE6F /* AnimationProjectView.swift */,
+				DE6F066D28F755C8003AEE6F /* CircleAnimationView.swift */,
+				DE6F066F28F75859003AEE6F /* ScaleEffectAnimationView.swift */,
 				DE6F066B28F74D63003AEE6F /* CornerAnimationView.swift */,
 				DE6F066728F7468E003AEE6F /* TransitionAnimationView.swift */,
 				DE6F066928F74C4A003AEE6F /* SnakAnimationView.swift */,
@@ -273,6 +281,7 @@
 			children = (
 				DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */,
 				DE6F066528F72C56003AEE6F /* CornerRotateModifier.swift */,
+				DE6F067128F75957003AEE6F /* DragAnimationModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -526,9 +535,11 @@
 				DE6F065028F42996003AEE6F /* ClassifierQuestionView.swift in Sources */,
 				DE0E648228EEE67600E916D2 /* BetterRestView.swift in Sources */,
 				DE6F066A28F74C4A003AEE6F /* SnakAnimationView.swift in Sources */,
+				DE6F066E28F755C8003AEE6F /* CircleAnimationView.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
 				DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */,
 				DEB3DB0B28F0CD1400B75DD1 /* ResultView.swift in Sources */,
+				DE6F067028F75859003AEE6F /* ScaleEffectAnimationView.swift in Sources */,
 				DE6F066228F714ED003AEE6F /* AnimationProjectView.swift in Sources */,
 				DEB3DB0428F096E000B75DD1 /* ClassifierViewModel.swift in Sources */,
 				DE6F066628F72C56003AEE6F /* CornerRotateModifier.swift in Sources */,
@@ -550,6 +561,7 @@
 				DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */,
 				DEB3DB1528F41E3900B75DD1 /* AnimalClassifierView.swift in Sources */,
 				DEF4FB9F28ECCB1800BDB191 /* FlagView.swift in Sources */,
+				DE6F067228F75957003AEE6F /* DragAnimationModifier.swift in Sources */,
 				DEB3DB0228F0914600B75DD1 /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

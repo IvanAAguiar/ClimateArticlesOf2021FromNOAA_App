@@ -10,7 +10,6 @@ import SwiftUI
 struct TransitionAnimationView: View {
     
     @State private var isShowingRed = false
-    @State private var dragAmount3 = CGSize.zero
     
     var body: some View {
         HStack {
@@ -39,14 +38,7 @@ struct TransitionAnimationView: View {
         .frame(width: 200, height: 200)
         .cornerRadius(10)
         .shadow(radius: 10)
-        .offset(dragAmount3)
-        .gesture(
-            DragGesture()
-                .onChanged { dragAmount3 = $0.translation }
-                .onEnded {_ in
-                    dragAmount3 = .zero
-                }
-        )
+        .draging()
     }
 }
 

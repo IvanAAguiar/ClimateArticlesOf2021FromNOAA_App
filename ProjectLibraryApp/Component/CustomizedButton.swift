@@ -9,12 +9,11 @@ import SwiftUI
 
 struct CustomizedButton: ViewModifier {
     
-    
     func body(content: Content) -> some View {
         content
             .bold()
             .font(.title2)
-            .frame(maxWidth: 350, maxHeight: 50, alignment: .center)
+            .frame(width: 350, height: 50, alignment: .center)
             .background(Color.blue)
             .foregroundColor(Color.white)
             .cornerRadius(10)
