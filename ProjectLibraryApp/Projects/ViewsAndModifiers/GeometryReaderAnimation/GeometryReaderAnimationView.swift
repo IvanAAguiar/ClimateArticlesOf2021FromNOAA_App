@@ -14,6 +14,7 @@ struct GeometryReaderAnimationView: View {
     var countries = ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "uk", "us"]
     
     var body: some View {
+
             ScrollView (showsIndicators: false) {
                 VStack {
                     ForEach(countries, id: \.self) { flag in
