@@ -29,6 +29,11 @@
 		DE6F065828F5870D003AEE6F /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F065728F5870D003AEE6F /* WordViewModel.swift */; };
 		DE6F065A28F59165003AEE6F /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = DE6F065928F59165003AEE6F /* start.txt */; };
 		DE6F065F28F6BCC7003AEE6F /* ScrambleGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F065E28F6BCC7003AEE6F /* ScrambleGameView.swift */; };
+		DE6F066228F714ED003AEE6F /* AnimationProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066128F714ED003AEE6F /* AnimationProjectView.swift */; };
+		DE6F066628F72C56003AEE6F /* CornerRotateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066528F72C56003AEE6F /* CornerRotateModifier.swift */; };
+		DE6F066828F7468E003AEE6F /* TransitionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066728F7468E003AEE6F /* TransitionAnimationView.swift */; };
+		DE6F066A28F74C4A003AEE6F /* SnakAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066928F74C4A003AEE6F /* SnakAnimationView.swift */; };
+		DE6F066C28F74D63003AEE6F /* CornerAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066B28F74D63003AEE6F /* CornerAnimationView.swift */; };
 		DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */; };
 		DE764C6F28E6324F00ADE5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */; };
 		DE764C7228E6324F00ADE5B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */; };
@@ -76,6 +81,11 @@
 		DE6F065728F5870D003AEE6F /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		DE6F065928F59165003AEE6F /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		DE6F065E28F6BCC7003AEE6F /* ScrambleGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrambleGameView.swift; sourceTree = "<group>"; };
+		DE6F066128F714ED003AEE6F /* AnimationProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProjectView.swift; sourceTree = "<group>"; };
+		DE6F066528F72C56003AEE6F /* CornerRotateModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRotateModifier.swift; sourceTree = "<group>"; };
+		DE6F066728F7468E003AEE6F /* TransitionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationView.swift; sourceTree = "<group>"; };
+		DE6F066928F74C4A003AEE6F /* SnakAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakAnimationView.swift; sourceTree = "<group>"; };
+		DE6F066B28F74D63003AEE6F /* CornerAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerAnimationView.swift; sourceTree = "<group>"; };
 		DE764C6728E6324E00ADE5B6 /* ProjectLibraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLibraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProjectsApp.swift; sourceTree = "<group>"; };
 		DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -247,6 +257,40 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DE6F066028F714BE003AEE6F /* ElementsAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F066128F714ED003AEE6F /* AnimationProjectView.swift */,
+				DE6F066B28F74D63003AEE6F /* CornerAnimationView.swift */,
+				DE6F066728F7468E003AEE6F /* TransitionAnimationView.swift */,
+				DE6F066928F74C4A003AEE6F /* SnakAnimationView.swift */,
+			);
+			path = ElementsAnimation;
+			sourceTree = "<group>";
+		};
+		DE6F066328F72C16003AEE6F /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */,
+				DE6F066528F72C56003AEE6F /* CornerRotateModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		DE6F066428F72C1F003AEE6F /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F066028F714BE003AEE6F /* ElementsAnimation */,
+				DE6F065428F56228003AEE6F /* WordScramble */,
+				DE0E647E28EEE2E800E916D2 /* BetterRest */,
+				DEF4FB8F28EC279B00BDB191 /* ViewsAndModifiers */,
+				DE321ED828EB3824006A74E0 /* GuessTheFlag */,
+				DE321EB628E72742006A74E0 /* ClimateArticles */,
+				DE321EB728E72795006A74E0 /* WeSplit */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
 		DE764C5E28E6324E00ADE5B6 = {
 			isa = PBXGroup;
 			children = (
@@ -266,12 +310,8 @@
 		DE764C6928E6324E00ADE5B6 /* ProjectLibraryApp */ = {
 			isa = PBXGroup;
 			children = (
-				DE6F065428F56228003AEE6F /* WordScramble */,
-				DE0E647E28EEE2E800E916D2 /* BetterRest */,
-				DEF4FB8F28EC279B00BDB191 /* ViewsAndModifiers */,
-				DE321ED828EB3824006A74E0 /* GuessTheFlag */,
-				DE321EB628E72742006A74E0 /* ClimateArticles */,
-				DE321EB728E72795006A74E0 /* WeSplit */,
+				DE6F066428F72C1F003AEE6F /* Projects */,
+				DE6F066328F72C16003AEE6F /* Modifiers */,
 				DEF4FBA028ECCCD700BDB191 /* Component */,
 				DE321EBE28E72C60006A74E0 /* HomeView.swift */,
 				DE321EBC28E72B97006A74E0 /* ProjectListView.swift */,
@@ -389,7 +429,6 @@
 			isa = PBXGroup;
 			children = (
 				DEF4FBA128ECCCF400BDB191 /* ExplanationView.swift */,
-				DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */,
 				DEF4FBA328ECD0F100BDB191 /* CustomizedButton.swift */,
 			);
 			path = Component;
@@ -486,10 +525,15 @@
 				DE305EBE28F04AC2002FD76F /* IVAModel.swift in Sources */,
 				DE6F065028F42996003AEE6F /* ClassifierQuestionView.swift in Sources */,
 				DE0E648228EEE67600E916D2 /* BetterRestView.swift in Sources */,
+				DE6F066A28F74C4A003AEE6F /* SnakAnimationView.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
 				DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */,
 				DEB3DB0B28F0CD1400B75DD1 /* ResultView.swift in Sources */,
+				DE6F066228F714ED003AEE6F /* AnimationProjectView.swift in Sources */,
 				DEB3DB0428F096E000B75DD1 /* ClassifierViewModel.swift in Sources */,
+				DE6F066628F72C56003AEE6F /* CornerRotateModifier.swift in Sources */,
+				DE6F066828F7468E003AEE6F /* TransitionAnimationView.swift in Sources */,
+				DE6F066C28F74D63003AEE6F /* CornerAnimationView.swift in Sources */,
 				DE6F065828F5870D003AEE6F /* WordViewModel.swift in Sources */,
 				DE764C8628E6329300ADE5B6 /* Articles_Table_View.swift in Sources */,
 				DEF4FBA228ECCCF400BDB191 /* ExplanationView.swift in Sources */,

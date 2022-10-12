@@ -16,6 +16,7 @@ struct ProjectListView: View {
             NavigationLink("Views And Modifiers", destination: ViewsModifierView())
             NavigationLink("BetterRest", destination: BetterRestView())
             NavigationLink("Word Scramble", destination: WordScrambleView())
+            NavigationLink("Animation", destination: AnimationProjectView())
         }
     }
 }
