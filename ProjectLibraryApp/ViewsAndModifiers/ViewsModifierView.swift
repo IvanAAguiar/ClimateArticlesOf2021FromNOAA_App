@@ -34,7 +34,7 @@ struct ViewsModifierView: View {
         .navigationBarTitleDisplayMode(.large)
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
-                NavigationLink(destination: ExplanationView(title: "Views And Modifiers", description: "This project was inspired from HACKING WITH SWIFT. The principle goal is to understand how GeometryReader and LazyVGrid work. The second goal is review @State, customized itens, random itens, arrays and ForEachs.")) {
+                NavigationLink(destination: ExplanationView(title: "Views And Modifiers", description: "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand how GeometryReader and LazyVGrid work. The second goal is review @State, customized itens, random itens, arrays and ForEachs.")) {
                     HStack {
                         Text("Explanation")
                         Image(systemName: "brain.head.profile")

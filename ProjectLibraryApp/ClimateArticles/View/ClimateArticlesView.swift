@@ -43,7 +43,7 @@ struct ClimateArticlesView: View {
                     .navigationBarTitleDisplayMode(.large)
                     .toolbar {
                         ToolbarItemGroup(placement: .navigationBarTrailing) {
-                            NavigationLink(destination: ExplanationView(title: "Climate Articles", description: "This project was inspired from HACKING WITH SWIFT. The principle goal is to understand the difference between TableView and TabView. All the data are static and was collected from NOAA web site.")) {
+                            NavigationLink(destination: ExplanationView(title: "Climate Articles", description: "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand the difference between TableView and TabView. All the data are static and was collected from NOAA web site.")) {
                                 HStack {
                                     Text("Explanation")
                                     Image(systemName: "brain.head.profile")

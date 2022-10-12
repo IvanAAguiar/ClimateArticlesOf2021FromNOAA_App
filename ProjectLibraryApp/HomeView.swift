@@ -20,7 +20,7 @@ struct HomeView: View {
                 Text("My First Project")
                     .font(.largeTitle)
                 Spacer()
-                Text("This is the project number 1. It was inspired from HACKING WITH SWIFT. The principle goal is to undestand the basic structure of a SwiftUI app. It will tries to get form, navagation bar, program state, biding state, interface controls and loops as secoundary goals. All the data are static and was collected from NOAA web site.")
+                Text("This is the project number 1. It was inspired by HACKING WITH SWIFT. The principle goal is to undestand the basic structure of a SwiftUI app. It will tries to get form, navagation bar, program state, biding state, interface controls and loops as secoundary goals. All the data are static and was collected from NOAA web site.")
                     .multilineTextAlignment(.center)
                     .font(.title3)
             }

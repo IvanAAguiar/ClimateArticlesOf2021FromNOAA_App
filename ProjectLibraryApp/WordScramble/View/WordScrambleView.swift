@@ -21,13 +21,20 @@ struct WordScrambleView: View {
             VStack {
                 Text("Click on 'Start Game' and give us a guess!").font(.system(size: 40))
                     .padding()
+                NavigationLink("Start Game", destination: ScrambleGameView(vm: vm))
+                    .simultaneousGesture(TapGesture().onEnded(vm.startGame))
+                    .ButtonCustomizedStyle()
             }
             .navigationTitle("Word Scramble Game")
             .navigationBarTitleDisplayMode(.large)
             .toolbar(content: {
                 ToolbarItemGroup(content: {
-                    NavigationLink("Start Game", destination: ScrambleGameView(vm: vm))
-                        .simultaneousGesture(TapGesture().onEnded(vm.startGame))
+                    NavigationLink(destination: ExplanationView(title: "Word Scramble Game", description: "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand how List View, onAppear, Bundle, fatalError(), and UITextChecker works. The secondary goal is to use navigationView to organize the path for the views."), label: {
+                        HStack {
+                            Text("Explanation")
+                            Image(systemName: "brain.head.profile")
+                        }
+                    })
                 })
             })
         }

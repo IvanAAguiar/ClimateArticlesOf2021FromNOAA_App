@@ -28,7 +28,7 @@ struct GuessTheFlagView: View {
         .navigationBarTitleDisplayMode(.large)
         .toolbar {
             ToolbarItemGroup (placement: .navigationBarTrailing) {
-                NavigationLink(destination: ExplanationView(title: "Guess The Flag", description: "This project was inspired from HACKING WITH SWIFT. The principle goal is to understand new SwiftUI functionality: stacks, buttons, images, alerts, asset catalogs, and more. The secondary goal is turn the components reusables.")) {
+                NavigationLink(destination: ExplanationView(title: "Guess The Flag", description: "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand new SwiftUI functionality: stacks, buttons, images, alerts, asset catalogs, and more. The secondary goal is turn the components reusables.")) {
                     HStack {
                         Image(systemName: "brain.head.profile")
                         Text("Explanation")
