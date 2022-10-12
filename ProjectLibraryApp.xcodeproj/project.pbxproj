@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E647C28EDD96D00E916D2 /* ViewsModifierView.swift */; };
-		DE0E648228EEE67600E916D2 /* BetterRestProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648128EEE67600E916D2 /* BetterRestProjectView.swift */; };
+		DE0E648228EEE67600E916D2 /* BetterRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648128EEE67600E916D2 /* BetterRestView.swift */; };
 		DE0E648C28EF271500E916D2 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */; };
 		DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */; };
 		DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E649228F01F9000E916D2 /* GridViewModel.swift */; };
@@ -28,6 +28,7 @@
 		DE6F065628F585EE003AEE6F /* WordScrambleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F065528F585EE003AEE6F /* WordScrambleView.swift */; };
 		DE6F065828F5870D003AEE6F /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F065728F5870D003AEE6F /* WordViewModel.swift */; };
 		DE6F065A28F59165003AEE6F /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = DE6F065928F59165003AEE6F /* start.txt */; };
+		DE6F065F28F6BCC7003AEE6F /* ScrambleGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F065E28F6BCC7003AEE6F /* ScrambleGameView.swift */; };
 		DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */; };
 		DE764C6F28E6324F00ADE5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */; };
 		DE764C7228E6324F00ADE5B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */; };
@@ -54,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		DE0E647C28EDD96D00E916D2 /* ViewsModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsModifierView.swift; sourceTree = "<group>"; };
-		DE0E648128EEE67600E916D2 /* BetterRestProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestProjectView.swift; sourceTree = "<group>"; };
+		DE0E648128EEE67600E916D2 /* BetterRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestView.swift; sourceTree = "<group>"; };
 		DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestMLViewModel.swift; sourceTree = "<group>"; };
 		DE0E649228F01F9000E916D2 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		DE6F065528F585EE003AEE6F /* WordScrambleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleView.swift; sourceTree = "<group>"; };
 		DE6F065728F5870D003AEE6F /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		DE6F065928F59165003AEE6F /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		DE6F065E28F6BCC7003AEE6F /* ScrambleGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrambleGameView.swift; sourceTree = "<group>"; };
 		DE764C6728E6324E00ADE5B6 /* ProjectLibraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLibraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProjectsApp.swift; sourceTree = "<group>"; };
 		DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,7 +124,7 @@
 		DE0E648F28EF600100E916D2 /* BetterRest */ = {
 			isa = PBXGroup;
 			children = (
-				DE0E648128EEE67600E916D2 /* BetterRestProjectView.swift */,
+				DE0E648128EEE67600E916D2 /* BetterRestView.swift */,
 				DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */,
 				DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */,
 			);
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6F065528F585EE003AEE6F /* WordScrambleView.swift */,
+				DE6F065E28F6BCC7003AEE6F /* ScrambleGameView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -478,10 +481,11 @@
 				DEF4FBA428ECD0F100BDB191 /* CustomizedButton.swift in Sources */,
 				DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */,
 				DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */,
+				DE6F065F28F6BCC7003AEE6F /* ScrambleGameView.swift in Sources */,
 				DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */,
 				DE305EBE28F04AC2002FD76F /* IVAModel.swift in Sources */,
 				DE6F065028F42996003AEE6F /* ClassifierQuestionView.swift in Sources */,
-				DE0E648228EEE67600E916D2 /* BetterRestProjectView.swift in Sources */,
+				DE0E648228EEE67600E916D2 /* BetterRestView.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
 				DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */,
 				DEB3DB0B28F0CD1400B75DD1 /* ResultView.swift in Sources */,

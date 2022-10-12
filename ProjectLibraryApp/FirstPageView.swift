@@ -29,6 +29,7 @@ struct FirstPageView: View {
             }
         }
         .accentColor(defaultColor == .light ? .black : .white)
+        .tint(.primary)
     }
 }
 

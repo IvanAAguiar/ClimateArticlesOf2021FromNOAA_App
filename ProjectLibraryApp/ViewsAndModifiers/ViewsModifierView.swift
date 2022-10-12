@@ -42,7 +42,6 @@ struct ViewsModifierView: View {
                 }
             }
         }
-        .tint(.primary)
     }
 }
 

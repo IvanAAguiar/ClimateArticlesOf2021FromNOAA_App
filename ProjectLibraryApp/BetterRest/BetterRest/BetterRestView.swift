@@ -1,5 +1,5 @@
 //
-//  BetterRestProjectView.swift
+//  BetterRestView.swift
 //  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 06/10/2022.
@@ -8,7 +8,7 @@
 import CoreML
 import SwiftUI
 
-struct BetterRestProjectView: View {
+struct BetterRestView: View {
     
     @ObservedObject var vm: BetterRestMLViewModel = BetterRestMLViewModel()
     
@@ -68,10 +68,10 @@ struct BetterRestProjectView: View {
     }
 }
 
-struct BetterRestProject_Previews: PreviewProvider {
+struct BetterRestView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            BetterRestProjectView()
+            BetterRestView()
         }
     }
 }

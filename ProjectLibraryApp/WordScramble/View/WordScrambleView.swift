@@ -3,59 +3,41 @@
 //  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 11/10/2022.
-//
 
 import SwiftUI
 
 struct WordScrambleView: View {
     
     @ObservedObject private var vm: WordViewModel = WordViewModel()
+    @State private var playing = false
     
     var body: some View {
-        NavigationView {
         ZStack {
-            LinearGradient(colors: [.green, .yellow], startPoint: .bottom, endPoint: .top)
-                .ignoresSafeArea(.all)
+            Image("scrabble")
+                .resizable()
+                .ignoresSafeArea()
+                .opacity(0.1)
+            
             VStack {
-                       List {
-                           Section {
-                               TextField("Enter your word", text: $vm.newWord)
-                                   .textInputAutocapitalization(.none)
-                           }
-                           Section {
-                               ForEach(vm.usedWords, id: \.self) {word in
-                                   HStack {
-                                       Image(systemName: "\(word.count).circle")
-                                       Text(word)
-                                   }
-                               }
-                           }
-                       }
-                   }
+                Text("Click on 'Start Game' and give us a guess!").font(.system(size: 40))
+                    .padding()
             }
-        .navigationTitle(!vm.playing ? "Word Scramble Game" : vm.rootWord)
-        .toolbar(content: {
-            ToolbarItemGroup(content: {
-                Button(!vm.playing ? "Start Game" : "Restart") {
-                    vm.startGame()
-                }
-                if vm.playing {
-                    Button("Finish", action: vm.finishGame)
-                }
+            .navigationTitle("Word Scramble Game")
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar(content: {
+                ToolbarItemGroup(content: {
+                    NavigationLink("Start Game", destination: ScrambleGameView(vm: vm))
+                        .simultaneousGesture(TapGesture().onEnded(vm.startGame))
+                })
             })
-        })
-        .onSubmit(vm.addNewWord)
-        .alert(vm.errorTitle, isPresented: $vm.showingError) {
-            Button("OK", role: .cancel) { }
-        } message: {
-            Text(vm.errorMessage)
-        }
         }
     }
 }
 
 struct WordScrambleView_Previews: PreviewProvider {
     static var previews: some View {
-        WordScrambleView()
+        NavigationView {
+            WordScrambleView()
+        }
     }
 }

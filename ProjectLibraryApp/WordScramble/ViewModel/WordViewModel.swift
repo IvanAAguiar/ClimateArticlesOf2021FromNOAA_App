@@ -16,8 +16,9 @@ class WordViewModel: ObservableObject {
     @Published var usedWords = [String]()
     @Published var rootWord = ""
     @Published var newWord = ""
-    
-    @Published var playing = false
+        
+    @Published var score = 0
+    private var point = 10
     
     func addNewWord() {
         // lowercase and trim the word, to make sure we don't add duplicate words with case differences
@@ -29,6 +30,7 @@ class WordViewModel: ObservableObject {
         //exit if remaining string has less than 3 letters
         guard followingRule(word: answer) else {
             wordError(title: "Unfollowing the rule", message: "Word must have at least 3 letters!")
+            if score != 0 { score -= point }
             return
         }
         
@@ -41,17 +43,20 @@ class WordViewModel: ObservableObject {
         // exit if isn't possible to use the word
         guard isPossible(word: answer) else {
             wordError(title: "Word not possible", message: "You can't spell that word from '\(rootWord)'!")
+            if score != 0 { score -= point }
             return
         }
 
         // exit if the word doesn't exist
         guard isReal(word: answer) else {
             wordError(title: "Word not recognized", message: "You can't just make them up, you know!")
+            if score != 0 { score -= point }
             return
         }
         
         withAnimation {
             usedWords.insert(answer, at: 0)
+            score += point
         }
         newWord = ""
     }
@@ -66,16 +71,13 @@ class WordViewModel: ObservableObject {
                 //4. Pick one random word, or use "silkworm" as a sensible default
                 rootWord = allWords.randomElement() ?? "silkworm"
                 // If we are here everything has wored, so we can exit
-                playing = true
+                usedWords = [String]()
+                score = 0
                 return
             }
         }
         // If were are *here* then there was a problem - trigger a crash and report the error
         fatalError("Could not load start.txt from bundle.")
-    }
-    
-    func finishGame() {
-        playing = false
     }
     
     func followingRule (word: String) -> Bool {

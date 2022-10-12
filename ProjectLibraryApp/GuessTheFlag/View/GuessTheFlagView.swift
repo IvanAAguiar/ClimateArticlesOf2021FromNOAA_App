@@ -36,7 +36,6 @@ struct GuessTheFlagView: View {
                 }
             }
         }
-        .tint(.primary)
     }
 }
 
