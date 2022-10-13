@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct GuessTheFlagView: View {
+    
+    @ObservedObject private var vm: GuessViewModel = GuessViewModel()
         
     var body: some View {
         VStack {
             Image("flag_world")
                 .resizable()
                 .scaledToFit()
-            NavigationLink {
+            NavigationLink("Start") {
                 FlagGameView()
-            } label: {
-                Text("Start")
-                    .ButtonCustomizedStyle()
-                    .font(.system(size: 40))
-                    .padding(.vertical, 60)
             }
+            .buttonStyleModifier()
+            .font(.system(size: 40))
+            .padding(.vertical, 60)
         }
         .padding(80)
         .navigationTitle("Guess The Flag")

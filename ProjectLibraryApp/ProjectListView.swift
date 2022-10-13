@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProjectListView: View {
     var body: some View {
-        Form {
+        List {
             NavigationLink("WeSplit", destination: WeSplitProjectView())
             NavigationLink("Climate Articles", destination: ClimateArticlesView())
             NavigationLink("Guess The Flag", destination: GuessTheFlagView())
@@ -18,11 +18,15 @@ struct ProjectListView: View {
             NavigationLink("Word Scramble", destination: WordScrambleView())
             NavigationLink("Animation", destination: AnimationProjectView())
         }
+        .navigationTitle("Projects")
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 
 struct ProjectListView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectListView()
+        NavigationView {
+            ProjectListView()
+        }
     }
 }

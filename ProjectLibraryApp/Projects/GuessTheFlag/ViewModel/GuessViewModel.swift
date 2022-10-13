@@ -52,7 +52,9 @@ class GuessViewModel: ObservableObject {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
-        resetGame()
+        if gameOver {
+            resetGame()
+        }
     }
     
     func addPoint() {
@@ -76,10 +78,8 @@ class GuessViewModel: ObservableObject {
     }
     
     func resetGame() {
-        if plays == 8 {
             plays = 0
             score = 0
             gameOver = false
-        }
     }
 }

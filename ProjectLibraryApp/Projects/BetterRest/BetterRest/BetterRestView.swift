@@ -63,7 +63,7 @@ struct BetterRestView: View {
             NavigationLink(destination: AnimalClassifierView()) {
                 Text("Jump to another game")
             }
-            .ButtonCustomizedStyle()
+            .buttonStyleModifier()
         }
     }
 }

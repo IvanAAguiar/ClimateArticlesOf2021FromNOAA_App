@@ -10,6 +10,7 @@ import SwiftUI
 struct FlagGameView: View {
     
     @ObservedObject var vm: GuessViewModel = GuessViewModel()
+    @Environment(\.dismiss) private var dismiss
             
     var body: some View {
         ZStack {
@@ -33,23 +34,35 @@ struct FlagGameView: View {
                 }
                 Spacer()
                 
+                
                 ForEach(0..<3) { number in
-                    Button {
-                        vm.flagTapped(number)
-                    } label: {
-                        FlagView(countryName: vm.countries[number].countryName)
-                    }
+                    FlagView(countryName: vm.countries[number].countryName)
+                        .rotation360()
+                        .simultaneousGesture(
+                            DragGesture(minimumDistance: 0)
+                                .onEnded({_ in
+                                    vm.flagTapped(number)
+                                })
+                        )
                 }
                 Spacer()
                 Text("SCORE: \(vm.score)")
             }
             .alert(vm.scoreTitle, isPresented: $vm.showingScore) {
-                Button("Continue", action: vm.askQuestion)
-                if vm.gameOver {
-                    Button("Finish", action: vm.resetGame)
+                if !vm.gameOver { Button("Continue", action: vm.askQuestion) } else {
+                    Button("Restart", action: vm.askQuestion)
                 }
             } message: {
                 vm.gameOver ? Text(vm.result()) : (vm.scoreTitle == "Correct" ? Text ("Well done!") : Text("Try again!"))
+            }
+        }
+        .navigationTitle("Do you have 8 chances!")
+        .navigationBarTitleDisplayMode(.large)
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            ToolbarItemGroup {
+                Button("Finish", action: dismiss.callAsFunction)
+                    .simultaneousGesture(TapGesture().onEnded(vm.resetGame))
             }
         }
     }
@@ -57,6 +70,8 @@ struct FlagGameView: View {
 
 struct FlagGameView_Previews: PreviewProvider {
     static var previews: some View {
-        FlagGameView()
+        NavigationView {
+            FlagGameView()
+        }
     }
 }

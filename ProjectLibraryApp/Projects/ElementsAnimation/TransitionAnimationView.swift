@@ -14,19 +14,19 @@ struct TransitionAnimationView: View {
     var body: some View {
         HStack {
             ZStack {
-                Rectangle()
-                    .fill(.red)
+                Text("Tap Me")
+                    .clipShape(Rectangle())
                     .frame(width: 200, height: 200)
-                Text("Tap at me")
                     .foregroundColor(.white)
+                    .background(Color.red)
                 
                 if isShowingRed {
-                    Rectangle()
-                        .fill(.blue)
+                    Text("Now I'm blue")
+                        .clipShape(Rectangle())
                         .frame(width: 200, height: 200)
-                        .transition(.pivot)
-                    Text("Tap at me")
                         .foregroundColor(.white)
+                        .background(Color.blue)
+                        .transition(.pivot)
                 }
             }
             .onTapGesture {

@@ -28,7 +28,7 @@ struct AnimalClassifierView: View {
                         }
                     }
                     NavigationLink("Classify", destination: ResultView(name: name, probability: probability))
-                        .ButtonCustomizedStyle()
+                        .buttonStyleModifier()
                 }
                 .navigationTitle("Animal Classifier")
             }

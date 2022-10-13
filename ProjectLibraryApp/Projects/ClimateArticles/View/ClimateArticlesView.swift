@@ -28,14 +28,14 @@ struct ClimateArticlesView: View {
                                     Text("TableView")
                                 }
                             }
-                            .ButtonCustomizedStyle()
+                            .buttonStyleModifier()
                             NavigationLink(destination: Articles_Tab_View()) {
                                 HStack {
                                     Image(systemName: "arrow.right.doc.on.clipboard")
                                     Text("TabView")
                                 }
                             }
-                            .ButtonCustomizedStyle()
+                            .buttonStyleModifier()
                         }
                         .padding(20)
                     }

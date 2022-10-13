@@ -28,6 +28,7 @@ struct ViewsModifierView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 }
             }
+            .animation(.easeIn(duration: 1), value: theme)
             .padding()
         }
         .navigationTitle("View Modifiers")

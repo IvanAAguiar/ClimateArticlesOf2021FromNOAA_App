@@ -9,7 +9,6 @@ import SwiftUI
 struct WordScrambleView: View {
     
     @ObservedObject private var vm: WordViewModel = WordViewModel()
-    @State private var playing = false
     
     var body: some View {
         ZStack {
@@ -23,7 +22,7 @@ struct WordScrambleView: View {
                     .padding()
                 NavigationLink("Start Game", destination: ScrambleGameView(vm: vm))
                     .simultaneousGesture(TapGesture().onEnded(vm.startGame))
-                    .ButtonCustomizedStyle()
+                    .buttonStyleModifier()
             }
             .navigationTitle("Word Scramble Game")
             .navigationBarTitleDisplayMode(.large)

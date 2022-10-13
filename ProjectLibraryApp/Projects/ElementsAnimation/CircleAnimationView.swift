@@ -8,21 +8,15 @@
 import SwiftUI
 
 struct CircleAnimationView: View {
-    
-    @State private var animationAmount = 0.0
-    
+        
     var body: some View {
-        Button("Tap Me") {
-            withAnimation (.interpolatingSpring(stiffness: 5, damping: 1)) {
-                animationAmount +=  360
-            }
-        }
+        Text("Tap Me")
         .padding(50)
         .background(.red)
         .foregroundColor(.white)
         .clipShape(Circle())
         .shadow(color: .black, radius: 5)
-        .rotation3DEffect(.degrees(animationAmount), axis: (x:0, y:1, z:0))
+        .rotation360()
         .draging()
     }
 }

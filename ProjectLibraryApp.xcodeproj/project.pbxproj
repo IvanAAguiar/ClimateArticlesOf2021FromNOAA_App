@@ -37,6 +37,7 @@
 		DE6F066E28F755C8003AEE6F /* CircleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066D28F755C8003AEE6F /* CircleAnimationView.swift */; };
 		DE6F067028F75859003AEE6F /* ScaleEffectAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F066F28F75859003AEE6F /* ScaleEffectAnimationView.swift */; };
 		DE6F067228F75957003AEE6F /* DragAnimationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F067128F75957003AEE6F /* DragAnimationModifier.swift */; };
+		DE6F067428F8090D003AEE6F /* Rotation360Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F067328F8090D003AEE6F /* Rotation360Modifier.swift */; };
 		DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */; };
 		DE764C6F28E6324F00ADE5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */; };
 		DE764C7228E6324F00ADE5B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */; };
@@ -92,6 +93,7 @@
 		DE6F066D28F755C8003AEE6F /* CircleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAnimationView.swift; sourceTree = "<group>"; };
 		DE6F066F28F75859003AEE6F /* ScaleEffectAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEffectAnimationView.swift; sourceTree = "<group>"; };
 		DE6F067128F75957003AEE6F /* DragAnimationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAnimationModifier.swift; sourceTree = "<group>"; };
+		DE6F067328F8090D003AEE6F /* Rotation360Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Rotation360Modifier.swift; path = ProjectLibraryApp/Modifiers/Rotation360Modifier.swift; sourceTree = SOURCE_ROOT; };
 		DE764C6728E6324E00ADE5B6 /* ProjectLibraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLibraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProjectsApp.swift; sourceTree = "<group>"; };
 		DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -279,9 +281,11 @@
 		DE6F066328F72C16003AEE6F /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F067328F8090D003AEE6F /* Rotation360Modifier.swift */,
 				DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */,
 				DE6F066528F72C56003AEE6F /* CornerRotateModifier.swift */,
 				DE6F067128F75957003AEE6F /* DragAnimationModifier.swift */,
+				DEF4FBA328ECD0F100BDB191 /* CustomizedButton.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -438,7 +442,6 @@
 			isa = PBXGroup;
 			children = (
 				DEF4FBA128ECCCF400BDB191 /* ExplanationView.swift */,
-				DEF4FBA328ECD0F100BDB191 /* CustomizedButton.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				DEB3DB1528F41E3900B75DD1 /* AnimalClassifierView.swift in Sources */,
 				DEF4FB9F28ECCB1800BDB191 /* FlagView.swift in Sources */,
 				DE6F067228F75957003AEE6F /* DragAnimationModifier.swift in Sources */,
+				DE6F067428F8090D003AEE6F /* Rotation360Modifier.swift in Sources */,
 				DEB3DB0228F0914600B75DD1 /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
