@@ -17,6 +17,7 @@ struct ProjectListView: View {
             NavigationLink("BetterRest", destination: BetterRestView())
             NavigationLink("Word Scramble", destination: WordScrambleView())
             NavigationLink("Animation", destination: AnimationProjectView())
+            NavigationLink("iExpense", destination: ExpenseManagerView())
         }
         .navigationTitle("Projects")
         .navigationBarTitleDisplayMode(.large)
