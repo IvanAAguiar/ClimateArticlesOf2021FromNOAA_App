@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MoonshotAppView: View {
-    let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
-    let mission: [Mission] = Bundle.main.decode("missions.json")
+    
+    @StateObject var vm: MissionViewModel = MissionViewModel()
     
     let columns = [
         GridItem(.adaptive(minimum: 150))
@@ -18,9 +18,9 @@ struct MoonshotAppView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns) {
-                ForEach(mission) { mission in
+                ForEach(vm.missions, id: \.id) { mission in
                     NavigationLink {
-                        MissionView(misson: mission, astronauts: astronauts)
+                        MissionView(vm: vm, mission: mission)
                     } label: {
                         VStack {
                             Image(mission.image)

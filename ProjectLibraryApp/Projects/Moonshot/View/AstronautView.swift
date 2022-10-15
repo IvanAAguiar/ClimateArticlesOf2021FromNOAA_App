@@ -13,25 +13,14 @@ struct AstronautView: View {
     
     var body: some View {
         ScrollView {
-            
-            Rectangle()
-                .frame(height: 2)
-                .foregroundColor(.lightBackground)
-                .padding(.vertical)
-            
+            SeparatorComponent()
             VStack{
                 Image(astronaut.id)
                     .resizable()
                     .scaledToFit()
-                
-                Rectangle()
-                    .frame(height: 2)
-                    .foregroundColor(.lightBackground)
-                    .padding(.vertical)
-                
+                SeparatorComponent()
                 Text(astronaut.description)
                     .padding()
-                    
             }
         }
         .background(.darkBackground)
