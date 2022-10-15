@@ -31,14 +31,19 @@ struct ExpenseManagerView: View {
         .navigationBarTitleDisplayMode(.large)
         .toolbar {
             Button {
-              showingAddExpense = true
+                showingAddExpense = true
             } label: {
                 Image( systemName: "plus")
             }
             .sheet(isPresented: $showingAddExpense) {
                 AddView(expenses: expenses)
             }
-            EditButton()
+            NavigationLink(destination: ExplanationView(title: "iExpense", description: "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand how UserDefaults, Codable, sheet(), onDelete(), @StateObject works. The secondary goal is get more experience with List, Text and code organization."), label: {
+                HStack {
+                    Text("Explanation")
+                    Image(systemName: "brain.head.profile")
+                }
+            })
         }
     }
     
