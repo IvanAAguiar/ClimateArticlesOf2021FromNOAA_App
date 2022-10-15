@@ -22,6 +22,9 @@ struct MissionView: View {
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding(.top)
                     
+                    Text(mission.formatterLaunchDate)
+                        .font(.title2)
+                    
                     VStack (alignment: .leading){
                         SeparatorComponent()
                         
@@ -45,7 +48,6 @@ struct MissionView: View {
             }
         }
         .navigationTitle(mission.displayName)
-        .navigationBarTitleDisplayMode(.inline)
         .background(.darkBackground)
     }
 }
