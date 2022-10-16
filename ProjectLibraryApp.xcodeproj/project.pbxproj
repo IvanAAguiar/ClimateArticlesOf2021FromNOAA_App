@@ -12,6 +12,8 @@
 		DE0E648C28EF271500E916D2 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */; };
 		DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */; };
 		DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E649228F01F9000E916D2 /* GridViewModel.swift */; };
+		DE211A4F28FC1C1500B5F97B /* GridLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE211A4E28FC1C1500B5F97B /* GridLayoutView.swift */; };
+		DE211A5128FC1CFA00B5F97B /* ListLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE211A5028FC1CFA00B5F97B /* ListLayoutView.swift */; };
 		DE305EB928F03FA8002FD76F /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EB828F03FA8002FD76F /* CalculatorViewModel.swift */; };
 		DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */; };
 		DE305EBE28F04AC2002FD76F /* IVAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBD28F04AC2002FD76F /* IVAModel.swift */; };
@@ -86,6 +88,8 @@
 		DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		DE0E649028EF604F00E916D2 /* BetterRestMLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestMLViewModel.swift; sourceTree = "<group>"; };
 		DE0E649228F01F9000E916D2 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
+		DE211A4E28FC1C1500B5F97B /* GridLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayoutView.swift; sourceTree = "<group>"; };
+		DE211A5028FC1CFA00B5F97B /* ListLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLayoutView.swift; sourceTree = "<group>"; };
 		DE305EB828F03FA8002FD76F /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLLinkViewModifier.swift; sourceTree = "<group>"; };
 		DE305EBD28F04AC2002FD76F /* IVAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVAModel.swift; sourceTree = "<group>"; };
@@ -395,6 +399,8 @@
 			isa = PBXGroup;
 			children = (
 				DE6F067F28F96319003AEE6F /* MoonshotAppView.swift */,
+				DE211A5028FC1CFA00B5F97B /* ListLayoutView.swift */,
+				DE211A4E28FC1C1500B5F97B /* GridLayoutView.swift */,
 				DE6F068E28FB0E4A003AEE6F /* MissionView.swift */,
 				DE6F069328FB1BE4003AEE6F /* AstronautView.swift */,
 				DE6F069828FB2E8D003AEE6F /* CrewView.swift */,
@@ -657,6 +663,7 @@
 				DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */,
 				DE6F067D28F882C9003AEE6F /* AddView.swift in Sources */,
 				DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */,
+				DE211A5128FC1CFA00B5F97B /* ListLayoutView.swift in Sources */,
 				DE6F069B28FB303F003AEE6F /* CrewRole.swift in Sources */,
 				DEF4FB9528EC283800BDB191 /* GridMaginificationEffectView.swift in Sources */,
 				DEB3DB1328F0E00300B75DD1 /* AnimalClassifier.mlpackage in Sources */,
@@ -687,6 +694,7 @@
 				DE6F069D28FB3181003AEE6F /* MissionViewModel.swift in Sources */,
 				DE6F068F28FB0E4A003AEE6F /* MissionView.swift in Sources */,
 				DEB3DB0B28F0CD1400B75DD1 /* ResultView.swift in Sources */,
+				DE211A4F28FC1C1500B5F97B /* GridLayoutView.swift in Sources */,
 				DE6F067728F87D89003AEE6F /* ExpenseItem.swift in Sources */,
 				DE6F067028F75859003AEE6F /* ScaleEffectAnimationView.swift in Sources */,
 				DE6F066228F714ED003AEE6F /* AnimationProjectView.swift in Sources */,
