@@ -11,7 +11,7 @@ import SwiftUI
 struct AllProjectsApp: App {
     var body: some Scene {
         WindowGroup {
-            FirstPageView()
+            HomeView()
         }
     }
 }

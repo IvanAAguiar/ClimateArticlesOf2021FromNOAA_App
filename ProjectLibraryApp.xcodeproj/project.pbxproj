@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0696B328FD5AC50071EA9F /* DrawingAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0696B228FD5AC50071EA9F /* DrawingAppView.swift */; };
+		DE0696B528FDABEF0071EA9F /* Spirograph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0696B428FDABEF0071EA9F /* Spirograph.swift */; };
+		DE0696BA28FDACB50071EA9F /* SpirographView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0696B928FDACB50071EA9F /* SpirographView.swift */; };
 		DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E647C28EDD96D00E916D2 /* ViewsModifierView.swift */; };
 		DE0E648228EEE67600E916D2 /* BetterRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648128EEE67600E916D2 /* BetterRestView.swift */; };
 		DE0E648C28EF271500E916D2 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */; };
@@ -20,7 +23,6 @@
 		DE305EC028F04D7E002FD76F /* TipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBF28F04D7E002FD76F /* TipModel.swift */; };
 		DE305EC528F05D11002FD76F /* FlagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EC428F05D11002FD76F /* FlagModel.swift */; };
 		DE305EC728F05FDB002FD76F /* GuessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EC628F05FDB002FD76F /* GuessViewModel.swift */; };
-		DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EB828E7282E006A74E0 /* FirstPageView.swift */; };
 		DE321EBD28E72B97006A74E0 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBC28E72B97006A74E0 /* ProjectListView.swift */; };
 		DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EBE28E72C60006A74E0 /* HomeView.swift */; };
 		DE321EC328E7465D006A74E0 /* WeSplitProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE321EC228E7465D006A74E0 /* WeSplitProjectView.swift */; };
@@ -74,6 +76,13 @@
 		DEB3DB0B28F0CD1400B75DD1 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB0A28F0CD1400B75DD1 /* ResultView.swift */; };
 		DEB3DB1328F0E00300B75DD1 /* AnimalClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB1228F0E00300B75DD1 /* AnimalClassifier.mlpackage */; };
 		DEB3DB1528F41E3900B75DD1 /* AnimalClassifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB1428F41E3900B75DD1 /* AnimalClassifierView.swift */; };
+		DEDE77B228FF0FA5000DADB3 /* BlendingColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B128FF0FA5000DADB3 /* BlendingColorsView.swift */; };
+		DEDE77B428FF18AF000DADB3 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B328FF18AF000DADB3 /* Flower.swift */; };
+		DEDE77B628FF1B28000DADB3 /* FlowerShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B528FF1B28000DADB3 /* FlowerShapeView.swift */; };
+		DEDE77B828FF1D95000DADB3 /* ColorCyclingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B728FF1D95000DADB3 /* ColorCyclingCircle.swift */; };
+		DEDE77BA28FF1E63000DADB3 /* ColorCyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B928FF1E63000DADB3 /* ColorCyclingView.swift */; };
+		DEDE77BC28FF2899000DADB3 /* CheckerBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77BB28FF2899000DADB3 /* CheckerBoard.swift */; };
+		DEDE77BE28FF2948000DADB3 /* AnimatablePairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77BD28FF2948000DADB3 /* AnimatablePairView.swift */; };
 		DEF4FB9528EC283800BDB191 /* GridMaginificationEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FB9428EC283800BDB191 /* GridMaginificationEffectView.swift */; };
 		DEF4FB9728EC6B8600BDB191 /* GeometryReaderAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FB9628EC6B8600BDB191 /* GeometryReaderAnimationView.swift */; };
 		DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FB9A28EC74D400BDB191 /* FlagsCoordinateView.swift */; };
@@ -83,6 +92,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE0696B228FD5AC50071EA9F /* DrawingAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAppView.swift; sourceTree = "<group>"; };
+		DE0696B428FDABEF0071EA9F /* Spirograph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spirograph.swift; sourceTree = "<group>"; };
+		DE0696B928FDACB50071EA9F /* SpirographView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirographView.swift; sourceTree = "<group>"; };
 		DE0E647C28EDD96D00E916D2 /* ViewsModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsModifierView.swift; sourceTree = "<group>"; };
 		DE0E648128EEE67600E916D2 /* BetterRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestView.swift; sourceTree = "<group>"; };
 		DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
@@ -96,7 +108,6 @@
 		DE305EBF28F04D7E002FD76F /* TipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipModel.swift; sourceTree = "<group>"; };
 		DE305EC428F05D11002FD76F /* FlagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagModel.swift; sourceTree = "<group>"; };
 		DE305EC628F05FDB002FD76F /* GuessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessViewModel.swift; sourceTree = "<group>"; };
-		DE321EB828E7282E006A74E0 /* FirstPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageView.swift; sourceTree = "<group>"; };
 		DE321EBC28E72B97006A74E0 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
 		DE321EBE28E72C60006A74E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DE321EC228E7465D006A74E0 /* WeSplitProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitProjectView.swift; sourceTree = "<group>"; };
@@ -151,6 +162,13 @@
 		DEB3DB0A28F0CD1400B75DD1 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		DEB3DB1228F0E00300B75DD1 /* AnimalClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = AnimalClassifier.mlpackage; sourceTree = "<group>"; };
 		DEB3DB1428F41E3900B75DD1 /* AnimalClassifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalClassifierView.swift; sourceTree = "<group>"; };
+		DEDE77B128FF0FA5000DADB3 /* BlendingColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendingColorsView.swift; sourceTree = "<group>"; };
+		DEDE77B328FF18AF000DADB3 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
+		DEDE77B528FF1B28000DADB3 /* FlowerShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerShapeView.swift; sourceTree = "<group>"; };
+		DEDE77B728FF1D95000DADB3 /* ColorCyclingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingCircle.swift; sourceTree = "<group>"; };
+		DEDE77B928FF1E63000DADB3 /* ColorCyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingView.swift; sourceTree = "<group>"; };
+		DEDE77BB28FF2899000DADB3 /* CheckerBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerBoard.swift; sourceTree = "<group>"; };
+		DEDE77BD28FF2948000DADB3 /* AnimatablePairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePairView.swift; sourceTree = "<group>"; };
 		DEF4FB9428EC283800BDB191 /* GridMaginificationEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridMaginificationEffectView.swift; sourceTree = "<group>"; };
 		DEF4FB9628EC6B8600BDB191 /* GeometryReaderAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderAnimationView.swift; sourceTree = "<group>"; };
 		DEF4FB9A28EC74D400BDB191 /* FlagsCoordinateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsCoordinateView.swift; sourceTree = "<group>"; };
@@ -170,6 +188,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE0696B128FD5AA90071EA9F /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				DE0696B828FDAC9B0071EA9F /* View */,
+				DE0696B728FDAC940071EA9F /* ViewModel */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		DE0696B728FDAC940071EA9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEDE77BB28FF2899000DADB3 /* CheckerBoard.swift */,
+				DEDE77B728FF1D95000DADB3 /* ColorCyclingCircle.swift */,
+				DEDE77B328FF18AF000DADB3 /* Flower.swift */,
+				DE0696B428FDABEF0071EA9F /* Spirograph.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE0696B828FDAC9B0071EA9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE0696B228FD5AC50071EA9F /* DrawingAppView.swift */,
+				DE0696B928FDACB50071EA9F /* SpirographView.swift */,
+				DEDE77B528FF1B28000DADB3 /* FlowerShapeView.swift */,
+				DEDE77B928FF1E63000DADB3 /* ColorCyclingView.swift */,
+				DEDE77B128FF0FA5000DADB3 /* BlendingColorsView.swift */,
+				DEDE77BD28FF2948000DADB3 /* AnimatablePairView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DE0E647E28EEE2E800E916D2 /* BetterRest */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +384,7 @@
 		DE6F066428F72C1F003AEE6F /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				DE0696B128FD5AA90071EA9F /* Drawing */,
 				DE6F067E28F962F6003AEE6F /* Moonshot */,
 				DE6F067528F86D15003AEE6F /* iExpense */,
 				DE6F066028F714BE003AEE6F /* ElementsAnimation */,
@@ -468,7 +520,6 @@
 				DEF4FBA028ECCCD700BDB191 /* Component */,
 				DE321EBE28E72C60006A74E0 /* HomeView.swift */,
 				DE321EBC28E72B97006A74E0 /* ProjectListView.swift */,
-				DE321EB828E7282E006A74E0 /* FirstPageView.swift */,
 				DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */,
 				DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */,
 				DE764C7028E6324F00ADE5B6 /* Preview Content */,
@@ -661,6 +712,7 @@
 			files = (
 				DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */,
 				DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */,
+				DE0696B328FD5AC50071EA9F /* DrawingAppView.swift in Sources */,
 				DE6F067D28F882C9003AEE6F /* AddView.swift in Sources */,
 				DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */,
 				DE211A5128FC1CFA00B5F97B /* ListLayoutView.swift in Sources */,
@@ -672,14 +724,18 @@
 				DE6F065628F585EE003AEE6F /* WordScrambleView.swift in Sources */,
 				DE764C8728E6329300ADE5B6 /* ListRowView.swift in Sources */,
 				DE6F069428FB1BE4003AEE6F /* AstronautView.swift in Sources */,
+				DEDE77B828FF1D95000DADB3 /* ColorCyclingCircle.swift in Sources */,
 				DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */,
+				DE0696B528FDABEF0071EA9F /* Spirograph.swift in Sources */,
 				DE0E648C28EF271500E916D2 /* SleepCalculator.mlmodel in Sources */,
 				DE305EC028F04D7E002FD76F /* TipModel.swift in Sources */,
+				DE0696BA28FDACB50071EA9F /* SpirographView.swift in Sources */,
+				DEDE77B228FF0FA5000DADB3 /* BlendingColorsView.swift in Sources */,
 				DE764C8428E6329300ADE5B6 /* Articles_Tab_View.swift in Sources */,
+				DEDE77BC28FF2899000DADB3 /* CheckerBoard.swift in Sources */,
 				DE764C8828E6329300ADE5B6 /* ClimateArticlesView.swift in Sources */,
 				DEF4FBA428ECD0F100BDB191 /* CustomizedButton.swift in Sources */,
 				DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */,
-				DE321EB928E7282E006A74E0 /* FirstPageView.swift in Sources */,
 				DE6F065F28F6BCC7003AEE6F /* ScrambleGameView.swift in Sources */,
 				DE6F067928F87DBA003AEE6F /* Expenses.swift in Sources */,
 				DE6F068828F9682F003AEE6F /* Bundle_Decodable.swift in Sources */,
@@ -691,6 +747,7 @@
 				DE6F066E28F755C8003AEE6F /* CircleAnimationView.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
 				DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */,
+				DEDE77B628FF1B28000DADB3 /* FlowerShapeView.swift in Sources */,
 				DE6F069D28FB3181003AEE6F /* MissionViewModel.swift in Sources */,
 				DE6F068F28FB0E4A003AEE6F /* MissionView.swift in Sources */,
 				DEB3DB0B28F0CD1400B75DD1 /* ResultView.swift in Sources */,
@@ -700,6 +757,7 @@
 				DE6F066228F714ED003AEE6F /* AnimationProjectView.swift in Sources */,
 				DEB3DB0428F096E000B75DD1 /* ClassifierViewModel.swift in Sources */,
 				DE6F067B28F87E43003AEE6F /* ExpenseManagerView.swift in Sources */,
+				DEDE77B428FF18AF000DADB3 /* Flower.swift in Sources */,
 				DE6F06A028FB401F003AEE6F /* CrewMember.swift in Sources */,
 				DE6F066628F72C56003AEE6F /* CornerRotateModifier.swift in Sources */,
 				DE6F066828F7468E003AEE6F /* TransitionAnimationView.swift in Sources */,
@@ -721,10 +779,12 @@
 				DE6F06A228FB43A5003AEE6F /* SeparatorComponent.swift in Sources */,
 				DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */,
 				DEB3DB1528F41E3900B75DD1 /* AnimalClassifierView.swift in Sources */,
+				DEDE77BE28FF2948000DADB3 /* AnimatablePairView.swift in Sources */,
 				DEF4FB9F28ECCB1800BDB191 /* FlagView.swift in Sources */,
 				DE6F067228F75957003AEE6F /* DragAnimationModifier.swift in Sources */,
 				DE6F067428F8090D003AEE6F /* Rotation360Modifier.swift in Sources */,
 				DEB3DB0228F0914600B75DD1 /* View.swift in Sources */,
+				DEDE77BA28FF1E63000DADB3 /* ColorCyclingView.swift in Sources */,
 				DE6F068A28F96C79003AEE6F /* Mission.swift in Sources */,
 				DE6F068628F9640B003AEE6F /* Astronauts.swift in Sources */,
 			);

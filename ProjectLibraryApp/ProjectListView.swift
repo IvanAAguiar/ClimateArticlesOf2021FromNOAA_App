@@ -9,19 +9,20 @@ import SwiftUI
 
 struct ProjectListView: View {
     var body: some View {
-        List {
-            NavigationLink("WeSplit", destination: WeSplitProjectView())
-            NavigationLink("Climate Articles", destination: ClimateArticlesView())
-            NavigationLink("Guess The Flag", destination: GuessTheFlagView())
-            NavigationLink("Views And Modifiers", destination: ViewsModifierView())
-            NavigationLink("BetterRest", destination: BetterRestView())
-            NavigationLink("Word Scramble", destination: WordScrambleView())
-            NavigationLink("Animation", destination: AnimationProjectView())
-            NavigationLink("iExpense", destination: ExpenseManagerView())
-            NavigationLink("Moonshot", destination: MoonshotAppView())
-        }
-        .navigationTitle("Projects")
-        .navigationBarTitleDisplayMode(.large)
+            List {
+                NavigationLink("WeSplit", destination: WeSplitProjectView())
+                NavigationLink("Climate Articles", destination: ClimateArticlesView())
+                NavigationLink("Guess The Flag", destination: GuessTheFlagView())
+                NavigationLink("Views And Modifiers", destination: ViewsModifierView())
+                NavigationLink("BetterRest", destination: BetterRestView())
+                NavigationLink("Word Scramble", destination: WordScrambleView())
+                NavigationLink("Animation", destination: AnimationProjectView())
+                NavigationLink("iExpense", destination: ExpenseManagerView())
+                NavigationLink("Moonshot", destination: MoonshotAppView())
+                NavigationLink("Drawing App", destination: DrawingAppView())
+            }
+            .navigationTitle("Projects")
+            .navigationBarTitleDisplayMode(.large)
     }
 }
 
