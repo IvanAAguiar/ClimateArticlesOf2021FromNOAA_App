@@ -33,6 +33,7 @@ struct ArticleView: View {
                 .padding()
                 Link(destination: article.url) {
                     Text("FOR READ CLICK HERE!")
+                        .padding()
                         .buttonStyleModifier()
                 }
                 VStack (alignment: .leading, spacing: 10){
