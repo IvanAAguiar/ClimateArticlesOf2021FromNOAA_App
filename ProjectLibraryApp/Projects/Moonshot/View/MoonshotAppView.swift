@@ -28,12 +28,6 @@ struct MoonshotAppView: View {
         .navigationBarTitleDisplayMode(.large)
         .toolbar {
             ToolbarItemGroup(content: {
-                NavigationLink(destination: ExplanationView(title: "Moonshot", description: "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand how Codable works. The secondary goal is get more experience with List, Text and code organization."), label: {
-                    HStack {
-                        Text("Explanation")
-                        Image(systemName: "brain.head.profile")
-                    }
-                })
                 Toggle("List", isOn: $showingList)
                     .padding(.horizontal)
             })

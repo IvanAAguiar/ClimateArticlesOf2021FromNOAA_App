@@ -1,0 +1,53 @@
+
+{
+    1: {
+        "id": 1
+        "projTitle": "WeSplit",
+        "projDescription": "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand how Form works. The secondary goal is to customize the components and try to simplify the code as it is possible."
+    },
+    2: {
+        "id": 2
+        "projTitle": "Climate Articles",
+        "projDescription": "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand the difference between TableView and TabView. All the data are static and was collected from NOAA web site."
+    },
+    3: {
+        "id": 3
+        "projTitle": "Guess The Flag",
+        "projDescription": "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand new SwiftUI functionality: stacks, buttons, images, alerts, asset catalogs, and more. The secondary goal is turn the components reusables."
+    },
+    4: {
+        "id": 4
+        "projTitle": "Views And Modifiers",
+        "projDescription": "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand how GeometryReader and LazyVGrid work. The second goal is review @State, customised itens, random itens, arrays and ForEach's."
+    },
+    5: {
+        "id": 5
+        "projTitle": "Better Rest",
+        "projDescription": "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand how MLCreate works. The reason we have a fairly simple project is because is to introduce one of the true power features of iOS development: machine learning (ML). All iPhones come with a technology called Core ML built right in, which allows us to write code that makes predictions about new data based on previous data it has seen. We’ll start with some raw data, give that to our Mac as training data, then use the results to build an app able to make accurate estimates about new data – all on device, and with complete privacy for users. The actual app we’re building is called BetterRest, and it’s designed to help coffee drinkers get a good night’s sleep by asking them three questions: - When do they want to wake up? - Roughly how many hours of sleep do they want? - How many cups of coffee do they drink per day? Once we have those three values, we’ll feed them into Core ML to get a result telling us when they ought to go to bed. If you think about it, there are billions of possible answers – all the various wake times multiplied by all the number of sleep hours, multiplied again by the full range of coffee amounts. That’s where machine learning comes in: using a technique called regression analysis we can ask the computer to come up with an algorithm able to represent all our data. This in turn allows it to apply the algorithm to fresh data it hasn’t seen before, and get accurate results."
+    },
+    6: {
+        "id": 6
+        "projTitle": "Word Scramble Game",
+        "projDescription": "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand how List View, onAppear, Bundle, fatalError(), and UITextChecker works. The secondary goal is to use navigationView to organize the path for the views."
+    },
+    7: {
+        "id": 7
+        "projTitle": "Elements Animation",
+        "projDescription": "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand how Animation works. The secondary goal is to customise the components and try to simplify the code as it is possible."
+    },
+    8: {
+        "id": 8
+        "projTitle": "iExpense",
+        "projDescription": "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand how UserDefaults, Codable, sheet(), onDelete(), @StateObject works. The secondary goal is get more experience with List, Text and code organisation."
+    },
+    9: {
+        "id": 9
+        "projTitle": "Moonshot",
+        "projDescription": "This project was inspired by HACKING WITH SWIFT. The principle goal is to understand how Codable works. The secondary goal is get more experience with List, Text and code organisation."
+    },
+    10: {
+        "id": 10
+        "projTitle": "Drawing App",
+        "projDescription": "This project was inspired by HACKING WITH SWIFT. The principle goal learn about paths, shapes, strokes, transforms, drawing groups, animating values, and more. The secondary goal is get more experience with List, TabView and code organisation."
+    }
+}

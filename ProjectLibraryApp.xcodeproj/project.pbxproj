@@ -83,6 +83,14 @@
 		DEDE77BA28FF1E63000DADB3 /* ColorCyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B928FF1E63000DADB3 /* ColorCyclingView.swift */; };
 		DEDE77BC28FF2899000DADB3 /* CheckerBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77BB28FF2899000DADB3 /* CheckerBoard.swift */; };
 		DEDE77BE28FF2948000DADB3 /* AnimatablePairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77BD28FF2948000DADB3 /* AnimatablePairView.swift */; };
+		DEDE77C028FFF02F000DADB3 /* Explanation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77BF28FFF02F000DADB3 /* Explanation.swift */; };
+		DEDE77C628FFFC97000DADB3 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77C528FFFC97000DADB3 /* Projects.swift */; };
+		DEDE77C929000224000DADB3 /* projects.json in Resources */ = {isa = PBXBuildFile; fileRef = DEDE77C829000224000DADB3 /* projects.json */; };
+		DEDE77CB2900029C000DADB3 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77CA2900029C000DADB3 /* ProjectsViewModel.swift */; };
+		DEDE77CE290026D5000DADB3 /* CupcakeCornerAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77CD290026D5000DADB3 /* CupcakeCornerAppView.swift */; };
+		DEDE77D0290026EF000DADB3 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77CF290026EF000DADB3 /* AddressView.swift */; };
+		DEDE77D529002742000DADB3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77D429002742000DADB3 /* Order.swift */; };
+		DEDE77D729002968000DADB3 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77D629002968000DADB3 /* CheckoutView.swift */; };
 		DEF4FB9528EC283800BDB191 /* GridMaginificationEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FB9428EC283800BDB191 /* GridMaginificationEffectView.swift */; };
 		DEF4FB9728EC6B8600BDB191 /* GeometryReaderAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FB9628EC6B8600BDB191 /* GeometryReaderAnimationView.swift */; };
 		DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FB9A28EC74D400BDB191 /* FlagsCoordinateView.swift */; };
@@ -169,6 +177,14 @@
 		DEDE77B928FF1E63000DADB3 /* ColorCyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingView.swift; sourceTree = "<group>"; };
 		DEDE77BB28FF2899000DADB3 /* CheckerBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerBoard.swift; sourceTree = "<group>"; };
 		DEDE77BD28FF2948000DADB3 /* AnimatablePairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePairView.swift; sourceTree = "<group>"; };
+		DEDE77BF28FFF02F000DADB3 /* Explanation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explanation.swift; sourceTree = "<group>"; };
+		DEDE77C528FFFC97000DADB3 /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+		DEDE77C829000224000DADB3 /* projects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = projects.json; sourceTree = "<group>"; };
+		DEDE77CA2900029C000DADB3 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
+		DEDE77CD290026D5000DADB3 /* CupcakeCornerAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerAppView.swift; sourceTree = "<group>"; };
+		DEDE77CF290026EF000DADB3 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		DEDE77D429002742000DADB3 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		DEDE77D629002968000DADB3 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		DEF4FB9428EC283800BDB191 /* GridMaginificationEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridMaginificationEffectView.swift; sourceTree = "<group>"; };
 		DEF4FB9628EC6B8600BDB191 /* GeometryReaderAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderAnimationView.swift; sourceTree = "<group>"; };
 		DEF4FB9A28EC74D400BDB191 /* FlagsCoordinateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsCoordinateView.swift; sourceTree = "<group>"; };
@@ -372,6 +388,7 @@
 		DE6F066328F72C16003AEE6F /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				DEDE77BF28FFF02F000DADB3 /* Explanation.swift */,
 				DE6F067328F8090D003AEE6F /* Rotation360Modifier.swift */,
 				DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */,
 				DE6F066528F72C56003AEE6F /* CornerRotateModifier.swift */,
@@ -384,6 +401,7 @@
 		DE6F066428F72C1F003AEE6F /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				DEDE77CC290026AF000DADB3 /* CupcakeCorner */,
 				DE0696B128FD5AA90071EA9F /* Drawing */,
 				DE6F067E28F962F6003AEE6F /* Moonshot */,
 				DE6F067528F86D15003AEE6F /* iExpense */,
@@ -518,8 +536,7 @@
 				DE6F068B28FB09A4003AEE6F /* Extension */,
 				DE6F066328F72C16003AEE6F /* Modifiers */,
 				DEF4FBA028ECCCD700BDB191 /* Component */,
-				DE321EBE28E72C60006A74E0 /* HomeView.swift */,
-				DE321EBC28E72B97006A74E0 /* ProjectListView.swift */,
+				DEDE77C128FFF9B9000DADB3 /* HomePage */,
 				DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */,
 				DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */,
 				DE764C7028E6324F00ADE5B6 /* Preview Content */,
@@ -597,6 +614,77 @@
 				DEB3DB1428F41E3900B75DD1 /* AnimalClassifierView.swift */,
 				DEB3DB0A28F0CD1400B75DD1 /* ResultView.swift */,
 				DE6F064F28F42996003AEE6F /* ClassifierQuestionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEDE77C128FFF9B9000DADB3 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				DEDE77C428FFF9E3000DADB3 /* View */,
+				DEDE77C328FFF9DD000DADB3 /* ViewModel */,
+				DEDE77C228FFF9D3000DADB3 /* Model */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		DEDE77C228FFF9D3000DADB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEDE77C528FFFC97000DADB3 /* Projects.swift */,
+				DEDE77C829000224000DADB3 /* projects.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEDE77C328FFF9DD000DADB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEDE77CA2900029C000DADB3 /* ProjectsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEDE77C428FFF9E3000DADB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE321EBE28E72C60006A74E0 /* HomeView.swift */,
+				DE321EBC28E72B97006A74E0 /* ProjectListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEDE77CC290026AF000DADB3 /* CupcakeCorner */ = {
+			isa = PBXGroup;
+			children = (
+				DEDE77D329002731000DADB3 /* View */,
+				DEDE77D229002729000DADB3 /* ViewModel */,
+				DEDE77D129002721000DADB3 /* Model */,
+			);
+			path = CupcakeCorner;
+			sourceTree = "<group>";
+		};
+		DEDE77D129002721000DADB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEDE77D229002729000DADB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEDE77D429002742000DADB3 /* Order.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEDE77D329002731000DADB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEDE77CD290026D5000DADB3 /* CupcakeCornerAppView.swift */,
+				DEDE77CF290026EF000DADB3 /* AddressView.swift */,
+				DEDE77D629002968000DADB3 /* CheckoutView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -696,6 +784,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE764C7228E6324F00ADE5B6 /* Preview Assets.xcassets in Resources */,
+				DEDE77C929000224000DADB3 /* projects.json in Resources */,
 				DE6F068428F96349003AEE6F /* missions.json in Resources */,
 				DE6F065A28F59165003AEE6F /* start.txt in Resources */,
 				DE764C6F28E6324F00ADE5B6 /* Assets.xcassets in Resources */,
@@ -711,6 +800,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */,
+				DEDE77D529002742000DADB3 /* Order.swift in Sources */,
 				DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */,
 				DE0696B328FD5AC50071EA9F /* DrawingAppView.swift in Sources */,
 				DE6F067D28F882C9003AEE6F /* AddView.swift in Sources */,
@@ -724,6 +814,8 @@
 				DE6F065628F585EE003AEE6F /* WordScrambleView.swift in Sources */,
 				DE764C8728E6329300ADE5B6 /* ListRowView.swift in Sources */,
 				DE6F069428FB1BE4003AEE6F /* AstronautView.swift in Sources */,
+				DEDE77C028FFF02F000DADB3 /* Explanation.swift in Sources */,
+				DEDE77CE290026D5000DADB3 /* CupcakeCornerAppView.swift in Sources */,
 				DEDE77B828FF1D95000DADB3 /* ColorCyclingCircle.swift in Sources */,
 				DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */,
 				DE0696B528FDABEF0071EA9F /* Spirograph.swift in Sources */,
@@ -738,17 +830,20 @@
 				DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */,
 				DE6F065F28F6BCC7003AEE6F /* ScrambleGameView.swift in Sources */,
 				DE6F067928F87DBA003AEE6F /* Expenses.swift in Sources */,
+				DEDE77D0290026EF000DADB3 /* AddressView.swift in Sources */,
 				DE6F068828F9682F003AEE6F /* Bundle_Decodable.swift in Sources */,
 				DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */,
 				DE305EBE28F04AC2002FD76F /* IVAModel.swift in Sources */,
 				DE6F065028F42996003AEE6F /* ClassifierQuestionView.swift in Sources */,
 				DE0E648228EEE67600E916D2 /* BetterRestView.swift in Sources */,
 				DE6F066A28F74C4A003AEE6F /* SnakAnimationView.swift in Sources */,
+				DEDE77D729002968000DADB3 /* CheckoutView.swift in Sources */,
 				DE6F066E28F755C8003AEE6F /* CircleAnimationView.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
 				DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */,
 				DEDE77B628FF1B28000DADB3 /* FlowerShapeView.swift in Sources */,
 				DE6F069D28FB3181003AEE6F /* MissionViewModel.swift in Sources */,
+				DEDE77CB2900029C000DADB3 /* ProjectsViewModel.swift in Sources */,
 				DE6F068F28FB0E4A003AEE6F /* MissionView.swift in Sources */,
 				DEB3DB0B28F0CD1400B75DD1 /* ResultView.swift in Sources */,
 				DE211A4F28FC1C1500B5F97B /* GridLayoutView.swift in Sources */,
@@ -761,6 +856,7 @@
 				DE6F06A028FB401F003AEE6F /* CrewMember.swift in Sources */,
 				DE6F066628F72C56003AEE6F /* CornerRotateModifier.swift in Sources */,
 				DE6F066828F7468E003AEE6F /* TransitionAnimationView.swift in Sources */,
+				DEDE77C628FFFC97000DADB3 /* Projects.swift in Sources */,
 				DE6F066C28F74D63003AEE6F /* CornerAnimationView.swift in Sources */,
 				DE6F065828F5870D003AEE6F /* WordViewModel.swift in Sources */,
 				DE764C8628E6329300ADE5B6 /* Articles_Table_View.swift in Sources */,
