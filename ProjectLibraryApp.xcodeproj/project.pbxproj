@@ -231,13 +231,6 @@
 			path = Bookworm;
 			sourceTree = "<group>";
 		};
-		DE020E8B2901413800F8D67D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		DE020E8C2901414000F8D67D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,7 +262,6 @@
 			children = (
 				DE020E8D2901414600F8D67D /* View */,
 				DE020E8C2901414000F8D67D /* ViewModel */,
-				DE020E8B2901413800F8D67D /* Model */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";

@@ -9,14 +9,14 @@ import SwiftUI
 
 struct Articles_Table_View: View {
     
-    @ObservedObject var articlesView: ArticleListViewModel = ArticleListViewModel()
+    @ObservedObject var vm: ArticleListViewModel
     
     var body: some View {
         ZStack {
             VStack {
                 Text("Explaining climate science, impacts, and adaptation through maps, graphs, and other data visualizations.")
                     .padding(1)
-                List (articlesView.articles2021, id: \.id) { item in
+                List (vm.articles2021, id: \.id) { item in
                     NavigationLink(destination: ArticleView(article: item), label: {
                         ListRowView(article: item)
                     })
@@ -30,6 +30,6 @@ struct Articles_Table_View: View {
 
 struct Articles_Table_View_Previews: PreviewProvider {
     static var previews: some View {
-        Articles_Table_View()
+        Articles_Table_View(vm: ArticleListViewModel())
     }
 }

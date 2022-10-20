@@ -10,7 +10,7 @@ import SwiftUI
 struct GridMaginificationEffectView: View {
     // MARK: Gesture State
     @GestureState var location: CGPoint = .zero
-    @ObservedObject var vm: GridViewModel = GridViewModel()
+    @StateObject var vm: GridViewModel = GridViewModel()
         
     var body: some View {
         GeometryReader { proxy in

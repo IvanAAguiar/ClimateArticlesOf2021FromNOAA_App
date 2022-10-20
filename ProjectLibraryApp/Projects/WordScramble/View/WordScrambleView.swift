@@ -8,7 +8,7 @@ import SwiftUI
 
 struct WordScrambleView: View {
     
-    @ObservedObject private var vm: WordViewModel = WordViewModel()
+    @StateObject private var vm: WordViewModel = WordViewModel()
     
     var body: some View {
         ZStack {

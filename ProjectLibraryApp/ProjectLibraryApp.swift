@@ -8,8 +8,7 @@
 import SwiftUI
 
 @main
-struct ProjectLibraryApp: App {
-    
+struct ProjectLibraryApp: App {    
     var body: some Scene {
         WindowGroup {
             HomeView()

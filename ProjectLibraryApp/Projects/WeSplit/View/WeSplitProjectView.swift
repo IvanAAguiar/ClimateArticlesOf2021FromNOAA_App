@@ -10,7 +10,7 @@ import SwiftUI
 
 struct WeSplitProjectView: View {
     
-    @ObservedObject private var vm: CalculatorViewModel = CalculatorViewModel()
+    @StateObject private var vm: CalculatorViewModel = CalculatorViewModel()
     @FocusState private var billAmountIsFocused: Bool
     
     var body: some View {

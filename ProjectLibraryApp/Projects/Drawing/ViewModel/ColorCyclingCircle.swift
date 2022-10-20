@@ -14,7 +14,7 @@ struct ColorCyclingCircle: View {
 
         var body: some View {
             ZStack {
-                ForEach(0..<steps) { value in
+                ForEach(0..<steps, id: \.self) { value in
                     Circle()
                         .inset(by: Double(value))
                         .strokeBorder(

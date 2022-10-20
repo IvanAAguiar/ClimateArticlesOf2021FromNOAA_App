@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddBookView: View {
     
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) private var dismiss
     @ObservedObject var vm: BookwormViewModel
     
     var body: some View {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BookDetailView: View {
     
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) private var dismiss
     @ObservedObject var vm: BookwormViewModel
     
     let book: Book
@@ -67,11 +67,3 @@ struct BookDetailView: View {
         }
     }
 }
-
-//struct BookDetailView_Previews: PreviewProvider {
-//
-//
-//    static var previews: some View {
-//        BookDetailView(vm: BookwormViewModel(), book: )
-//    }
-//}

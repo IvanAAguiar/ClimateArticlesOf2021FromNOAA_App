@@ -9,11 +9,11 @@ import SwiftUI
 
 struct Articles_Tab_View: View {
 
-    @ObservedObject var articlesView: ArticleListViewModel = ArticleListViewModel()
+    @ObservedObject var vm: ArticleListViewModel
 
     var body: some View {
         TabView {
-            ForEach (articlesView.articles2021, id: \.id) { art in
+            ForEach (vm.articles2021, id: \.id) { art in
                 ArticleView(article: art)
             }
         }
@@ -24,6 +24,6 @@ struct Articles_Tab_View: View {
 
 struct Articles_Tab_View_Previews: PreviewProvider {
     static var previews: some View {
-        Articles_Tab_View()
+        Articles_Tab_View(vm: ArticleListViewModel())
     }
 }

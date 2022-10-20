@@ -17,7 +17,7 @@ struct GuessTheFlagView: View {
                 .resizable()
                 .scaledToFit()
             NavigationLink("Start") {
-                FlagGameView()
+                FlagGameView(vm: vm)
             }
             .buttonStyleModifier()
             .font(.system(size: 40))

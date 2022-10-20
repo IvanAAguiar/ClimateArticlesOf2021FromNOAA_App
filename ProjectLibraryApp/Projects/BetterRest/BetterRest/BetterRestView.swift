@@ -10,7 +10,7 @@ import SwiftUI
 
 struct BetterRestView: View {
     
-    @ObservedObject var vm: BetterRestMLViewModel = BetterRestMLViewModel()
+    @StateObject var vm: BetterRestMLViewModel = BetterRestMLViewModel()
     
     var body: some View {
         VStack {

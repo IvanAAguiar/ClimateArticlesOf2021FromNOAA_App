@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ClimateArticlesView: View {
     
+    @StateObject var vm: ArticleListViewModel = ArticleListViewModel()
+    
     var body: some View {
             ZStack {
                 Color.clear.ignoresSafeArea()
@@ -22,14 +24,14 @@ struct ClimateArticlesView: View {
                             .scaledToFit()
                             .padding(50)
                         HStack {
-                            NavigationLink(destination: Articles_Table_View()) {
+                            NavigationLink(destination: Articles_Table_View(vm: vm)) {
                                 HStack {
                                     Image(systemName: "list.dash")
                                     Text("TableView")
                                 }
                             }
                             .buttonStyleModifier()
-                            NavigationLink(destination: Articles_Tab_View()) {
+                            NavigationLink(destination: Articles_Tab_View(vm: vm)) {
                                 HStack {
                                     Image(systemName: "arrow.right.doc.on.clipboard")
                                     Text("TabView")

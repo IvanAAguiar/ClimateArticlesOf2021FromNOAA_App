@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FlagGameView: View {
     
-    @ObservedObject var vm: GuessViewModel = GuessViewModel()
+    @ObservedObject var vm: GuessViewModel
     @Environment(\.dismiss) private var dismiss
             
     var body: some View {
@@ -71,7 +71,7 @@ struct FlagGameView: View {
 struct FlagGameView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            FlagGameView()
+            FlagGameView(vm: GuessViewModel())
         }
     }
 }

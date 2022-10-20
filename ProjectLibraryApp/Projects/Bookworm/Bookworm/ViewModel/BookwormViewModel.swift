@@ -79,12 +79,23 @@ class BookwormViewModel: ObservableObject {
         let newBook = Book(context: container.viewContext)
         newBook.title = self.title
         newBook.author = self.author
+            newBook.id = UUID()
             newBook.rating = Int16(self.rating)
             newBook.genre = self.genre
             newBook.review = self.review
             newBook.date = self.date
             saveBook()
+            resetInputs()
             fetchBooks()
+    }
+    
+    func resetInputs() {
+       title = ""
+       author = ""
+       rating = 0
+       genre = ""
+       review = ""
+       date = Date.now
     }
     
     func deleteBooks(at offsets: IndexSet) {
