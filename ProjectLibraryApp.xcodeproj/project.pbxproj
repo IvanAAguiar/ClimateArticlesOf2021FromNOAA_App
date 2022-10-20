@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE020E8A2901412C00F8D67D /* StudentsAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE020E892901412C00F8D67D /* StudentsAppView.swift */; };
+		DE020E8F2901416400F8D67D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE020E8E2901416400F8D67D /* DataController.swift */; };
+		DE020E95290157A100F8D67D /* ProjectLibrary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE020E93290157A000F8D67D /* ProjectLibrary.xcdatamodeld */; };
+		DE020E992901588100F8D67D /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE020E982901588100F8D67D /* AddBookView.swift */; };
+		DE020E9B29015DDA00F8D67D /* BookwormAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE020E9A29015DDA00F8D67D /* BookwormAppView.swift */; };
+		DE020E9D2901634300F8D67D /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE020E9C2901634300F8D67D /* RatingView.swift */; };
+		DE020E9F290166D300F8D67D /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE020E9E290166D300F8D67D /* EmojiRatingView.swift */; };
+		DE020EA12901691000F8D67D /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE020EA02901691000F8D67D /* BookDetailView.swift */; };
+		DE020EA32901836B00F8D67D /* BookwormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE020EA22901836B00F8D67D /* BookwormViewModel.swift */; };
 		DE0696B328FD5AC50071EA9F /* DrawingAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0696B228FD5AC50071EA9F /* DrawingAppView.swift */; };
 		DE0696B528FDABEF0071EA9F /* Spirograph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0696B428FDABEF0071EA9F /* Spirograph.swift */; };
 		DE0696BA28FDACB50071EA9F /* SpirographView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0696B928FDACB50071EA9F /* SpirographView.swift */; };
@@ -60,7 +69,7 @@
 		DE6F069D28FB3181003AEE6F /* MissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F069C28FB3181003AEE6F /* MissionViewModel.swift */; };
 		DE6F06A028FB401F003AEE6F /* CrewMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F069F28FB401F003AEE6F /* CrewMember.swift */; };
 		DE6F06A228FB43A5003AEE6F /* SeparatorComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F06A128FB43A5003AEE6F /* SeparatorComponent.swift */; };
-		DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */; };
+		DE764C6B28E6324E00ADE5B6 /* ProjectLibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C6A28E6324E00ADE5B6 /* ProjectLibraryApp.swift */; };
 		DE764C6F28E6324F00ADE5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */; };
 		DE764C7228E6324F00ADE5B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */; };
 		DE764C8328E6329300ADE5B6 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7928E6329300ADE5B6 /* ArticleView.swift */; };
@@ -100,6 +109,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE020E892901412C00F8D67D /* StudentsAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsAppView.swift; sourceTree = "<group>"; };
+		DE020E8E2901416400F8D67D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		DE020E94290157A100F8D67D /* ProjectLibrary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectLibrary.xcdatamodel; sourceTree = "<group>"; };
+		DE020E982901588100F8D67D /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		DE020E9A29015DDA00F8D67D /* BookwormAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormAppView.swift; sourceTree = "<group>"; };
+		DE020E9C2901634300F8D67D /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		DE020E9E290166D300F8D67D /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		DE020EA02901691000F8D67D /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		DE020EA22901836B00F8D67D /* BookwormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormViewModel.swift; sourceTree = "<group>"; };
 		DE0696B228FD5AC50071EA9F /* DrawingAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAppView.swift; sourceTree = "<group>"; };
 		DE0696B428FDABEF0071EA9F /* Spirograph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spirograph.swift; sourceTree = "<group>"; };
 		DE0696B928FDACB50071EA9F /* SpirographView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirographView.swift; sourceTree = "<group>"; };
@@ -154,7 +172,7 @@
 		DE6F069F28FB401F003AEE6F /* CrewMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMember.swift; sourceTree = "<group>"; };
 		DE6F06A128FB43A5003AEE6F /* SeparatorComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorComponent.swift; sourceTree = "<group>"; };
 		DE764C6728E6324E00ADE5B6 /* ProjectLibraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLibraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProjectsApp.swift; sourceTree = "<group>"; };
+		DE764C6A28E6324E00ADE5B6 /* ProjectLibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectLibraryApp.swift; sourceTree = "<group>"; };
 		DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE764C7128E6324F00ADE5B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE764C7928E6329300ADE5B6 /* ArticleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
@@ -204,6 +222,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE020E882901410D00F8D67D /* Bookworm */ = {
+			isa = PBXGroup;
+			children = (
+				DE020E972901581200F8D67D /* Bookworm */,
+				DE020E962901580300F8D67D /* Students */,
+			);
+			path = Bookworm;
+			sourceTree = "<group>";
+		};
+		DE020E8B2901413800F8D67D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE020E8C2901414000F8D67D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE020EA22901836B00F8D67D /* BookwormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE020E8D2901414600F8D67D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE020E9A29015DDA00F8D67D /* BookwormAppView.swift */,
+				DE020EA02901691000F8D67D /* BookDetailView.swift */,
+				DE020E982901588100F8D67D /* AddBookView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE020E962901580300F8D67D /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				DE020E892901412C00F8D67D /* StudentsAppView.swift */,
+			);
+			path = Students;
+			sourceTree = "<group>";
+		};
+		DE020E972901581200F8D67D /* Bookworm */ = {
+			isa = PBXGroup;
+			children = (
+				DE020E8D2901414600F8D67D /* View */,
+				DE020E8C2901414000F8D67D /* ViewModel */,
+				DE020E8B2901413800F8D67D /* Model */,
+			);
+			path = Bookworm;
+			sourceTree = "<group>";
+		};
 		DE0696B128FD5AA90071EA9F /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +471,7 @@
 		DE6F066428F72C1F003AEE6F /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				DE020E882901410D00F8D67D /* Bookworm */,
 				DEDE77CC290026AF000DADB3 /* CupcakeCorner */,
 				DE0696B128FD5AA90071EA9F /* Drawing */,
 				DE6F067E28F962F6003AEE6F /* Moonshot */,
@@ -537,7 +608,8 @@
 				DE6F066328F72C16003AEE6F /* Modifiers */,
 				DEF4FBA028ECCCD700BDB191 /* Component */,
 				DEDE77C128FFF9B9000DADB3 /* HomePage */,
-				DE764C6A28E6324E00ADE5B6 /* AllProjectsApp.swift */,
+				DE764C6A28E6324E00ADE5B6 /* ProjectLibraryApp.swift */,
+				DE020E93290157A000F8D67D /* ProjectLibrary.xcdatamodeld */,
 				DE764C6E28E6324F00ADE5B6 /* Assets.xcassets */,
 				DE764C7028E6324F00ADE5B6 /* Preview Content */,
 			);
@@ -640,6 +712,7 @@
 		DEDE77C328FFF9DD000DADB3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DE020E8E2901416400F8D67D /* DataController.swift */,
 				DEDE77CA2900029C000DADB3 /* ProjectsViewModel.swift */,
 			);
 			path = ViewModel;
@@ -720,6 +793,8 @@
 		DEF4FBA028ECCCD700BDB191 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				DE020E9C2901634300F8D67D /* RatingView.swift */,
+				DE020E9E290166D300F8D67D /* EmojiRatingView.swift */,
 				DEF4FBA128ECCCF400BDB191 /* ExplanationView.swift */,
 			);
 			path = Component;
@@ -802,6 +877,7 @@
 				DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */,
 				DEDE77D529002742000DADB3 /* Order.swift in Sources */,
 				DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */,
+				DE020E9D2901634300F8D67D /* RatingView.swift in Sources */,
 				DE0696B328FD5AC50071EA9F /* DrawingAppView.swift in Sources */,
 				DE6F067D28F882C9003AEE6F /* AddView.swift in Sources */,
 				DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */,
@@ -813,11 +889,14 @@
 				DE6F068028F96319003AEE6F /* MoonshotAppView.swift in Sources */,
 				DE6F065628F585EE003AEE6F /* WordScrambleView.swift in Sources */,
 				DE764C8728E6329300ADE5B6 /* ListRowView.swift in Sources */,
+				DE020EA32901836B00F8D67D /* BookwormViewModel.swift in Sources */,
 				DE6F069428FB1BE4003AEE6F /* AstronautView.swift in Sources */,
 				DEDE77C028FFF02F000DADB3 /* Explanation.swift in Sources */,
 				DEDE77CE290026D5000DADB3 /* CupcakeCornerAppView.swift in Sources */,
 				DEDE77B828FF1D95000DADB3 /* ColorCyclingCircle.swift in Sources */,
 				DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */,
+				DE020EA12901691000F8D67D /* BookDetailView.swift in Sources */,
+				DE020E9B29015DDA00F8D67D /* BookwormAppView.swift in Sources */,
 				DE0696B528FDABEF0071EA9F /* Spirograph.swift in Sources */,
 				DE0E648C28EF271500E916D2 /* SleepCalculator.mlmodel in Sources */,
 				DE305EC028F04D7E002FD76F /* TipModel.swift in Sources */,
@@ -827,6 +906,7 @@
 				DEDE77BC28FF2899000DADB3 /* CheckerBoard.swift in Sources */,
 				DE764C8828E6329300ADE5B6 /* ClimateArticlesView.swift in Sources */,
 				DEF4FBA428ECD0F100BDB191 /* CustomizedButton.swift in Sources */,
+				DE020E9F290166D300F8D67D /* EmojiRatingView.swift in Sources */,
 				DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */,
 				DE6F065F28F6BCC7003AEE6F /* ScrambleGameView.swift in Sources */,
 				DE6F067928F87DBA003AEE6F /* Expenses.swift in Sources */,
@@ -850,8 +930,10 @@
 				DE6F067728F87D89003AEE6F /* ExpenseItem.swift in Sources */,
 				DE6F067028F75859003AEE6F /* ScaleEffectAnimationView.swift in Sources */,
 				DE6F066228F714ED003AEE6F /* AnimationProjectView.swift in Sources */,
+				DE020E992901588100F8D67D /* AddBookView.swift in Sources */,
 				DEB3DB0428F096E000B75DD1 /* ClassifierViewModel.swift in Sources */,
 				DE6F067B28F87E43003AEE6F /* ExpenseManagerView.swift in Sources */,
+				DE020E95290157A100F8D67D /* ProjectLibrary.xcdatamodeld in Sources */,
 				DEDE77B428FF18AF000DADB3 /* Flower.swift in Sources */,
 				DE6F06A028FB401F003AEE6F /* CrewMember.swift in Sources */,
 				DE6F066628F72C56003AEE6F /* CornerRotateModifier.swift in Sources */,
@@ -873,12 +955,14 @@
 				DE321EBD28E72B97006A74E0 /* ProjectListView.swift in Sources */,
 				DE321EC328E7465D006A74E0 /* WeSplitProjectView.swift in Sources */,
 				DE6F06A228FB43A5003AEE6F /* SeparatorComponent.swift in Sources */,
-				DE764C6B28E6324E00ADE5B6 /* AllProjectsApp.swift in Sources */,
+				DE764C6B28E6324E00ADE5B6 /* ProjectLibraryApp.swift in Sources */,
 				DEB3DB1528F41E3900B75DD1 /* AnimalClassifierView.swift in Sources */,
 				DEDE77BE28FF2948000DADB3 /* AnimatablePairView.swift in Sources */,
+				DE020E8A2901412C00F8D67D /* StudentsAppView.swift in Sources */,
 				DEF4FB9F28ECCB1800BDB191 /* FlagView.swift in Sources */,
 				DE6F067228F75957003AEE6F /* DragAnimationModifier.swift in Sources */,
 				DE6F067428F8090D003AEE6F /* Rotation360Modifier.swift in Sources */,
+				DE020E8F2901416400F8D67D /* DataController.swift in Sources */,
 				DEB3DB0228F0914600B75DD1 /* View.swift in Sources */,
 				DEDE77BA28FF1E63000DADB3 /* ColorCyclingView.swift in Sources */,
 				DE6F068A28F96C79003AEE6F /* Mission.swift in Sources */,
@@ -1081,6 +1165,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DE020E93290157A000F8D67D /* ProjectLibrary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE020E94290157A100F8D67D /* ProjectLibrary.xcdatamodel */,
+			);
+			currentVersion = DE020E94290157A100F8D67D /* ProjectLibrary.xcdatamodel */;
+			path = ProjectLibrary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DE764C5F28E6324E00ADE5B6 /* Project object */;
 }
