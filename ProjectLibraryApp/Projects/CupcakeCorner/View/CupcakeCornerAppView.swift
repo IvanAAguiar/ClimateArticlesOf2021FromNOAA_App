@@ -47,6 +47,8 @@ struct CupcakeCornerAppView: View {
 
 struct CupcakeCornerAppView_Previews: PreviewProvider {
     static var previews: some View {
-        CupcakeCornerAppView()
+        NavigationView {
+            CupcakeCornerAppView()
+        }
     }
 }
