@@ -12,7 +12,8 @@ struct SeparatorComponent: View {
         Rectangle()
             .frame(height: 2)
             .foregroundColor(.lightBackground)
-            .padding(.vertical)    }
+            .padding(.vertical)
+    }
 }
 
 struct SeparatorComponent_Previews: PreviewProvider {

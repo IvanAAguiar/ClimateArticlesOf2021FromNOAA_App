@@ -85,6 +85,17 @@
 		DEB3DB0B28F0CD1400B75DD1 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB0A28F0CD1400B75DD1 /* ResultView.swift */; };
 		DEB3DB1328F0E00300B75DD1 /* AnimalClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB1228F0E00300B75DD1 /* AnimalClassifier.mlpackage */; };
 		DEB3DB1528F41E3900B75DD1 /* AnimalClassifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB1428F41E3900B75DD1 /* AnimalClassifierView.swift */; };
+		DEC245AF29069C2A0035B9CA /* CoreDataAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245AE29069C2A0035B9CA /* CoreDataAppView.swift */; };
+		DEC245BB2906F8260035B9CA /* FilteredListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245BA2906F8260035B9CA /* FilteredListView.swift */; };
+		DEC245BD2906FB4A0035B9CA /* MovieRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245BC2906FB4A0035B9CA /* MovieRowView.swift */; };
+		DEC245C229070E000035B9CA /* Actor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245C029070E000035B9CA /* Actor+CoreDataClass.swift */; };
+		DEC245C329070E000035B9CA /* Actor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245C129070E000035B9CA /* Actor+CoreDataProperties.swift */; };
+		DEC245C629070E3C0035B9CA /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245C429070E3C0035B9CA /* Movie+CoreDataClass.swift */; };
+		DEC245C729070E3C0035B9CA /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245C529070E3C0035B9CA /* Movie+CoreDataProperties.swift */; };
+		DEC245C92907112E0035B9CA /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245C82907112E0035B9CA /* MovieDetailsView.swift */; };
+		DEC245CB290720E90035B9CA /* AddActorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245CA290720E90035B9CA /* AddActorsView.swift */; };
+		DEC245CE2907E54B0035B9CA /* InstaFilterAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245CD2907E54B0035B9CA /* InstaFilterAppView.swift */; };
+		DEC245D22907E8CB0035B9CA /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245D12907E8CB0035B9CA /* FilterViewModel.swift */; };
 		DEDE77B228FF0FA5000DADB3 /* BlendingColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B128FF0FA5000DADB3 /* BlendingColorsView.swift */; };
 		DEDE77B428FF18AF000DADB3 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B328FF18AF000DADB3 /* Flower.swift */; };
 		DEDE77B628FF1B28000DADB3 /* FlowerShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B528FF1B28000DADB3 /* FlowerShapeView.swift */; };
@@ -188,6 +199,17 @@
 		DEB3DB0A28F0CD1400B75DD1 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		DEB3DB1228F0E00300B75DD1 /* AnimalClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = AnimalClassifier.mlpackage; sourceTree = "<group>"; };
 		DEB3DB1428F41E3900B75DD1 /* AnimalClassifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalClassifierView.swift; sourceTree = "<group>"; };
+		DEC245AE29069C2A0035B9CA /* CoreDataAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataAppView.swift; sourceTree = "<group>"; };
+		DEC245BA2906F8260035B9CA /* FilteredListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredListView.swift; sourceTree = "<group>"; };
+		DEC245BC2906FB4A0035B9CA /* MovieRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRowView.swift; sourceTree = "<group>"; };
+		DEC245C029070E000035B9CA /* Actor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Actor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DEC245C129070E000035B9CA /* Actor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Actor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DEC245C429070E3C0035B9CA /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DEC245C529070E3C0035B9CA /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; usesTabs = 0; };
+		DEC245C82907112E0035B9CA /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		DEC245CA290720E90035B9CA /* AddActorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActorsView.swift; sourceTree = "<group>"; };
+		DEC245CD2907E54B0035B9CA /* InstaFilterAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFilterAppView.swift; sourceTree = "<group>"; };
+		DEC245D12907E8CB0035B9CA /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		DEDE77B128FF0FA5000DADB3 /* BlendingColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendingColorsView.swift; sourceTree = "<group>"; };
 		DEDE77B328FF18AF000DADB3 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
 		DEDE77B528FF1B28000DADB3 /* FlowerShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerShapeView.swift; sourceTree = "<group>"; };
@@ -463,6 +485,8 @@
 		DE6F066428F72C1F003AEE6F /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				DEC245CC2907E52B0035B9CA /* InstaFilter */,
+				DEC245A8290291340035B9CA /* CoreDataApp */,
 				DE020E882901410D00F8D67D /* Bookworm */,
 				DEDE77CC290026AF000DADB3 /* CupcakeCorner */,
 				DE0696B128FD5AA90071EA9F /* Drawing */,
@@ -682,6 +706,71 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DEC245A8290291340035B9CA /* CoreDataApp */ = {
+			isa = PBXGroup;
+			children = (
+				DEC245BE2906FE050035B9CA /* View */,
+				DEC245BF2906FE0B0035B9CA /* ViewModel */,
+				DEC245B92906E0E00035B9CA /* NSManagedObject */,
+			);
+			path = CoreDataApp;
+			sourceTree = "<group>";
+		};
+		DEC245B92906E0E00035B9CA /* NSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				DEC245C429070E3C0035B9CA /* Movie+CoreDataClass.swift */,
+				DEC245C529070E3C0035B9CA /* Movie+CoreDataProperties.swift */,
+				DEC245C129070E000035B9CA /* Actor+CoreDataProperties.swift */,
+				DEC245C029070E000035B9CA /* Actor+CoreDataClass.swift */,
+			);
+			path = NSManagedObject;
+			sourceTree = "<group>";
+		};
+		DEC245BE2906FE050035B9CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEC245AE29069C2A0035B9CA /* CoreDataAppView.swift */,
+				DEC245BA2906F8260035B9CA /* FilteredListView.swift */,
+				DEC245BC2906FB4A0035B9CA /* MovieRowView.swift */,
+				DEC245C82907112E0035B9CA /* MovieDetailsView.swift */,
+				DEC245CA290720E90035B9CA /* AddActorsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEC245BF2906FE0B0035B9CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEC245CC2907E52B0035B9CA /* InstaFilter */ = {
+			isa = PBXGroup;
+			children = (
+				DEC245D02907E8AE0035B9CA /* View */,
+				DEC245CF2907E8A20035B9CA /* ViewModel */,
+			);
+			path = InstaFilter;
+			sourceTree = "<group>";
+		};
+		DEC245CF2907E8A20035B9CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEC245D12907E8CB0035B9CA /* FilterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEC245D02907E8AE0035B9CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEC245CD2907E54B0035B9CA /* InstaFilterAppView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DEDE77C128FFF9B9000DADB3 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -873,13 +962,16 @@
 				DE0696B328FD5AC50071EA9F /* DrawingAppView.swift in Sources */,
 				DE6F067D28F882C9003AEE6F /* AddView.swift in Sources */,
 				DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */,
+				DEC245AF29069C2A0035B9CA /* CoreDataAppView.swift in Sources */,
 				DE211A5128FC1CFA00B5F97B /* ListLayoutView.swift in Sources */,
+				DEC245BD2906FB4A0035B9CA /* MovieRowView.swift in Sources */,
 				DE6F069B28FB303F003AEE6F /* CrewRole.swift in Sources */,
 				DEF4FB9528EC283800BDB191 /* GridMaginificationEffectView.swift in Sources */,
 				DEB3DB1328F0E00300B75DD1 /* AnimalClassifier.mlpackage in Sources */,
 				DE6F068D28FB0B91003AEE6F /* Color-Theme.swift in Sources */,
 				DE6F068028F96319003AEE6F /* MoonshotAppView.swift in Sources */,
 				DE6F065628F585EE003AEE6F /* WordScrambleView.swift in Sources */,
+				DEC245C729070E3C0035B9CA /* Movie+CoreDataProperties.swift in Sources */,
 				DE764C8728E6329300ADE5B6 /* ListRowView.swift in Sources */,
 				DE020EA32901836B00F8D67D /* BookwormViewModel.swift in Sources */,
 				DE6F069428FB1BE4003AEE6F /* AstronautView.swift in Sources */,
@@ -895,13 +987,17 @@
 				DE0696BA28FDACB50071EA9F /* SpirographView.swift in Sources */,
 				DEDE77B228FF0FA5000DADB3 /* BlendingColorsView.swift in Sources */,
 				DE764C8428E6329300ADE5B6 /* Articles_Tab_View.swift in Sources */,
+				DEC245C629070E3C0035B9CA /* Movie+CoreDataClass.swift in Sources */,
 				DEDE77BC28FF2899000DADB3 /* CheckerBoard.swift in Sources */,
 				DE764C8828E6329300ADE5B6 /* ClimateArticlesView.swift in Sources */,
 				DEF4FBA428ECD0F100BDB191 /* CustomizedButton.swift in Sources */,
 				DE020E9F290166D300F8D67D /* EmojiRatingView.swift in Sources */,
 				DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */,
+				DEC245D22907E8CB0035B9CA /* FilterViewModel.swift in Sources */,
 				DE6F065F28F6BCC7003AEE6F /* ScrambleGameView.swift in Sources */,
+				DEC245C229070E000035B9CA /* Actor+CoreDataClass.swift in Sources */,
 				DE6F067928F87DBA003AEE6F /* Expenses.swift in Sources */,
+				DEC245CE2907E54B0035B9CA /* InstaFilterAppView.swift in Sources */,
 				DEDE77D0290026EF000DADB3 /* AddressView.swift in Sources */,
 				DE6F068828F9682F003AEE6F /* Bundle_Decodable.swift in Sources */,
 				DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */,
@@ -923,9 +1019,11 @@
 				DE6F067028F75859003AEE6F /* ScaleEffectAnimationView.swift in Sources */,
 				DE6F066228F714ED003AEE6F /* AnimationProjectView.swift in Sources */,
 				DE020E992901588100F8D67D /* AddBookView.swift in Sources */,
+				DEC245C92907112E0035B9CA /* MovieDetailsView.swift in Sources */,
 				DEB3DB0428F096E000B75DD1 /* ClassifierViewModel.swift in Sources */,
 				DE6F067B28F87E43003AEE6F /* ExpenseManagerView.swift in Sources */,
 				DE020E95290157A100F8D67D /* ProjectLibrary.xcdatamodeld in Sources */,
+				DEC245CB290720E90035B9CA /* AddActorsView.swift in Sources */,
 				DEDE77B428FF18AF000DADB3 /* Flower.swift in Sources */,
 				DE6F06A028FB401F003AEE6F /* CrewMember.swift in Sources */,
 				DE6F066628F72C56003AEE6F /* CornerRotateModifier.swift in Sources */,
@@ -942,6 +1040,7 @@
 				DE321EDA28EB42FC006A74E0 /* GuessTheFlagView.swift in Sources */,
 				DE305EC728F05FDB002FD76F /* GuessViewModel.swift in Sources */,
 				DE305EB928F03FA8002FD76F /* CalculatorViewModel.swift in Sources */,
+				DEC245C329070E000035B9CA /* Actor+CoreDataProperties.swift in Sources */,
 				DE305EC528F05D11002FD76F /* FlagModel.swift in Sources */,
 				DE6F069928FB2E8D003AEE6F /* CrewView.swift in Sources */,
 				DE321EBD28E72B97006A74E0 /* ProjectListView.swift in Sources */,
@@ -952,6 +1051,7 @@
 				DEDE77BE28FF2948000DADB3 /* AnimatablePairView.swift in Sources */,
 				DE020E8A2901412C00F8D67D /* StudentsAppView.swift in Sources */,
 				DEF4FB9F28ECCB1800BDB191 /* FlagView.swift in Sources */,
+				DEC245BB2906F8260035B9CA /* FilteredListView.swift in Sources */,
 				DE6F067228F75957003AEE6F /* DragAnimationModifier.swift in Sources */,
 				DE6F067428F8090D003AEE6F /* Rotation360Modifier.swift in Sources */,
 				DE020E8F2901416400F8D67D /* DataController.swift in Sources */,

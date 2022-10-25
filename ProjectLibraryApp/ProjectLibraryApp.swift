@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct ProjectLibraryApp: App {    
+struct ProjectLibraryApp: App {
+    @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

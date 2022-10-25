@@ -28,6 +28,9 @@ struct ProjectListView: View {
                 Group {
                     NavigationLink("Cupcake Corner", destination: CupcakeCornerAppView())
                     NavigationLink("Bookworm", destination: BookwormAppView())
+                    NavigationLink("Students", destination: StudentsAppView())
+                    NavigationLink("CoreData App", destination: CoreDataAppView())
+                    NavigationLink("InstaFilter", destination: InstaFilterAppView())
                 }
             }
             .navigationTitle("Projects")
