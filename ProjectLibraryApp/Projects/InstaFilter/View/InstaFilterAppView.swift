@@ -34,7 +34,12 @@ struct InstaFilterAppView: View {
             HStack (alignment: .center) {
                 Text("Filter Intensity")
                 Slider(value: $vm.intensity)
-                    .onChange(of: vm.intensity) { _ in vm.loadImage()}
+                    .onChange(of: vm.intensity) { _ in
+                        vm.loadImage()
+                        if vm.image != nil {
+                            vm.disableButton = true
+                        }
+                    }
             }
             .padding()
             
@@ -60,7 +65,9 @@ struct InstaFilterAppView: View {
                     vm.saveImageAtCoreImage()
                 }
                 .buttonStyleModifier()
-                .alert(vm.saveMessage, isPresented: $vm.showingSaveInfo) {}
+                .alert("\(vm.saveMessage)", isPresented: $vm.showingSaveInfo) {}
+                .opacity(!vm.disableButton ? 0.4 : 1.0)
+                .disabled(!vm.disableButton)
             }
             .padding([.horizontal, .bottom])
         }

@@ -19,6 +19,7 @@ class FilterViewModel: ObservableObject {
     @Published var showingImagePicker = false
     @Published var showingConfirmation = false
     @Published var showingSaveInfo = false
+    @Published var disableButton = false
 
     @Published var intensity = 0.0
     @Published var saveMessage = ""
@@ -61,11 +62,13 @@ class FilterViewModel: ObservableObject {
     
     func saveImageAtCoreImage() {
         guard let toSave = processedImage else {return}
-        
         let imageSaver = ImageSaver()
-        imageSaver.writeToPhotoAlbum(image: toSave)
         
-        saveMessage = imageSaver.saveHandler!
+        imageSaver.writeToPhotoAlbum(image: toSave)
+        imageSaver.sucessHandler = { print("Saved successfully.") }
+        imageSaver.errorHandler = { print("Oops! \($0.localizedDescription)") }
+        
         showingSaveInfo = true
+        disableButton = false
     }
 }
