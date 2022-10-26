@@ -79,6 +79,7 @@
 		DE764C8828E6329300ADE5B6 /* ClimateArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C7E28E6329300ADE5B6 /* ClimateArticlesView.swift */; };
 		DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C8028E6329300ADE5B6 /* ArticleListViewModel.swift */; };
 		DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C8228E6329300ADE5B6 /* Article.swift */; };
+		DEAFB0CA290947B20082DA5D /* ImagePickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0C9290947B20082DA5D /* ImagePickerService.swift */; };
 		DEB3DB0228F0914600B75DD1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB0128F0914600B75DD1 /* View.swift */; };
 		DEB3DB0428F096E000B75DD1 /* ClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB0328F096E000B75DD1 /* ClassifierViewModel.swift */; };
 		DEB3DB0928F0B90100B75DD1 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB0828F0B90100B75DD1 /* ResultViewModel.swift */; };
@@ -96,6 +97,7 @@
 		DEC245CB290720E90035B9CA /* AddActorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245CA290720E90035B9CA /* AddActorsView.swift */; };
 		DEC245CE2907E54B0035B9CA /* InstaFilterAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245CD2907E54B0035B9CA /* InstaFilterAppView.swift */; };
 		DEC245D22907E8CB0035B9CA /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245D12907E8CB0035B9CA /* FilterViewModel.swift */; };
+		DEC245D429093AC80035B9CA /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245D329093AC80035B9CA /* ImageSaver.swift */; };
 		DEDE77B228FF0FA5000DADB3 /* BlendingColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B128FF0FA5000DADB3 /* BlendingColorsView.swift */; };
 		DEDE77B428FF18AF000DADB3 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B328FF18AF000DADB3 /* Flower.swift */; };
 		DEDE77B628FF1B28000DADB3 /* FlowerShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B528FF1B28000DADB3 /* FlowerShapeView.swift */; };
@@ -193,6 +195,7 @@
 		DE764C7E28E6329300ADE5B6 /* ClimateArticlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ClimateArticlesView.swift; sourceTree = "<group>"; };
 		DE764C8028E6329300ADE5B6 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		DE764C8228E6329300ADE5B6 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		DEAFB0C9290947B20082DA5D /* ImagePickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePickerService.swift; path = ProjectLibraryApp/Projects/InstaFilter/ViewModel/ImagePickerService.swift; sourceTree = SOURCE_ROOT; };
 		DEB3DB0128F0914600B75DD1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DEB3DB0328F096E000B75DD1 /* ClassifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierViewModel.swift; sourceTree = "<group>"; };
 		DEB3DB0828F0B90100B75DD1 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 		DEC245CA290720E90035B9CA /* AddActorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActorsView.swift; sourceTree = "<group>"; };
 		DEC245CD2907E54B0035B9CA /* InstaFilterAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFilterAppView.swift; sourceTree = "<group>"; };
 		DEC245D12907E8CB0035B9CA /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		DEC245D329093AC80035B9CA /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		DEDE77B128FF0FA5000DADB3 /* BlendingColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendingColorsView.swift; sourceTree = "<group>"; };
 		DEDE77B328FF18AF000DADB3 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
 		DEDE77B528FF1B28000DADB3 /* FlowerShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerShapeView.swift; sourceTree = "<group>"; };
@@ -668,6 +672,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DEAFB0C8290947860082DA5D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DEAFB0C9290947B20082DA5D /* ImagePickerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		DEB3DAFC28F08DC900B75DD1 /* AnimalClassifier */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,6 +763,7 @@
 			children = (
 				DEC245D02907E8AE0035B9CA /* View */,
 				DEC245CF2907E8A20035B9CA /* ViewModel */,
+				DEAFB0C8290947860082DA5D /* Service */,
 			);
 			path = InstaFilter;
 			sourceTree = "<group>";
@@ -759,6 +772,7 @@
 			isa = PBXGroup;
 			children = (
 				DEC245D12907E8CB0035B9CA /* FilterViewModel.swift */,
+				DEC245D329093AC80035B9CA /* ImageSaver.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1007,6 +1021,7 @@
 				DE6F066A28F74C4A003AEE6F /* SnakAnimationView.swift in Sources */,
 				DEDE77D729002968000DADB3 /* CheckoutView.swift in Sources */,
 				DE6F066E28F755C8003AEE6F /* CircleAnimationView.swift in Sources */,
+				DEC245D429093AC80035B9CA /* ImageSaver.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
 				DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */,
 				DEDE77B628FF1B28000DADB3 /* FlowerShapeView.swift in Sources */,
@@ -1051,6 +1066,7 @@
 				DEDE77BE28FF2948000DADB3 /* AnimatablePairView.swift in Sources */,
 				DE020E8A2901412C00F8D67D /* StudentsAppView.swift in Sources */,
 				DEF4FB9F28ECCB1800BDB191 /* FlagView.swift in Sources */,
+				DEAFB0CA290947B20082DA5D /* ImagePickerService.swift in Sources */,
 				DEC245BB2906F8260035B9CA /* FilteredListView.swift in Sources */,
 				DE6F067228F75957003AEE6F /* DragAnimationModifier.swift in Sources */,
 				DE6F067428F8090D003AEE6F /* Rotation360Modifier.swift in Sources */,
@@ -1189,6 +1205,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectLibraryApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1217,6 +1234,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectLibraryApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
