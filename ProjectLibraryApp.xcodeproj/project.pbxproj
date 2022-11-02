@@ -26,6 +26,12 @@
 		DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E649228F01F9000E916D2 /* GridViewModel.swift */; };
 		DE211A4F28FC1C1500B5F97B /* GridLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE211A4E28FC1C1500B5F97B /* GridLayoutView.swift */; };
 		DE211A5128FC1CFA00B5F97B /* ListLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE211A5028FC1CFA00B5F97B /* ListLayoutView.swift */; };
+		DE21835F2912DD6300E8342E /* HotProspectsAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21835E2912DD6300E8342E /* HotProspectsAppView.swift */; };
+		DE2183612912F12900E8342E /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2183602912F12900E8342E /* ProspectsView.swift */; };
+		DE2183632912F13200E8342E /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2183622912F13200E8342E /* MeView.swift */; };
+		DE218368291309A000E8342E /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE218367291309A000E8342E /* Prospect.swift */; };
+		DE21836B2913146400E8342E /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = DE21836A2913146400E8342E /* SamplePackage */; };
+		DE21836E291314A900E8342E /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = DE21836D291314A900E8342E /* CodeScanner */; };
 		DE305EB928F03FA8002FD76F /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EB828F03FA8002FD76F /* CalculatorViewModel.swift */; };
 		DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */; };
 		DE305EBE28F04AC2002FD76F /* IVAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBD28F04AC2002FD76F /* IVAModel.swift */; };
@@ -86,7 +92,7 @@
 		DEAFB0D6290AA1070082DA5D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0D5290AA1070082DA5D /* MapView.swift */; };
 		DEAFB0D8290AA7D50082DA5D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0D7290AA7D50082DA5D /* Location.swift */; };
 		DEAFB0DA290AAA390082DA5D /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0D9290AAA390082DA5D /* LocationView.swift */; };
-		DEAFB0DC290AB8F40082DA5D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0DB290AB8F40082DA5D /* Result.swift */; };
+		DEAFB0DC290AB8F40082DA5D /* BucketListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0DB290AB8F40082DA5D /* BucketListResult.swift */; };
 		DEAFB0DF290BCFB90082DA5D /* VoiceOverAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0DE290BCFB90082DA5D /* VoiceOverAppView.swift */; };
 		DEAFB0E1290BECF90082DA5D /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0E0290BECF90082DA5D /* FileManager.swift */; };
 		DEAFB0E3290BF4AA0082DA5D /* NewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0E2290BF4AA0082DA5D /* NewUserView.swift */; };
@@ -151,6 +157,10 @@
 		DE0E649228F01F9000E916D2 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
 		DE211A4E28FC1C1500B5F97B /* GridLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayoutView.swift; sourceTree = "<group>"; };
 		DE211A5028FC1CFA00B5F97B /* ListLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLayoutView.swift; sourceTree = "<group>"; };
+		DE21835E2912DD6300E8342E /* HotProspectsAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsAppView.swift; sourceTree = "<group>"; };
+		DE2183602912F12900E8342E /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		DE2183622912F13200E8342E /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		DE218367291309A000E8342E /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Prospect.swift; path = ProjectLibraryApp/Projects/HotProspects/View/Prospect.swift; sourceTree = SOURCE_ROOT; };
 		DE305EB828F03FA8002FD76F /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLLinkViewModifier.swift; sourceTree = "<group>"; };
 		DE305EBD28F04AC2002FD76F /* IVAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVAModel.swift; sourceTree = "<group>"; };
@@ -212,7 +222,7 @@
 		DEAFB0D5290AA1070082DA5D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DEAFB0D7290AA7D50082DA5D /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = SOURCE_ROOT; };
 		DEAFB0D9290AAA390082DA5D /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
-		DEAFB0DB290AB8F40082DA5D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Result.swift; path = ProjectLibraryApp/Result.swift; sourceTree = SOURCE_ROOT; };
+		DEAFB0DB290AB8F40082DA5D /* BucketListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BucketListResult.swift; path = ProjectLibraryApp/BucketListResult.swift; sourceTree = SOURCE_ROOT; };
 		DEAFB0DE290BCFB90082DA5D /* VoiceOverAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverAppView.swift; sourceTree = "<group>"; };
 		DEAFB0E0290BECF90082DA5D /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		DEAFB0E2290BF4AA0082DA5D /* NewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserView.swift; sourceTree = "<group>"; };
@@ -262,6 +272,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE21836E291314A900E8342E /* CodeScanner in Frameworks */,
+				DE21836B2913146400E8342E /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +374,41 @@
 				DE0E648B28EF271500E916D2 /* SleepCalculator.mlmodel */,
 			);
 			path = BetterRest;
+			sourceTree = "<group>";
+		};
+		DE21835D2912DD3600E8342E /* HotProspects */ = {
+			isa = PBXGroup;
+			children = (
+				DE2183662912F15200E8342E /* View */,
+				DE2183652912F14C00E8342E /* ViewModel */,
+				DE2183642912F14600E8342E /* Model */,
+			);
+			path = HotProspects;
+			sourceTree = "<group>";
+		};
+		DE2183642912F14600E8342E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE218367291309A000E8342E /* Prospect.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE2183652912F14C00E8342E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE2183662912F15200E8342E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE21835E2912DD6300E8342E /* HotProspectsAppView.swift */,
+				DE2183602912F12900E8342E /* ProspectsView.swift */,
+				DE2183622912F13200E8342E /* MeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DE305EB628F03F67002FD76F /* View */ = {
@@ -509,6 +556,7 @@
 		DE6F066428F72C1F003AEE6F /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				DE21835D2912DD3600E8342E /* HotProspects */,
 				DEAFB0DD290BCF9F0082DA5D /* VoiceOver */,
 				DEAFB0CB290A77750082DA5D /* BucketList */,
 				DEC245CC2907E52B0035B9CA /* InstaFilter */,
@@ -716,7 +764,7 @@
 		DEAFB0CC290A77870082DA5D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DEAFB0DB290AB8F40082DA5D /* Result.swift */,
+				DEAFB0DB290AB8F40082DA5D /* BucketListResult.swift */,
 				DEAFB0D7290AA7D50082DA5D /* Location.swift */,
 				DEAFB0CF290A77AA0082DA5D /* User.swift */,
 			);
@@ -842,7 +890,6 @@
 			isa = PBXGroup;
 			children = (
 				DEC245D12907E8CB0035B9CA /* FilterViewModel.swift */,
-				DEC245D329093AC80035B9CA /* ImageSaver.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -958,6 +1005,7 @@
 		DEF4FBA028ECCCD700BDB191 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				DEC245D329093AC80035B9CA /* ImageSaver.swift */,
 				DE020E9C2901634300F8D67D /* RatingView.swift */,
 				DE020E9E290166D300F8D67D /* EmojiRatingView.swift */,
 				DEF4FBA128ECCCF400BDB191 /* ExplanationView.swift */,
@@ -981,6 +1029,10 @@
 			dependencies = (
 			);
 			name = ProjectLibraryApp;
+			packageProductDependencies = (
+				DE21836A2913146400E8342E /* SamplePackage */,
+				DE21836D291314A900E8342E /* CodeScanner */,
+			);
 			productName = ClimateArticlesOf2021FromNOAA_App;
 			productReference = DE764C6728E6324E00ADE5B6 /* ProjectLibraryApp.app */;
 			productType = "com.apple.product-type.application";
@@ -1009,6 +1061,10 @@
 				Base,
 			);
 			mainGroup = DE764C5E28E6324E00ADE5B6;
+			packageReferences = (
+				DE2183692913146400E8342E /* XCRemoteSwiftPackageReference "SamplePackage" */,
+				DE21836C291314A900E8342E /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = DE764C6828E6324E00ADE5B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1040,9 +1096,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */,
+				DE218368291309A000E8342E /* Prospect.swift in Sources */,
 				DEDE77D529002742000DADB3 /* Order.swift in Sources */,
 				DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */,
-				DEAFB0DC290AB8F40082DA5D /* Result.swift in Sources */,
+				DEAFB0DC290AB8F40082DA5D /* BucketListResult.swift in Sources */,
 				DE020E9D2901634300F8D67D /* RatingView.swift in Sources */,
 				DE0696B328FD5AC50071EA9F /* DrawingAppView.swift in Sources */,
 				DE6F067D28F882C9003AEE6F /* AddView.swift in Sources */,
@@ -1060,6 +1117,7 @@
 				DE764C8728E6329300ADE5B6 /* ListRowView.swift in Sources */,
 				DEAFB0DF290BCFB90082DA5D /* VoiceOverAppView.swift in Sources */,
 				DE020EA32901836B00F8D67D /* BookwormViewModel.swift in Sources */,
+				DE21835F2912DD6300E8342E /* HotProspectsAppView.swift in Sources */,
 				DE6F069428FB1BE4003AEE6F /* AstronautView.swift in Sources */,
 				DEDE77C028FFF02F000DADB3 /* Explanation.swift in Sources */,
 				DEDE77CE290026D5000DADB3 /* CupcakeCornerAppView.swift in Sources */,
@@ -1087,6 +1145,7 @@
 				DEAFB0D4290A78650082DA5D /* BucketListAppView.swift in Sources */,
 				DEC245CE2907E54B0035B9CA /* InstaFilterAppView.swift in Sources */,
 				DEDE77D0290026EF000DADB3 /* AddressView.swift in Sources */,
+				DE2183632912F13200E8342E /* MeView.swift in Sources */,
 				DE6F068828F9682F003AEE6F /* Bundle_Decodable.swift in Sources */,
 				DEAFB0D6290AA1070082DA5D /* MapView.swift in Sources */,
 				DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */,
@@ -1098,6 +1157,7 @@
 				DEAFB0D2290A77DD0082DA5D /* ListViewModel.swift in Sources */,
 				DE6F066A28F74C4A003AEE6F /* SnakAnimationView.swift in Sources */,
 				DEDE77D729002968000DADB3 /* CheckoutView.swift in Sources */,
+				DE2183612912F12900E8342E /* ProspectsView.swift in Sources */,
 				DE6F066E28F755C8003AEE6F /* CircleAnimationView.swift in Sources */,
 				DEC245D429093AC80035B9CA /* ImageSaver.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
@@ -1285,6 +1345,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectLibraryApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1315,6 +1376,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectLibraryApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1357,6 +1419,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE2183692913146400E8342E /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DE21836C291314A900E8342E /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE21836A2913146400E8342E /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2183692913146400E8342E /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+		DE21836D291314A900E8342E /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE21836C291314A900E8342E /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DE020E93290157A000F8D67D /* ProjectLibrary.xcdatamodeld */ = {

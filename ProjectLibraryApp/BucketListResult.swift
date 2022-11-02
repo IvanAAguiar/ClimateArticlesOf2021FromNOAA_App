@@ -1,5 +1,5 @@
 //
-//  Result.swift
+//  BucketListResult.swift
 //  ProjectLibraryApp
 //
 //  Created by Ivan Aguiar on 27/10/2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Result: Codable {
+struct BucketListResult: Codable {
     let query: Query
 }
 

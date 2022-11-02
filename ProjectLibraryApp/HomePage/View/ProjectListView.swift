@@ -33,6 +33,7 @@ struct ProjectListView: View {
                     NavigationLink("InstaFilter", destination: InstaFilterAppView())
                     NavigationLink("Bucket List", destination: BucketListAppView())
                     NavigationLink("VoiceOver", destination: VoiceOverAppView())
+                    NavigationLink("Hot Prospects", destination: HotProspectsAppView())
                 }
             }
             .navigationTitle("Projects")
