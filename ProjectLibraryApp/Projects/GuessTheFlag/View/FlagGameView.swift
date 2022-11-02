@@ -32,11 +32,11 @@ struct FlagGameView: View {
                         .foregroundColor(.white)
                         .font(.largeTitle.weight(.semibold))
                 }
+                .accessibilityElement(children: .combine)
                 Spacer()
                 
-                
                 ForEach(0..<3) { number in
-                    FlagView(countryName: vm.countries[number].countryName)
+                    FlagView(country: vm.countries[number])
                         .rotation360()
                         .simultaneousGesture(
                             DragGesture(minimumDistance: 0)

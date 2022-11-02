@@ -19,17 +19,17 @@ class GuessViewModel: ObservableObject {
 
     @Published var correctAnswer = Int.random(in: 0...2)
     @Published var countries = [
-        FlagModel(countryName: "estonia"),
-        FlagModel(countryName: "france"),
-        FlagModel(countryName: "germany"),
-        FlagModel(countryName: "ireland"),
-        FlagModel(countryName: "italy"),
-        FlagModel(countryName: "monaco"),
-        FlagModel(countryName: "nigeria"),
-        FlagModel(countryName: "poland"),
-        FlagModel(countryName: "russia"),
-        FlagModel(countryName: "uk"),
-        FlagModel(countryName: "us")
+        Country(countryName: "Estonia", flagDescription: "Flag with three horizontal stripes of equal size. Top stribe blue, middle stripe black, bottom strip white", image: "estonia"),
+        Country(countryName: "France", flagDescription: "Flag with three vertical stripes of equal size. Left stribe blue, middle stripe white, right strip red", image: "france"),
+        Country(countryName: "Germany", flagDescription: "Flag with three horizontal stripes of equal size. Top stribe black, middle stripe red, bottom strip gold", image: "germany"),
+        Country(countryName: "Ireland", flagDescription: "Flag with three vertical stripes of equal size. Left stribe green, middle stripe white, right strip orange", image: "ireland"),
+        Country(countryName: "Italy", flagDescription: "Flag with three vertical stripes of equal size. Left stribe green, middle stripe white, right strip red", image: "italy"),
+        Country(countryName: "Monaco", flagDescription: "Flag with two horizontal stripes of equal size. top stribe red, bottom strip white", image: "monaco"),
+        Country(countryName: "Nigeria", flagDescription: "Flag with three vertical stripes of equal size. Left stribe green, middle stripe white, right strip green", image: "nigeria"),
+        Country(countryName: "Poland", flagDescription: "Flag with two horizontal stripes of equal size. Top stribe white,  bottom strip red", image: "poland"),
+        Country(countryName: "Russia", flagDescription: "Flag with three horizontal stripes of equal size. Top stribe white, middle stripe blue, bottom strip red", image: "russia"),
+        Country(countryName: "UK", flagDescription: "Flag with everlapping red and white crosses, both straight and diagonally, on a blue background", image: "uk"),
+        Country(countryName: "US", flagDescription: "Flag with red and white stripes of equal size, with qhite stars on a blue background in the top-left corner", image: "us")
     ].shuffled()
 
     func flagTapped(_ number: Int) {

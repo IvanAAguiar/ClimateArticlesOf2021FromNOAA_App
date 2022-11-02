@@ -23,6 +23,8 @@ struct CheckoutView: View {
                 } placeholder: {
                     ProgressView()
                 }
+                .accessibilityElement()
+                .accessibilityLabel("Cupcakes Image")
                 .frame(height: 233)
                 
                 Text("Your total cost is \(order.cost, format: .currency(code: "USD"))")

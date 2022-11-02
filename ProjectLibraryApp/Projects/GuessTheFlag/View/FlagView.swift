@@ -9,18 +9,20 @@ import SwiftUI
 
 struct FlagView: View {
     
-    var countryName: String
+    var country: Country
     
     var body: some View {
-        Image(countryName)
+        Image(country.image)
             .renderingMode(.original)
             .cornerRadius(5.0)
             .shadow(color: .black ,radius: 2.5)
+            .accessibilityLabel("\(country.flagDescription)")
+            .accessibilityRemoveTraits(.isImage)
     }
 }
 
 struct FlagView_Previews: PreviewProvider {
     static var previews: some View {
-        FlagView(countryName: "uk")
+        FlagView(country: Country(countryName: "US", flagDescription: "new test", image: "us"))
     }
 }

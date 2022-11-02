@@ -24,6 +24,7 @@ struct ExpenseManagerView: View {
                     Spacer()
                     Text(item.amount, format: .currency(code: "USD"))
                 }
+                .accessibilityElement(children: .combine)
             }
             .onDelete(perform: removeItems)
         }
