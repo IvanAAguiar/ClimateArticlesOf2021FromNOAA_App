@@ -31,6 +31,8 @@ struct ProjectListView: View {
                     NavigationLink("Students", destination: StudentsAppView())
                     NavigationLink("CoreData App", destination: CoreDataAppView())
                     NavigationLink("InstaFilter", destination: InstaFilterAppView())
+                    NavigationLink("Bucket List", destination: BucketListAppView())
+                    NavigationLink("VoiceOver", destination: VoiceOverAppView())
                 }
             }
             .navigationTitle("Projects")

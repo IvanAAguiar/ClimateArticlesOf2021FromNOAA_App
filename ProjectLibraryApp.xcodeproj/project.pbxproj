@@ -80,6 +80,16 @@
 		DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C8028E6329300ADE5B6 /* ArticleListViewModel.swift */; };
 		DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE764C8228E6329300ADE5B6 /* Article.swift */; };
 		DEAFB0CA290947B20082DA5D /* ImagePickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0C9290947B20082DA5D /* ImagePickerService.swift */; };
+		DEAFB0D0290A77AA0082DA5D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0CF290A77AA0082DA5D /* User.swift */; };
+		DEAFB0D2290A77DD0082DA5D /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0D1290A77DD0082DA5D /* ListViewModel.swift */; };
+		DEAFB0D4290A78650082DA5D /* BucketListAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0D3290A78650082DA5D /* BucketListAppView.swift */; };
+		DEAFB0D6290AA1070082DA5D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0D5290AA1070082DA5D /* MapView.swift */; };
+		DEAFB0D8290AA7D50082DA5D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0D7290AA7D50082DA5D /* Location.swift */; };
+		DEAFB0DA290AAA390082DA5D /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0D9290AAA390082DA5D /* LocationView.swift */; };
+		DEAFB0DC290AB8F40082DA5D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0DB290AB8F40082DA5D /* Result.swift */; };
+		DEAFB0DF290BCFB90082DA5D /* VoiceOverAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0DE290BCFB90082DA5D /* VoiceOverAppView.swift */; };
+		DEAFB0E1290BECF90082DA5D /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0E0290BECF90082DA5D /* FileManager.swift */; };
+		DEAFB0E3290BF4AA0082DA5D /* NewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB0E2290BF4AA0082DA5D /* NewUserView.swift */; };
 		DEB3DB0228F0914600B75DD1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB0128F0914600B75DD1 /* View.swift */; };
 		DEB3DB0428F096E000B75DD1 /* ClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB0328F096E000B75DD1 /* ClassifierViewModel.swift */; };
 		DEB3DB0928F0B90100B75DD1 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3DB0828F0B90100B75DD1 /* ResultViewModel.swift */; };
@@ -196,6 +206,16 @@
 		DE764C8028E6329300ADE5B6 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		DE764C8228E6329300ADE5B6 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		DEAFB0C9290947B20082DA5D /* ImagePickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePickerService.swift; path = ProjectLibraryApp/Projects/InstaFilter/ViewModel/ImagePickerService.swift; sourceTree = SOURCE_ROOT; };
+		DEAFB0CF290A77AA0082DA5D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = ProjectLibraryApp/Projects/BucketList/Model/User.swift; sourceTree = SOURCE_ROOT; };
+		DEAFB0D1290A77DD0082DA5D /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		DEAFB0D3290A78650082DA5D /* BucketListAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListAppView.swift; sourceTree = "<group>"; };
+		DEAFB0D5290AA1070082DA5D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DEAFB0D7290AA7D50082DA5D /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = SOURCE_ROOT; };
+		DEAFB0D9290AAA390082DA5D /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		DEAFB0DB290AB8F40082DA5D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Result.swift; path = ProjectLibraryApp/Result.swift; sourceTree = SOURCE_ROOT; };
+		DEAFB0DE290BCFB90082DA5D /* VoiceOverAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverAppView.swift; sourceTree = "<group>"; };
+		DEAFB0E0290BECF90082DA5D /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		DEAFB0E2290BF4AA0082DA5D /* NewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserView.swift; sourceTree = "<group>"; };
 		DEB3DB0128F0914600B75DD1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DEB3DB0328F096E000B75DD1 /* ClassifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierViewModel.swift; sourceTree = "<group>"; };
 		DEB3DB0828F0B90100B75DD1 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
@@ -489,6 +509,8 @@
 		DE6F066428F72C1F003AEE6F /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				DEAFB0DD290BCF9F0082DA5D /* VoiceOver */,
+				DEAFB0CB290A77750082DA5D /* BucketList */,
 				DEC245CC2907E52B0035B9CA /* InstaFilter */,
 				DEC245A8290291340035B9CA /* CoreDataApp */,
 				DE020E882901410D00F8D67D /* Bookworm */,
@@ -531,6 +553,7 @@
 		DE6F068B28FB09A4003AEE6F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DEAFB0E0290BECF90082DA5D /* FileManager.swift */,
 				DE6F068C28FB0B91003AEE6F /* Color-Theme.swift */,
 				DE6F068728F9682F003AEE6F /* Bundle_Decodable.swift */,
 			);
@@ -678,6 +701,53 @@
 				DEAFB0C9290947B20082DA5D /* ImagePickerService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		DEAFB0CB290A77750082DA5D /* BucketList */ = {
+			isa = PBXGroup;
+			children = (
+				DEAFB0CE290A77940082DA5D /* View */,
+				DEAFB0CD290A778D0082DA5D /* ViewModel */,
+				DEAFB0CC290A77870082DA5D /* Model */,
+			);
+			path = BucketList;
+			sourceTree = "<group>";
+		};
+		DEAFB0CC290A77870082DA5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEAFB0DB290AB8F40082DA5D /* Result.swift */,
+				DEAFB0D7290AA7D50082DA5D /* Location.swift */,
+				DEAFB0CF290A77AA0082DA5D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEAFB0CD290A778D0082DA5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEAFB0D1290A77DD0082DA5D /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEAFB0CE290A77940082DA5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEAFB0D3290A78650082DA5D /* BucketListAppView.swift */,
+				DEAFB0E2290BF4AA0082DA5D /* NewUserView.swift */,
+				DEAFB0D5290AA1070082DA5D /* MapView.swift */,
+				DEAFB0D9290AAA390082DA5D /* LocationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEAFB0DD290BCF9F0082DA5D /* VoiceOver */ = {
+			isa = PBXGroup;
+			children = (
+				DEAFB0DE290BCFB90082DA5D /* VoiceOverAppView.swift */,
+			);
+			path = VoiceOver;
 			sourceTree = "<group>";
 		};
 		DEB3DAFC28F08DC900B75DD1 /* AnimalClassifier */ = {
@@ -972,6 +1042,7 @@
 				DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */,
 				DEDE77D529002742000DADB3 /* Order.swift in Sources */,
 				DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */,
+				DEAFB0DC290AB8F40082DA5D /* Result.swift in Sources */,
 				DE020E9D2901634300F8D67D /* RatingView.swift in Sources */,
 				DE0696B328FD5AC50071EA9F /* DrawingAppView.swift in Sources */,
 				DE6F067D28F882C9003AEE6F /* AddView.swift in Sources */,
@@ -987,6 +1058,7 @@
 				DE6F065628F585EE003AEE6F /* WordScrambleView.swift in Sources */,
 				DEC245C729070E3C0035B9CA /* Movie+CoreDataProperties.swift in Sources */,
 				DE764C8728E6329300ADE5B6 /* ListRowView.swift in Sources */,
+				DEAFB0DF290BCFB90082DA5D /* VoiceOverAppView.swift in Sources */,
 				DE020EA32901836B00F8D67D /* BookwormViewModel.swift in Sources */,
 				DE6F069428FB1BE4003AEE6F /* AstronautView.swift in Sources */,
 				DEDE77C028FFF02F000DADB3 /* Explanation.swift in Sources */,
@@ -1006,18 +1078,24 @@
 				DE764C8828E6329300ADE5B6 /* ClimateArticlesView.swift in Sources */,
 				DEF4FBA428ECD0F100BDB191 /* CustomizedButton.swift in Sources */,
 				DE020E9F290166D300F8D67D /* EmojiRatingView.swift in Sources */,
+				DEAFB0D0290A77AA0082DA5D /* User.swift in Sources */,
 				DE764C8A28E6329300ADE5B6 /* Article.swift in Sources */,
 				DEC245D22907E8CB0035B9CA /* FilterViewModel.swift in Sources */,
 				DE6F065F28F6BCC7003AEE6F /* ScrambleGameView.swift in Sources */,
 				DEC245C229070E000035B9CA /* Actor+CoreDataClass.swift in Sources */,
 				DE6F067928F87DBA003AEE6F /* Expenses.swift in Sources */,
+				DEAFB0D4290A78650082DA5D /* BucketListAppView.swift in Sources */,
 				DEC245CE2907E54B0035B9CA /* InstaFilterAppView.swift in Sources */,
 				DEDE77D0290026EF000DADB3 /* AddressView.swift in Sources */,
 				DE6F068828F9682F003AEE6F /* Bundle_Decodable.swift in Sources */,
+				DEAFB0D6290AA1070082DA5D /* MapView.swift in Sources */,
 				DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */,
 				DE305EBE28F04AC2002FD76F /* IVAModel.swift in Sources */,
 				DE6F065028F42996003AEE6F /* ClassifierQuestionView.swift in Sources */,
 				DE0E648228EEE67600E916D2 /* BetterRestView.swift in Sources */,
+				DEAFB0D8290AA7D50082DA5D /* Location.swift in Sources */,
+				DEAFB0E1290BECF90082DA5D /* FileManager.swift in Sources */,
+				DEAFB0D2290A77DD0082DA5D /* ListViewModel.swift in Sources */,
 				DE6F066A28F74C4A003AEE6F /* SnakAnimationView.swift in Sources */,
 				DEDE77D729002968000DADB3 /* CheckoutView.swift in Sources */,
 				DE6F066E28F755C8003AEE6F /* CircleAnimationView.swift in Sources */,
@@ -1025,6 +1103,7 @@
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
 				DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */,
 				DEDE77B628FF1B28000DADB3 /* FlowerShapeView.swift in Sources */,
+				DEAFB0E3290BF4AA0082DA5D /* NewUserView.swift in Sources */,
 				DE6F069D28FB3181003AEE6F /* MissionViewModel.swift in Sources */,
 				DEDE77CB2900029C000DADB3 /* ProjectsViewModel.swift in Sources */,
 				DE6F068F28FB0E4A003AEE6F /* MissionView.swift in Sources */,
@@ -1045,6 +1124,7 @@
 				DE6F066828F7468E003AEE6F /* TransitionAnimationView.swift in Sources */,
 				DEDE77C628FFFC97000DADB3 /* Projects.swift in Sources */,
 				DE6F066C28F74D63003AEE6F /* CornerAnimationView.swift in Sources */,
+				DEAFB0DA290AAA390082DA5D /* LocationView.swift in Sources */,
 				DE6F065828F5870D003AEE6F /* WordViewModel.swift in Sources */,
 				DE764C8628E6329300ADE5B6 /* Articles_Table_View.swift in Sources */,
 				DEF4FBA228ECCCF400BDB191 /* ExplanationView.swift in Sources */,
@@ -1205,6 +1285,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectLibraryApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1234,6 +1315,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectLibraryApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

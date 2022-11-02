@@ -65,7 +65,6 @@ struct InstaFilterAppView: View {
                     vm.saveImageAtCoreImage()
                 }
                 .buttonStyleModifier()
-                .alert("\(vm.saveMessage)", isPresented: $vm.showingSaveInfo) {}
                 .opacity(!vm.disableButton ? 0.4 : 1.0)
                 .disabled(!vm.disableButton)
             }
