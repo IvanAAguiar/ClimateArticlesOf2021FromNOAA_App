@@ -32,6 +32,10 @@
 		DE218368291309A000E8342E /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE218367291309A000E8342E /* Prospect.swift */; };
 		DE21836B2913146400E8342E /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = DE21836A2913146400E8342E /* SamplePackage */; };
 		DE21836E291314A900E8342E /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = DE21836D291314A900E8342E /* CodeScanner */; };
+		DE2183742913C2CA00E8342E /* FlashzillaAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2183732913C2CA00E8342E /* FlashzillaAppView.swift */; };
+		DE2183772913EC5F00E8342E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2183762913EC5F00E8342E /* Card.swift */; };
+		DE2183792913EDA800E8342E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2183782913EDA800E8342E /* CardView.swift */; };
+		DE218380291426FF00E8342E /* EditCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21837F291426FF00E8342E /* EditCardsView.swift */; };
 		DE305EB928F03FA8002FD76F /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EB828F03FA8002FD76F /* CalculatorViewModel.swift */; };
 		DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */; };
 		DE305EBE28F04AC2002FD76F /* IVAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBD28F04AC2002FD76F /* IVAModel.swift */; };
@@ -161,6 +165,10 @@
 		DE2183602912F12900E8342E /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		DE2183622912F13200E8342E /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		DE218367291309A000E8342E /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Prospect.swift; path = ProjectLibraryApp/Projects/HotProspects/View/Prospect.swift; sourceTree = SOURCE_ROOT; };
+		DE2183732913C2CA00E8342E /* FlashzillaAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlashzillaAppView.swift; path = ProjectLibraryApp/Projects/Flashzilla/View/FlashzillaAppView.swift; sourceTree = SOURCE_ROOT; };
+		DE2183762913EC5F00E8342E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		DE2183782913EDA800E8342E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DE21837F291426FF00E8342E /* EditCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardsView.swift; sourceTree = "<group>"; };
 		DE305EB828F03FA8002FD76F /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLLinkViewModifier.swift; sourceTree = "<group>"; };
 		DE305EBD28F04AC2002FD76F /* IVAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVAModel.swift; sourceTree = "<group>"; };
@@ -411,6 +419,41 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DE2183752913C2CE00E8342E /* Flashzilla */ = {
+			isa = PBXGroup;
+			children = (
+				DE21837C2913F5B800E8342E /* View */,
+				DE21837B2913F5B100E8342E /* ViewModel */,
+				DE21837A2913F5A800E8342E /* Model */,
+			);
+			path = Flashzilla;
+			sourceTree = "<group>";
+		};
+		DE21837A2913F5A800E8342E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE2183762913EC5F00E8342E /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE21837B2913F5B100E8342E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE21837C2913F5B800E8342E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE2183732913C2CA00E8342E /* FlashzillaAppView.swift */,
+				DE2183782913EDA800E8342E /* CardView.swift */,
+				DE21837F291426FF00E8342E /* EditCardsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DE305EB628F03F67002FD76F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +599,7 @@
 		DE6F066428F72C1F003AEE6F /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				DE2183752913C2CE00E8342E /* Flashzilla */,
 				DE21835D2912DD3600E8342E /* HotProspects */,
 				DEAFB0DD290BCF9F0082DA5D /* VoiceOver */,
 				DEAFB0CB290A77750082DA5D /* BucketList */,
@@ -636,7 +680,6 @@
 				DE6F068E28FB0E4A003AEE6F /* MissionView.swift */,
 				DE6F069328FB1BE4003AEE6F /* AstronautView.swift */,
 				DE6F069828FB2E8D003AEE6F /* CrewView.swift */,
-				DE6F06A128FB43A5003AEE6F /* SeparatorComponent.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1005,6 +1048,7 @@
 		DEF4FBA028ECCCD700BDB191 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F06A128FB43A5003AEE6F /* SeparatorComponent.swift */,
 				DEC245D329093AC80035B9CA /* ImageSaver.swift */,
 				DE020E9C2901634300F8D67D /* RatingView.swift */,
 				DE020E9E290166D300F8D67D /* EmojiRatingView.swift */,
@@ -1120,6 +1164,7 @@
 				DE21835F2912DD6300E8342E /* HotProspectsAppView.swift in Sources */,
 				DE6F069428FB1BE4003AEE6F /* AstronautView.swift in Sources */,
 				DEDE77C028FFF02F000DADB3 /* Explanation.swift in Sources */,
+				DE2183792913EDA800E8342E /* CardView.swift in Sources */,
 				DEDE77CE290026D5000DADB3 /* CupcakeCornerAppView.swift in Sources */,
 				DEDE77B828FF1D95000DADB3 /* ColorCyclingCircle.swift in Sources */,
 				DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */,
@@ -1129,6 +1174,7 @@
 				DE0E648C28EF271500E916D2 /* SleepCalculator.mlmodel in Sources */,
 				DE305EC028F04D7E002FD76F /* TipModel.swift in Sources */,
 				DE0696BA28FDACB50071EA9F /* SpirographView.swift in Sources */,
+				DE2183742913C2CA00E8342E /* FlashzillaAppView.swift in Sources */,
 				DEDE77B228FF0FA5000DADB3 /* BlendingColorsView.swift in Sources */,
 				DE764C8428E6329300ADE5B6 /* Articles_Tab_View.swift in Sources */,
 				DEC245C629070E3C0035B9CA /* Movie+CoreDataClass.swift in Sources */,
@@ -1161,10 +1207,12 @@
 				DE6F066E28F755C8003AEE6F /* CircleAnimationView.swift in Sources */,
 				DEC245D429093AC80035B9CA /* ImageSaver.swift in Sources */,
 				DE764C8928E6329300ADE5B6 /* ArticleListViewModel.swift in Sources */,
+				DE218380291426FF00E8342E /* EditCardsView.swift in Sources */,
 				DE0E649328F01F9000E916D2 /* GridViewModel.swift in Sources */,
 				DEDE77B628FF1B28000DADB3 /* FlowerShapeView.swift in Sources */,
 				DEAFB0E3290BF4AA0082DA5D /* NewUserView.swift in Sources */,
 				DE6F069D28FB3181003AEE6F /* MissionViewModel.swift in Sources */,
+				DE2183772913EC5F00E8342E /* Card.swift in Sources */,
 				DEDE77CB2900029C000DADB3 /* ProjectsViewModel.swift in Sources */,
 				DE6F068F28FB0E4A003AEE6F /* MissionView.swift in Sources */,
 				DEB3DB0B28F0CD1400B75DD1 /* ResultView.swift in Sources */,
