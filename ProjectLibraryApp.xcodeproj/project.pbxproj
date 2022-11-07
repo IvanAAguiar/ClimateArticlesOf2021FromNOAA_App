@@ -36,6 +36,9 @@
 		DE2183772913EC5F00E8342E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2183762913EC5F00E8342E /* Card.swift */; };
 		DE2183792913EDA800E8342E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2183782913EDA800E8342E /* CardView.swift */; };
 		DE218380291426FF00E8342E /* EditCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21837F291426FF00E8342E /* EditCardsView.swift */; };
+		DE2183832915102000E8342E /* LayoutAndGeometryAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2183822915102000E8342E /* LayoutAndGeometryAppView.swift */; };
+		DE2183852915363600E8342E /* FlippedCenterRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2183842915363600E8342E /* FlippedCenterRotationView.swift */; };
+		DE21838729156AC100E8342E /* CoverFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21838629156AC100E8342E /* CoverFlowView.swift */; };
 		DE305EB928F03FA8002FD76F /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EB828F03FA8002FD76F /* CalculatorViewModel.swift */; };
 		DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */; };
 		DE305EBE28F04AC2002FD76F /* IVAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE305EBD28F04AC2002FD76F /* IVAModel.swift */; };
@@ -118,6 +121,9 @@
 		DEC245CE2907E54B0035B9CA /* InstaFilterAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245CD2907E54B0035B9CA /* InstaFilterAppView.swift */; };
 		DEC245D22907E8CB0035B9CA /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245D12907E8CB0035B9CA /* FilterViewModel.swift */; };
 		DEC245D429093AC80035B9CA /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC245D329093AC80035B9CA /* ImageSaver.swift */; };
+		DED1000929157B390024077E /* RotatingBrushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1000829157B390024077E /* RotatingBrushView.swift */; };
+		DED1000B29157FB50024077E /* WindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1000A29157FB50024077E /* WindView.swift */; };
+		DED1000D2915862D0024077E /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1000C2915862D0024077E /* WaveView.swift */; };
 		DEDE77B228FF0FA5000DADB3 /* BlendingColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B128FF0FA5000DADB3 /* BlendingColorsView.swift */; };
 		DEDE77B428FF18AF000DADB3 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B328FF18AF000DADB3 /* Flower.swift */; };
 		DEDE77B628FF1B28000DADB3 /* FlowerShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE77B528FF1B28000DADB3 /* FlowerShapeView.swift */; };
@@ -169,6 +175,9 @@
 		DE2183762913EC5F00E8342E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		DE2183782913EDA800E8342E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DE21837F291426FF00E8342E /* EditCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardsView.swift; sourceTree = "<group>"; };
+		DE2183822915102000E8342E /* LayoutAndGeometryAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAndGeometryAppView.swift; sourceTree = "<group>"; };
+		DE2183842915363600E8342E /* FlippedCenterRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippedCenterRotationView.swift; sourceTree = "<group>"; };
+		DE21838629156AC100E8342E /* CoverFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFlowView.swift; sourceTree = "<group>"; };
 		DE305EB828F03FA8002FD76F /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		DE305EBA28F04137002FD76F /* URLLinkViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLLinkViewModifier.swift; sourceTree = "<group>"; };
 		DE305EBD28F04AC2002FD76F /* IVAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVAModel.swift; sourceTree = "<group>"; };
@@ -252,6 +261,9 @@
 		DEC245CD2907E54B0035B9CA /* InstaFilterAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFilterAppView.swift; sourceTree = "<group>"; };
 		DEC245D12907E8CB0035B9CA /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		DEC245D329093AC80035B9CA /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		DED1000829157B390024077E /* RotatingBrushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingBrushView.swift; sourceTree = "<group>"; };
+		DED1000A29157FB50024077E /* WindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindView.swift; sourceTree = "<group>"; };
+		DED1000C2915862D0024077E /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		DEDE77B128FF0FA5000DADB3 /* BlendingColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendingColorsView.swift; sourceTree = "<group>"; };
 		DEDE77B328FF18AF000DADB3 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
 		DEDE77B528FF1B28000DADB3 /* FlowerShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerShapeView.swift; sourceTree = "<group>"; };
@@ -454,6 +466,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DE21838129150FF100E8342E /* LayoutAndGeometry */ = {
+			isa = PBXGroup;
+			children = (
+				DE2183822915102000E8342E /* LayoutAndGeometryAppView.swift */,
+				DED1000C2915862D0024077E /* WaveView.swift */,
+				DED1000A29157FB50024077E /* WindView.swift */,
+				DED1000829157B390024077E /* RotatingBrushView.swift */,
+				DE21838629156AC100E8342E /* CoverFlowView.swift */,
+				DE2183842915363600E8342E /* FlippedCenterRotationView.swift */,
+			);
+			path = LayoutAndGeometry;
+			sourceTree = "<group>";
+		};
 		DE305EB628F03F67002FD76F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +624,7 @@
 		DE6F066428F72C1F003AEE6F /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				DE21838129150FF100E8342E /* LayoutAndGeometry */,
 				DE2183752913C2CE00E8342E /* Flashzilla */,
 				DE21835D2912DD3600E8342E /* HotProspects */,
 				DEAFB0DD290BCF9F0082DA5D /* VoiceOver */,
@@ -1142,12 +1168,14 @@
 				DE0E647D28EDD96D00E916D2 /* ViewsModifierView.swift in Sources */,
 				DE218368291309A000E8342E /* Prospect.swift in Sources */,
 				DEDE77D529002742000DADB3 /* Order.swift in Sources */,
+				DE21838729156AC100E8342E /* CoverFlowView.swift in Sources */,
 				DEF4FB9B28EC74D400BDB191 /* FlagsCoordinateView.swift in Sources */,
 				DEAFB0DC290AB8F40082DA5D /* BucketListResult.swift in Sources */,
 				DE020E9D2901634300F8D67D /* RatingView.swift in Sources */,
 				DE0696B328FD5AC50071EA9F /* DrawingAppView.swift in Sources */,
 				DE6F067D28F882C9003AEE6F /* AddView.swift in Sources */,
 				DE0E649128EF604F00E916D2 /* BetterRestMLViewModel.swift in Sources */,
+				DED1000B29157FB50024077E /* WindView.swift in Sources */,
 				DEC245AF29069C2A0035B9CA /* CoreDataAppView.swift in Sources */,
 				DE211A5128FC1CFA00B5F97B /* ListLayoutView.swift in Sources */,
 				DEC245BD2906FB4A0035B9CA /* MovieRowView.swift in Sources */,
@@ -1168,6 +1196,7 @@
 				DEDE77CE290026D5000DADB3 /* CupcakeCornerAppView.swift in Sources */,
 				DEDE77B828FF1D95000DADB3 /* ColorCyclingCircle.swift in Sources */,
 				DE321EBF28E72C60006A74E0 /* HomeView.swift in Sources */,
+				DED1000D2915862D0024077E /* WaveView.swift in Sources */,
 				DE020EA12901691000F8D67D /* BookDetailView.swift in Sources */,
 				DE020E9B29015DDA00F8D67D /* BookwormAppView.swift in Sources */,
 				DE0696B528FDABEF0071EA9F /* Spirograph.swift in Sources */,
@@ -1197,6 +1226,7 @@
 				DE305EBB28F04137002FD76F /* URLLinkViewModifier.swift in Sources */,
 				DE305EBE28F04AC2002FD76F /* IVAModel.swift in Sources */,
 				DE6F065028F42996003AEE6F /* ClassifierQuestionView.swift in Sources */,
+				DE2183852915363600E8342E /* FlippedCenterRotationView.swift in Sources */,
 				DE0E648228EEE67600E916D2 /* BetterRestView.swift in Sources */,
 				DEAFB0D8290AA7D50082DA5D /* Location.swift in Sources */,
 				DEAFB0E1290BECF90082DA5D /* FileManager.swift in Sources */,
@@ -1226,6 +1256,7 @@
 				DE6F067B28F87E43003AEE6F /* ExpenseManagerView.swift in Sources */,
 				DE020E95290157A100F8D67D /* ProjectLibrary.xcdatamodeld in Sources */,
 				DEC245CB290720E90035B9CA /* AddActorsView.swift in Sources */,
+				DED1000929157B390024077E /* RotatingBrushView.swift in Sources */,
 				DEDE77B428FF18AF000DADB3 /* Flower.swift in Sources */,
 				DE6F06A028FB401F003AEE6F /* CrewMember.swift in Sources */,
 				DE6F066628F72C56003AEE6F /* CornerRotateModifier.swift in Sources */,
@@ -1233,6 +1264,7 @@
 				DEDE77C628FFFC97000DADB3 /* Projects.swift in Sources */,
 				DE6F066C28F74D63003AEE6F /* CornerAnimationView.swift in Sources */,
 				DEAFB0DA290AAA390082DA5D /* LocationView.swift in Sources */,
+				DE2183832915102000E8342E /* LayoutAndGeometryAppView.swift in Sources */,
 				DE6F065828F5870D003AEE6F /* WordViewModel.swift in Sources */,
 				DE764C8628E6329300ADE5B6 /* Articles_Table_View.swift in Sources */,
 				DEF4FBA228ECCCF400BDB191 /* ExplanationView.swift in Sources */,

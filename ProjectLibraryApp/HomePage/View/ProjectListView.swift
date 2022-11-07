@@ -35,6 +35,7 @@ struct ProjectListView: View {
                     NavigationLink("VoiceOver", destination: VoiceOverAppView())
                     NavigationLink("Hot Prospects", destination: HotProspectsAppView())
                     NavigationLink("Flashzilla", destination: FlashzillaAppView())
+                    NavigationLink("Layout And Geometry", destination: LayoutAndGeometryAppView())
                 }
             }
             .navigationTitle("Projects")
