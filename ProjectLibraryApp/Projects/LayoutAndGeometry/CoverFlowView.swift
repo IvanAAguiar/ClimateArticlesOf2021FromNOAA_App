@@ -21,9 +21,12 @@ struct CoverFlowView: View {
                         }
                         .frame(width: 200, height: 400)
                         .background(colors[num % colors.count])
+                        .overlay(content: {
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.black, lineWidth: 1)
+                        })
                         .rotation3DEffect(.degrees(-geo.frame(in: .global).minX) / 7, axis: (x: 0, y: 1, z: 0))
                         .offset(x: 115)
-                        .shadow(radius: 2)
                     }
                     .offset(y:50)
                     .frame(width: 200, height: 500)

@@ -13,7 +13,7 @@ struct ProjectLibraryApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            ProjectListView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }

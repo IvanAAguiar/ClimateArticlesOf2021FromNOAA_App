@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ProjectListView: View {
+    
     var body: some View {
-//        let projects: [Int: Project] = Bundle.main.decode("projects.json")
-
+        //        let projects: [Int: Project] = Bundle.main.decode("projects.json")
+        NavigationView {
             List {
                 Group {
                     NavigationLink("WeSplit", destination: WeSplitProjectView())
@@ -37,9 +38,17 @@ struct ProjectListView: View {
                     NavigationLink("Flashzilla", destination: FlashzillaAppView())
                     NavigationLink("Layout And Geometry", destination: LayoutAndGeometryAppView())
                 }
+                Group {
+                    NavigationLink("Snow Seeker", destination: SnowSeekerAppView())
+                }
             }
             .navigationTitle("Projects")
             .navigationBarTitleDisplayMode(.large)
+            
+            WelcomeView()
+
+        }
+        .phoneOnlyNavigationView()
     }
 }
 

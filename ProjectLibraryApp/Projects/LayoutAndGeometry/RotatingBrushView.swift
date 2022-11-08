@@ -18,8 +18,10 @@ struct RotatingBrushView: View {
                             .font(.title)
                             .frame(maxWidth: .infinity)
                             .background(colors[index % colors.count])
-                            .shadow(radius: 1)
-                            .rotation3DEffect(.degrees(geo.frame(in: .global).minY / 0.1) / 1, axis: (x: 0, y: 1, z: 0.1))
+                            .overlay(content: {
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(.black, lineWidth: 1)
+                            })                            .rotation3DEffect(.degrees(geo.frame(in: .global).minY / 0.1) / 1, axis: (x: 0, y: 1, z: 0.1))
                     }
                     .frame(height: 40)
             }

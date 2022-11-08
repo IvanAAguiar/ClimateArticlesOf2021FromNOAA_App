@@ -18,6 +18,8 @@ extension Bundle {
         }
         
         let decoder = JSONDecoder()
+        
+        // MARK: This is a specific formatter for a project
         let formatter = DateFormatter()
         formatter.dateFormat = "y-MM-dd"
         decoder.dateDecodingStrategy = .formatted(formatter)

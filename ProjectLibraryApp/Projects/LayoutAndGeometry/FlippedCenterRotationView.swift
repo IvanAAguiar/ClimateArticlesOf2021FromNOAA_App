@@ -19,9 +19,10 @@ struct FlippedCenterRotationView: View {
                             .font(.title)
                             .frame(maxWidth: .infinity)
                             .background(colors[index % colors.count])
-                            .padding(10)
-                            .shadow(radius: 1)
-                            .rotation3DEffect(.degrees(geo.frame(in: .global).minY - fullView.size.height / 2) / 6, axis: (x: 0, y: 1, z: 0))
+                            .overlay(content: {
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(.black, lineWidth: 1)
+                            })                            .rotation3DEffect(.degrees(geo.frame(in: .global).minY - fullView.size.height / 2) / 6, axis: (x: 0, y: 1, z: 0))
                     }
                     .frame(height: 40)
                 }

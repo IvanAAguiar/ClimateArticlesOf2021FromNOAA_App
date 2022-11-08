@@ -18,7 +18,10 @@ struct WaveView: View {
                             .font(.title)
                             .frame(maxWidth: .infinity)
                             .background(colors[index % colors.count])
-                            .shadow(radius: 1)
+                            .overlay(content: {
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(.black, lineWidth: 1)
+                            })
                             .rotation3DEffect(.degrees(geo.frame(in: .global).minY), axis: (x: 1, y: 0, z: 0.2))
                     }
                     .padding()

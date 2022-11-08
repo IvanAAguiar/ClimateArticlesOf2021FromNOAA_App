@@ -18,9 +18,11 @@ struct WindView: View {
                             .font(.title)
                             .frame(maxWidth: 250)
                             .background(colors[index % colors.count])
-                            .cornerRadius(20)
-                            .shadow(radius: 1)
-                            .rotation3DEffect(.degrees(geo.frame(in: .global).minY) , axis: (x: 0.99, y: 0.58, z: 0.7))
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                            .overlay(content: {
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(.black, lineWidth: 1)
+                            })                            .rotation3DEffect(.degrees(geo.frame(in: .global).minY) , axis: (x: 0.99, y: 0.58, z: 0.7))
                     }
                     .frame(height: 200)
             }
